@@ -805,7 +805,7 @@
 
             obj.id = marker.uniqid;
 
-            return function () {              
+            return function () {
               infowindow.setContent('<div class="map_content"><figure><img src="' + obj.image + '" ></figure><div class="text"><span class="tag">' + obj.tag + '</span> <h6>' + obj.title + '</h6> <p class="icon address">' + obj.address + '</p>' + (obj.email ? '<a href="" class="icon mail">' + obj.email + '</a>' : '') + (obj.phone ? '<a href="" class="icon phone">' + obj.phone + '</a>' : '') + ' <a href="' + obj.url + '" class="link__img">View Detail <img src="/images/material/icon-angle-right-green.svg" alt=""></a></div></div>');
               infowindow.open(map, marker);
               setTimeout(() => {
