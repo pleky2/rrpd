@@ -2028,6 +2028,10 @@ footer .foot-link a:last-child:after {
     width: 48px;
     z-index: 2;
 }
+
+.slick-arrow::before {
+    content: ' ';
+}
 .banner-page .wrap-banner .slider .slick-arrow.slick-prev {
     left: -20px;
     right: auto;
