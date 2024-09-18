@@ -665,6 +665,10 @@ footer .foot-top__box.logo .img-logo {
     display: block;
     margin-bottom: 30px;
 }
+
+footer .foot-top__box.logo .img-logo img {
+    width: 150px;
+}
 footer .foot-top__box.logo .media {
     display: flex;
     margin-top: 10px;
