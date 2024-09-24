@@ -16,3 +16,7 @@ use App\Http\Controllers\HomepageController;
 
 Route::get('/', [HomepageController::class, 'index']);
 Route::get('/profile', [HomepageController::class, 'profile']);
+Route::get('/ceo-message', [HomepageController::class, 'ceoMessage']);
+Route::get('/management', [HomepageController::class, 'management']);
+Route::get('/milestone', [HomepageController::class, 'milestone']);
+

@@ -1,73 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template.index')
 
-<!-- Mirrored from sunenergy.id/milestone by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Aug 2024 13:06:50 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <title>Milestones</title>
-
-
-  <link rel="icon" type="image/png" href="images/thumb_32_32_contain_favicon.png" sizes="32x32">
-  <link rel="canonical" href="milestone.html" />
-
-
-  <!--Style-->
-  <link rel="stylesheet" href="css/reset.css" preload>
-  <link rel="stylesheet" href="css/milligram.css" preload>
-  <!--endbuild-->
-
-  <!--js-->
-  <script async type="text/javascript" src="js/app.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <!--endbuild-->
-
-  <link rel="stylesheet" type="text/css" href="css/about.css" preload>
-</head>
-
-<body>
-
-  <!-- header -->
-  <!-- end of header -->
-
-  <section class="middle gap-bottom">
+@section('content')
+<section class="middle gap-bottom">
     <div class="banner-page center">
       <figure>
-        <img src="images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png" alt="">
+        <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
       </figure>
       <figcaption>
-        <h5>ABOUT US</h5>
+        <h5>TENTANG KAMI</h5>
         <h2>Milestone</h2>
       </figcaption>
     </div>
     <div class="inner-content">
-      <div class="bg-top"><img src="images/material/bg-top.svg"></div>
+      <div class="bg-top"><img src="{{ asset('assets/images/material/bg-top.svg') }}"></div>
 
       <div class="wrapper wrapper-small content-pages">
-        <h3><b>Our History</b></h3>
+        <h3><b>Sejarah Kita</b></h3>
         <p>PT Bhakti Terang Indonesia “BTI” adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018.
         </p>
 
         <figure class="img-middle">
-          <img src="images/cover_w990_h480_hero-login.jpg" alt="">
+          <img src="{{ asset('assets/images/cover_w990_h480_hero-login.jpg') }}" alt="">
         </figure>
 
         <p>BTI memiliki cita-cita memberikan manfaat dan dampak positif bagi keseimbangan alam untuk kehidupan berkelanjutan di Indonesia dengan turut andil dalam mengakselerasi transisi ke sumber energi bersih dan ramah lingkungan. Demi mewujudkan hal tersebut, BTI hadir dalam memberikan solusi pengembangan energi surya dan penyedia bahan bakar biomassa.</p>
       </div>
       <div class="our-milestone">
         <div class="wrapper wrapper-small">
-          <h3><b>Our Milestone</b></h3>
+          <h3><b>&nbsp;</b></h3>
           <div class="slider-dots">
 
             <div class="list">
@@ -96,7 +56,7 @@
                 <div class="slider-milestone">
                   <div class="slider">
                     <div class="inner">
-                      <figure><img src="images/cover_w273_h274_offgrid-kat-birang.jpg" alt="">
+                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
                       </figure>
                       <div class="text">
                         <p>BTI didirikan pada tanggal 27 Agustus 2018 di Jakarta. Bisnis utama BTI adalah sebagai
@@ -113,7 +73,7 @@
                 <div class="slider-milestone">
                   <div class="slider">
                     <div class="inner">
-                      <figure><img src="images/cover_w273_h274_offgrid-kat-birang.jpg" alt="">
+                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
                       </figure>
                       <div class="text">
                         <p>BTI melakukan relokasi head office ke Bandar Lampung. BTI juga mengembangkan bisnisnya ke
@@ -130,7 +90,7 @@
                 <div class="slider-milestone">
                   <div class="slider">
                     <div class="inner">
-                      <figure><img src="images/cover_w273_h274_offgrid-kat-birang.jpg" alt="">
+                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
                       </figure>
                       <div class="text">
                         <p>BTI terus berupaya mendukung penggunaan energi hijau dengan penambahan lini bisnis sebagai
@@ -146,7 +106,7 @@
                 <div class="slider-milestone">
                   <div class="slider">
                     <div class="inner">
-                      <figure><img src="images/cover_w273_h274_offgrid-kat-birang.jpg" alt="">
+                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
                       </figure>
                       <div class="text">
                         <h4>Hutan Tanaman Energi (HTE)
@@ -166,15 +126,4 @@
       
     </div>
   </section>
-
-
-  <!--Footer -->
-
-  <!--end of Footer -->
-  <script type="text/javascript" src="js/common.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</body>
-
-<!-- Mirrored from sunenergy.id/milestone by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Aug 2024 13:06:54 GMT -->
-
-</html>
+  @endsection

@@ -14,4 +14,16 @@ class HomepageController extends Controller
     public function profile() {
         return view('content.profile');
     }
+
+    public function ceoMessage() {
+        return view('content.ceo-message');
+    }
+
+    public function management() {
+        return view('content.management');
+    }
+
+    public function milestone() {
+        return view('content.milestone');
+    }
 }

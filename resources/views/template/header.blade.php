@@ -15,17 +15,23 @@
 
 
   <link rel="icon" type="image/png" href="{{ asset('assets/images/logo_home.png') }}" sizes="32x32">
-  <link rel="canonical" href="index.html" />
+  <link rel="canonical" href="/" />
 
 
   <!--Style-->
   <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}" preload>
   <link rel="stylesheet" href="{{ asset('assets/css/milligram.css') }}" preload>
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload>
   <!--endbuild-->
 
   <!--js-->
   <script async type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!--endbuild-->
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/home.css') }}" preload>
   <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
@@ -37,7 +43,7 @@
 
     <div class="wrapper">
       <nav>
-        <a href="index.html" class="logo"><img src="{{ asset('assets/images/logo_home.png') }}" alt=""></a>
+        <a href="/" class="logo"><img src="{{ asset('assets/images/logo_home.png') }}" alt=""></a>
         <div class="right-header">
           <div class="top">
             &nbsp;
@@ -53,9 +59,9 @@
                   <div class="col">
                     <ul>
                       <li class=""><a href="/profile">Info Perusahaan</a></li>
-                      <li class=""><a href="/ceo-message.html">Sambutan CEO</a></li>
-                      <li class=""><a href="/our-people.html">Manajemen</a></li>
-                      <li class=""><a href="/milestone.html">Milestone</a></li>
+                      <li class=""><a href="/ceo-message">Sambutan CEO</a></li>
+                      <li class=""><a href="/management">Manajemen</a></li>
+                      <li class=""><a href="/milestone">Milestone</a></li>
                       <li class=""><a href="#">Mengapa BTI Group</a></li>
                     </ul>
                   </div>
@@ -148,15 +154,6 @@
                         <li>Install and start using your solar energy system<br>&nbsp;</li>
                       </ol>
                     </div>
-                  </div>
-                  <div class="col">
-                    <figure class="text-abs">
-                      <img src="{{ asset('assets/images/cover_w252_h326_cover_w252_h326_thumbnail-video-about-us.png') }}" alt="">
-                      <figcaption>
-                        <h5>Calculate your energy needs today</h5>
-                        <a href="#" class="button">Calculate now </a>
-                      </figcaption>
-                    </figure>
                   </div>
                 </div>
 

@@ -1,75 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template.index')
 
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <title>Our People</title>
-
-  <link rel="icon" type="image/png" href="cfind/thumbs/images/thumb_32_32_contain_favicon.png" sizes="32x32">
-  <link rel="canonical" href="our-people.html" />
-
-
-  <!--Style-->
-  <link rel="stylesheet" href="css/reset.css" preload>
-  <link rel="stylesheet" href="css/milligram.css" preload>
-  <!--endbuild-->
-
-  <!--js-->
-  <script async type="text/javascript" src="js/app.js"></script>
-  <script async type="text/javascript" src="js/common.js"></script>
-  <!--endbuild-->
-
-  <link rel="stylesheet" type="text/css" href="css/about.css" preload>
-</head>
-
-<body>
-
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- header -->
-  <header>
-    <div class="wrapper">
-      <!-- replace nav -->
-    </div>
-    <!-- <section class="popup center" id="video-menu">
-      <div class="inner-popup video-popup">
-        <div class="close-popup"></div>
-        <div class="content-popup">
-          <div class="video">
-          
-          </div>
-        </div>
-      </div>
-    </section> -->
-  </header>
-  <!-- end of header -->
-
-  <section class="middle gap-bottom">
+@section('content')
+<section class="middle gap-bottom">
     <div class="banner-page center">
       <figure>
-        <img src="images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png" alt="">
+        <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
       </figure>
       <figcaption>
-        <h5>ABOUT US</h5>
-        <h2>Our People</h2>
+        <h5>TENTANG KAMI</h5>
+        <h2>Manajemen</h2>
       </figcaption>
     </div>
     <div class="inner-content">
-      <div class="bg-top"><img src="images/material/bg-top.svg"></div>
+      <div class="bg-top"><img src="{{ asset('assets/images/material/bg-top.svg') }}"></div>
 
       <div class="wrapper wrapper-small content-pages">
-        <h3><b>Introducing the talented individuals who have contributed to our success</b></h3>
-        <p style="text-align:center;">At SUN Energy, our employees are passionate about fostering the growth and
-          development of the solar industry.&nbsp;<br>We work closely with our member companies and other stakeholders
-          to promote the wider adoption of solar energy across the region.<br>&nbsp;</p>
+        <h3 style="text-align:center;"><b>Memperkenalkan individu-individu berbakat yang telah berkontribusi</b></h3>
+        <p style="text-align:center;">Di BTI, karyawan kami bersemangat dalam mendorong pertumbuhan dan perkembangan industri tenaga surya.&nbsp;<br>Kami bekerja sama dengan perusahaan anggota kami dan pemangku kepentingan lainnya untuk mempromosikan penggunaan energi surya secara lebih luas di seluruh wilayah.<br>&nbsp;</p>
         <br>
         <br>
         <div class="center-text">
-          <h3><b>Our Management</b></h3>
+          <h3><b>Manajemen kami</b></h3>
         </div>
         <br>
         <div class="grid-container" style="padding-bottom: 8px;">
@@ -80,14 +31,14 @@
               <p class="title">Komisaris Utama</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Maria Novitawati</b></p>
               <span>Komisaris Utama</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Maria Novitawati</b></h4>
                 <small>Komisaris Utama</small>
@@ -111,14 +62,14 @@
               <p class="title">Direktur Utama</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Daud Hadi Winarto</b></p>
               <span>Direktur Utama</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Daud Hadi Winarto</b></h4>
                 <small>Direktur Utama</small>
@@ -139,14 +90,14 @@
               <p class="title">Direktur</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Anita Carolina</b></p>
               <span>Direktur</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Anita Carolina</b></h4>
                 <small>Direktur Utama</small>
@@ -170,14 +121,14 @@
               <p class="title">Direktur</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Dhimas Mahardhika</b></p>
               <span>Direktur</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Dhimas Mahardhika</b></h4>
                 <small>Direktur</small>
@@ -201,14 +152,14 @@
               <p class="title">Superintendent Keuangan</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Ani Anjaswati</b></p>
               <span>Superintendent Keuangan</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Ani Anjaswati</b></h4>
                 <small>Superintendent Keuangan</small>
@@ -231,14 +182,14 @@
               <p class="title">O&M Engineer</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Dwi Saputri</b></p>
               <span>O&M Engineer</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Dwi Saputri</b></h4>
                 <small>O&M Engineer</small>
@@ -259,14 +210,14 @@
               <p class="title">HSE</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Yulinda Puspita</b></p>
               <span>HSE</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Yulinda Puspita</b></h4>
                 <small>HSE</small>
@@ -288,14 +239,14 @@
               <p class="title">Finance</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Fina Yuliana</b></p>
               <span>Finance</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Fina Yuliana</b></h4>
                 <small>Finance</small>
@@ -316,14 +267,14 @@
               <p class="title">HRD</p>
               <span>Lihat Profile</span>
             </div>
-            <img src="images/cover_w312_h312_01-philiplee.png" />
+            <img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" />
             <div class="title">
               <p><b>Dita Arta Pemia</b></p>
               <span>HRD</span>
             </div>
 
             <div class="data-popup">
-              <figure><img src="images/cover_w312_h312_01-philiplee.png" alt=""></figure>
+              <figure><img src="{{ asset('assets/images/cover_w312_h312_01-philiplee.png') }}" alt=""></figure>
               <div class="text">
                 <h4><b>Dita Arta Pemia</b></h4>
                 <small>HRD</small>
@@ -346,23 +297,4 @@
         </div>
       </div>
   </section>
-
-  <section class="popup" id="popup-bod">
-    <div class="inner-popup overlay-text">
-      <div class="close-popup"></div>
-      <div class="content-popup content-pages">
-      </div>
-    </div>
-  </section>
-
-  <!--Footer -->
-  <footer>
-    <!-- replace footer -->
-  </footer>
-  <!--end of Footer -->
-
-  <script type="text/javascript" src="js/about.js"></script>
-</body>
-
-
-</html>
+  @endsection
