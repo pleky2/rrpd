@@ -2679,6 +2679,16 @@ img[data-src].lazyloaded {
     object-position: center;
     width: 100%;
 }
+
+.banner__slider-item .video-slider img {
+    display: block;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%;
+}
 .banner__slider-item .wrapper {
     left: 0;
     position: absolute;

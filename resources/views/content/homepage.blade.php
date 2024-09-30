@@ -6,10 +6,21 @@
       <div class="banner__slider">
         <div class="banner__slider-item">
           <div class="video-slider">
-            <video muted="muted" loop="loop" playsinline="" autoplay="autoplay" width="400" __idm_id__="737281">
-              <source src="{{ asset('assets/video/sun-video-banner-v5.mp4') }}" type="video/mp4">
-              Your browser does not support HTML video.
-            </video>
+            <img src="{{ asset('assets/images/cover_w990_h420_offgrid-kat-birang.jpg') }}" alt="" />
+          </div>
+
+          <div class="wrapper">
+            <div class="banner__slider-item--text">
+              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
+              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
+                through End-to-End Solar System</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner__slider-item">
+          <div class="video-slider">
+            <img src="{{ asset('assets/images/cover_w990_h420_dji_0050.jpg') }}" alt="" />
           </div>
 
           <div class="wrapper">
@@ -26,6 +37,7 @@
           <div class="numbers">
             <span class="active">01</span> / <span class="total">02</span>
           </div>
+          
           <div class="slick-arrows">
             <div class="arrow-prev">
               <img src="{{ asset('assets/images/material/icon-arrow-left.svg') }}" alt="">
@@ -56,7 +68,7 @@
         </div>
       </div>
     </section>
-    {{-- <section class="scroller our-solution animating-scroll" data-section-name="our-solution" id="our-solution"
+   <section class="scroller our-solution animating-scroll" data-section-name="our-solution" id="our-solution"
       data-animate-trigger=".trigger-3">
       <div class="trigger trigger-3"></div>
       <div class="wrapper">
@@ -130,72 +142,8 @@
           </div>
         </div>
       </div>
-    </section> --}}
-    <!-- <section class="scroller solar-calculator animating-scroll" data-section-name="solar-calculator"
-      id="solar-calculator" data-animate-trigger=".trigger-4">
-      <div class="trigger trigger-4"></div>
-      <div class="wrapper">
-        <div class="title-section text-center">
-          <div class="title-section__text">
-            <span>SOLAR CALCULATOR</span>
-            <h2>Explore how Bhakti Terang Indonesia can reduce your electricity tariff</h2>
-            <p>Solar Calculator, our feature to estimate your solar energy needs Building type:</p>
-          </div>
-        </div>
-        <div class="solar-calculator__box">
-          <h4 class="text-center">Your property is used for:</h4>
-          <a class="solar-calculator__box-item" href="#">
-            <div class="solar-calculator__box-item--text">
-              <h4>Commercial &amp; Industrial</h4>
-              <span>Bhakti Terang Indonesia is specialized and pioneer in providing tailor-made solar energy solutions
-                for commercial
-                &amp; industrial sectors with no upfront cost.</span>
-            </div>
-            <figure><img src="{{ asset('assets/images/material/icon-business-2.png') }}" alt="icon"></figure>
-          </a>
-
-          <a class="solar-calculator__box-item" href="#" target="_blank">
-            <div class="solar-calculator__box-item--text">
-              <h4>Residential</h4>
-              <span>SUN Terra is a tech-based solar energy developer specializing in residential, small medium
-                enterprises &amp; business, and retail sectors.</span>
-            </div>
-            <figure><img src="{{ asset('assets/images/material/icon-residence-2.png') }}" alt="icon"></figure>
-          </a>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section class="client">
-        <h3>Client & Partners</h3>
-        <div class="test" data-slick='{"slidesToShow": 1, "slidesToScroll": 4}'>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
-        </div> -->
-        <!-- <div class="slider-client">
-          <div class="item-wrapper">
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-          </div>
-
-          <div class="item-wrapper">
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-          </div>
-        </div> -->
-
-        
-        
-    <!-- </section> -->
+    </section>
+    
     <section class="mpek">
       <h3>Client & Partners</h3>
       <div class="client test">

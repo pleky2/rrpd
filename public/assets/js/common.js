@@ -40,14 +40,14 @@ $(document).ready(function(){
     });
 
     $(document).ready(function(){
-        $('.inactive').on('click', function () {
+        $('.next').on('click', function () {
             console.log('test')
             $('.test').slick('slickGoTo', 1);
         });
     });
 
     $(document).ready(function(){
-        $('.active').on('click', function () {
+        $('.prev').on('click', function () {
             console.log('test')
             $('.test').slick('slickGoTo', 0);
         });
