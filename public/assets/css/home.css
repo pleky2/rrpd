@@ -1066,6 +1066,11 @@ footer .foot-link a:last-child:after {
     footer .foot-top__box h5 {
         font-size: 14px;
     }
+
+    .our-company {
+        min-height: 100vh;
+        background-color: #0058ba;
+    }
 }
 @media (max-width: 1023px) {
     header nav .logo {
@@ -1129,6 +1134,11 @@ footer .foot-link a:last-child:after {
     }
     footer .foot-link {
         justify-content: flex-start;
+    }
+
+    .our-company {
+        min-height: 100vh;
+        background-color: #0058ba;
     }
 }
 @media (max-width: 767px) {
@@ -1239,6 +1249,11 @@ footer .foot-link a:last-child:after {
     }
     footer .foot-link {
         justify-content: center;
+    }
+
+    .our-company {
+        min-height: 100vh;
+        background-color: #0058ba;
     }
 }
 .popup {

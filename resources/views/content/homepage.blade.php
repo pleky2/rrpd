@@ -49,7 +49,7 @@
         </div>
       </div>
     </section>
-    <section class="scroller about-us animating-scroll" data-section-name="about-us" id="about-us"
+    <!-- <section class="scroller about-us animating-scroll" data-section-name="about-us" id="about-us"
       data-animate-trigger=".trigger-2">
       <div class="trigger trigger-2"></div>
       <div class="wrapper">
@@ -67,82 +67,12 @@
           </figure>
         </div>
       </div>
+    </section> -->
+
+    <section class="our-company">
+      <div>Our Company</div>
     </section>
-   <section class="scroller our-solution animating-scroll" data-section-name="our-solution" id="our-solution"
-      data-animate-trigger=".trigger-3">
-      <div class="trigger trigger-3"></div>
-      <div class="wrapper">
-        <div class="our-solution__image">
-          <div class="our-solution__image-item  active " data-id-img="tab-1">
-            <figure>
-              <img src="{{ asset('assets/images/homepage/ongrid-min.gif') }}" alt="icon">
-            </figure>
-          </div>
-          <div class="our-solution__image-item " data-id-img="tab-2">
-            <figure>
-              <img src="{{ asset('assets/images/homepage/ofgrid-min.gif') }}" alt="icon">
-            </figure>
-          </div>
-          <div class="our-solution__image-item " data-id-img="tab-3">
-            <figure>
-              <img src="{{ asset('assets/images/homepage/hybrids-min.gif') }}" alt="icon">
-            </figure>
-          </div>
-        </div>
-        <div class="our-solution__box">
-          <div class="title-section">
-            <div class="title-section__text">
-              <span>OUR SOLUTION</span>
-              <h2>Smart Solar System</h2>
-            </div>
-          </div>
-          <div class="our-solution__box-thumb">
-            <ul class="nav-tab">
-              <li class="active" data-id="tab-1"><span>On Grid</span></li>
-              <li data-id="tab-2"><span>Off Grid</span></li>
-              <li data-id="tab-3"><span>Hybrid</span></li>
-            </ul>
-            <div class="nav-content">
-              <div class="nav-content__item  active " id="tab-1">
-                <div class="nav-content__item-box">
-                  <figure>
-                    <img src="{{ asset('assets/images/material/icon-ongrid.svg') }}" alt="">
-                  </figure>
-                  <div class="nav-content__item-box--text">
-                    <span><b>On Grid</b></span>
-                    <span>Maximize the power produced by the sun during the daytime and utilize electricity provided by
-                      the national grid at night.</span>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-content__item " id="tab-2">
-                <div class="nav-content__item-box">
-                  <figure>
-                    <img src="{{ asset('assets/images/material/icon-offgrid.svg') }}" alt="">
-                  </figure>
-                  <div class="nav-content__item-box--text">
-                    <span><b>Off Grid</b></span>
-                    <span>Get independent solar-powered electricity, with or without batteries.</span>
-                  </div>
-                </div>
-              </div>
-              <div class="nav-content__item " id="tab-3">
-                <div class="nav-content__item-box">
-                  <figure>
-                    <img src="{{ asset('assets/images/material/icon-hybrid.svg') }}" alt="">
-                  </figure>
-                  <div class="nav-content__item-box--text">
-                    <span><b>Hybrid</b></span>
-                    <span>When a solar energy system is combined with another energy source, such as diesel gen-sets,
-                      gas, wind, and others.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
     
     <section class="mpek">
       <h3>Client & Partners</h3>
@@ -166,10 +96,10 @@
       </div>
 
       <div class="tab zz">
-          <div class="tab-item active">
+          <div class="tab-item prev">
             <p>Padma</p>
           </div>
-          <div class="tab-item inactive">
+          <div class="tab-item next">
             <p>Ajinomoto</p>
           </div>
       </div>
