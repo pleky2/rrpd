@@ -70,7 +70,66 @@
     </section> -->
 
     <section class="our-company">
-      <div>Our Company</div>
+      <div class="wrapper">
+        <h2>Our Company</h2>
+        <div class="multiple-items">
+
+        <div class="slide-item">
+            <div class="content">
+              <div class="card-img">
+                <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
+              </div>
+              <div class="text">
+                <h3>Sun Terra</h3>
+                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
+                <p class="rm">Read More</p>
+              </div>
+            </div>
+          </div>
+
+          
+        <div class="slide-item">
+            <div class="content">
+              <div class="card-img">
+                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              </div>
+              <div class="text">
+                <h3>Sun Terra</h3>
+                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
+                <p class="rm">Read More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-item">
+            <div class="content">
+              <div class="card-img">
+                <img src="{{ asset('assets/images/gh.png') }}" alt="">
+              </div>
+              <div class="text">
+                <h3>Sun Terra</h3>
+                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
+                <p class="rm">Read More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide-item">
+            <div class="content">
+              <div class="card-img">
+                <img src="{{ asset('assets/images/yys.png') }}" alt="">
+              </div>
+              <div class="text">
+                <h3>Sun Terra</h3>
+                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
+                <p class="rm">Read More</p>
+              </div>
+            </div>
+          </div>
+          
+         
+        </div>
+      </div>
     </section>
    
     

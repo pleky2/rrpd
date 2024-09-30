@@ -52,5 +52,16 @@ $(document).ready(function(){
             $('.test').slick('slickGoTo', 0);
         });
     });
+
+
+    $(document).ready(function(){
+        $('.multiple-items').slick({ 
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            centerMode: true,
+        });
+    });
 });
 
