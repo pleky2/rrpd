@@ -141,9 +141,7 @@
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          
           </div>
           <div class="item-wrapper">
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>

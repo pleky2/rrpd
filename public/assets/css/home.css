@@ -635,7 +635,6 @@ h1.elementor-heading-title.elementor-size-default {
 }
 
 .our-company {
-   
     background-color: floralwhite;
     padding: 100px 128px;
 }
@@ -806,6 +805,51 @@ footer .foot-link a:last-child:after {
         width: auto;
         
     }
+
+    .our-company {
+        background-color: floralwhite;
+        padding: 100px 128px;
+    }
+    
+    .slide-item {
+        border-radius: 16px;
+        background-color: #f7ecd2;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+    
+    .slide-item .content{
+       padding: 25px;
+       display: flex;
+      
+    }
+    
+    .rm {
+        color: #fc6519;
+    }
+    
+    .slide-item .content .card-img{
+        border-radius: 8px;
+        padding: 8px;
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+     }
+     
+     .slide-item .content .text{
+        margin-left: 20px;
+        flex: 2;
+        /* color: white; */
+     }
+    
+     .slide-item .content .text h3{
+        font-weight: bold;
+     }
 }
 @media (max-width: 1280px) {
     header {
@@ -1114,9 +1158,49 @@ footer .foot-link a:last-child:after {
     }
 
     .our-company {
-        min-height: 100vh;
         background-color: floralwhite;
+        padding: 100px 128px;
     }
+    
+    .slide-item {
+        border-radius: 16px;
+        background-color: #f7ecd2;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+    
+    .slide-item .content{
+       padding: 25px;
+       display: flex;
+      
+    }
+    
+    .rm {
+        color: #fc6519;
+    }
+    
+    .slide-item .content .card-img{
+        border-radius: 8px;
+        padding: 8px;
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+     }
+     
+     .slide-item .content .text{
+        margin-left: 20px;
+        flex: 2;
+        /* color: white; */
+     }
+    
+     .slide-item .content .text h3{
+        font-weight: bold;
+     }
 }
 @media (max-width: 1023px) {
     header nav .logo {
@@ -1183,9 +1267,49 @@ footer .foot-link a:last-child:after {
     }
 
     .our-company {
-        min-height: 100vh;
-        background-color: #0058ba;
+        background-color: floralwhite;
+        padding: 100px 128px;
     }
+    
+    .slide-item {
+        border-radius: 16px;
+        background-color: #f7ecd2;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+    
+    .slide-item .content{
+       padding: 25px;
+       display: flex;
+      
+    }
+    
+    .rm {
+        color: #fc6519;
+    }
+    
+    .slide-item .content .card-img{
+        border-radius: 8px;
+        padding: 8px;
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+     }
+     
+     .slide-item .content .text{
+        margin-left: 20px;
+        flex: 2;
+        /* color: white; */
+     }
+    
+     .slide-item .content .text h3{
+        font-weight: bold;
+     }
 }
 @media (max-width: 767px) {
     header {
@@ -1298,9 +1422,49 @@ footer .foot-link a:last-child:after {
     }
 
     .our-company {
-        min-height: 100vh;
-        background-color: #0058ba;
+        background-color: floralwhite;
+        padding: 100px 128px;
     }
+    
+    .slide-item {
+        border-radius: 16px;
+        background-color: #f7ecd2;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+    
+    .slide-item .content{
+       padding: 25px;
+       display: flex;
+      
+    }
+    
+    .rm {
+        color: #fc6519;
+    }
+    
+    .slide-item .content .card-img{
+        border-radius: 8px;
+        padding: 8px;
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+     }
+     
+     .slide-item .content .text{
+        margin-left: 20px;
+        flex: 2;
+        /* color: white; */
+     }
+    
+     .slide-item .content .text h3{
+        font-weight: bold;
+     }
 }
 .popup {
     align-items: center;
