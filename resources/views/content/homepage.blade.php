@@ -1,29 +1,6 @@
 @extends('template.index')
 
 @section('content')
-      <!-- middle -->
-  <div class="indicator">
-    <div class="indicator__box">
-      <a class="indicator__box-item active" content-target="banner">
-        <div class="number"><span>01</span></div>
-      </a>
-      <a class="indicator__box-item" content-target="about-us">
-        <div class="number"><span>02</span></div>
-      </a>
-      <a class="indicator__box-item" content-target="our-solution">
-        <div class="number"><span>03</span></div>
-      </a>
-      <a class="indicator__box-item" content-target="solar-calculator">
-        <div class="number"><span>04</span></div>
-      </a>
-      {{-- <a class="indicator__box-item" content-target="our-project">
-        <div class="number"><span>05</span></div>
-      </a>
-      <a class="indicator__box-item" content-target="news-update">
-        <div class="number"><span>06</span></div>
-      </a> --}}
-    </div>
-  </div>
   <section class="wrap-parallax">
     <section class="scroller banner" data-section-name="banner" id="banner">
       <div class="banner__slider">
@@ -76,46 +53,6 @@
               <img src="{{ asset('assets/images/homepage/light-bg.webp') }}" alt="" style="max-width: 60%;">
             </div>
           </figure>
-        </div>
-      </div>
-      <div class="wrapper bg-white">
-        <div class="poin">
-          {{-- <div class="poin__item">
-            <figure>
-              <img src="{{ asset('assets/images/material/icon-contracted-projects.svg') }}" alt="icon">
-            </figure>
-            <div class="poin__item-text">
-              <h4><span class="counting">300</span>MWp</h4>
-              <span>Contracted Projects</span>
-            </div>
-          </div>
-          <div class="poin__item">
-            <figure>
-              <img src="{{ asset('assets/images/material/icon-emission.png') }}" alt="icon">
-            </figure>
-            <div class="poin__item-text">
-              <h4><span class="counting">929</span>Kilo Tons</h4>
-              <span>Carbon Emission Reduction</span>
-            </div>
-          </div>
-          <div class="poin__item">
-            <figure>
-              <img src="{{ asset('assets/images/material/icon-clean-energy.png') }}" alt="icon">
-            </figure>
-            <div class="poin__item-text">
-              <h4><span class="counting">815</span>GWh</h4>
-              <span>Clean Energy Production</span>
-            </div>
-          </div>
-          <div class="poin__item">
-            <figure>
-              <img src="{{ asset('assets/images/material/icon-tree.png') }}" alt="icon">
-            </figure>
-            <div class="poin__item-text">
-              <h4><span class="counting">13</span>Billions</h4>
-              <span>Trees Planted</span>
-            </div>
-          </div> --}}
         </div>
       </div>
     </section>
@@ -194,7 +131,7 @@
         </div>
       </div>
     </section> --}}
-    <section class="scroller solar-calculator animating-scroll" data-section-name="solar-calculator"
+    <!-- <section class="scroller solar-calculator animating-scroll" data-section-name="solar-calculator"
       id="solar-calculator" data-animate-trigger=".trigger-4">
       <div class="trigger trigger-4"></div>
       <div class="wrapper">
@@ -227,8 +164,70 @@
           </a>
         </div>
       </div>
+    </section> -->
+    <!-- <section class="client">
+        <h3>Client & Partners</h3>
+        <div class="test" data-slick='{"slidesToShow": 1, "slidesToScroll": 4}'>
+          <div><h3>1</h3></div>
+          <div><h3>2</h3></div>
+          <div><h3>3</h3></div>
+          <div><h3>4</h3></div>
+          <div><h3>5</h3></div>
+          <div><h3>6</h3></div>
+        </div> -->
+        <!-- <div class="slider-client">
+          <div class="item-wrapper">
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          </div>
+
+          <div class="item-wrapper">
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          </div>
+        </div> -->
+
+        
+        
+    <!-- </section> -->
+    <section class="mpek">
+      <h3>Client & Partners</h3>
+      <div class="client test">
+          <div class="item-wrapper">
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          </div>
+          <div class="item-wrapper">
+            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
+          </div>
+      </div>
+
+      <div class="tab zz">
+          <div class="tab-item active">
+            <p>Padma</p>
+          </div>
+          <div class="tab-item inactive">
+            <p>Ajinomoto</p>
+          </div>
+      </div>
     </section>
-    <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
+			
+    <!-- <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
       data-animate-trigger=".trigger-5">
       <div class="trigger trigger-5"></div>
       <div class="slider-project">
@@ -243,88 +242,12 @@
                 <h2>Key Portfolios &amp; Highlights</h2>
               </div>
             </div>
-            <div class="slider-project__item-text">
+            <div class="slider-project__item-text r-2">
               <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <h3>Padma Hotels</h3>
-              <div class="wrap-sub-tag">
-                <span>Commercial</span>
-              </div>
-              <p>Padma Hotels in Java &amp; Bali have implemented a range of green initiatives to minimize their
-                environmental impact and have made a commitment to sustainable management policies that are part of
-                their environmental management system.</p>
-              <div class="foot">
-                <div class="wrap-btn">
-                  <a href="#" class="link__img outline">View Detail <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                  <a href="#" class="link__img outline">Get a Quote <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                </div>
-                <div class="count">1<small>/12</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-project__item">
-          <figure>
-            <img src="{{ asset('assets/images/thumbs/cover_w1000_h562_padma-ubud-web.jpg') }}" alt="">
-          </figure>
-          <div class="wrapper">
-            <div class="title-section text-white">
-              <div class="title-section__text">
-                <span>Notable Projects</span>
-                <h2>Key Portfolios &amp; Highlights</h2>
-              </div>
-            </div>
-            <div class="slider-project__item-text">
-              <img src="{{ asset('assets/images/yys.png') }}" alt="">
-              <h3>Bluebird</h3>
-              <div class="wrap-sub-tag">
-                <span>Commercial Building</span>
-              </div>
-              <p>Bluebird is now powered by solar energy, representing Bhakti Terang Indonesia&#039;s initial venture
-                into
-                sustainable transportation. The solar energy system has a capacity of 215.6 kWp.</p>
-              <div class="foot">
-                <div class="wrap-btn">
-                  <a href="#" class="link__img outline">View Detail <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                  <a href="#" class="link__img outline">Get a Quote <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                </div>
-                <div class="count">2<small>/12</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-project__item">
-          <figure>
-            <img src="{{ asset('assets/images/thumbs/cover_w1000_h562_padma-ubud-web.jpg') }}" alt="">
-          </figure>
-          <div class="wrapper">
-            <div class="title-section text-white">
-              <div class="title-section__text">
-                <span>Notable Projects</span>
-                <h2>Key Portfolios &amp; Highlights</h2>
-              </div>
-            </div>
-            <div class="slider-project__item-text">
-              <img src="{{ asset('assets/images/gh.png') }}" alt="">
-              <h3>Gelora Djaja (Wismilak Group)</h3>
-              <div class="wrap-sub-tag">
-                <span>Manufacturing</span>
-              </div>
-              <p>Tjiwi Kimia, a global paper manufacturer, prioritizes sustainability with its 9.8 MWp solar system, the
-                largest in the industrial sector, featuring 17,854 panels integrated into 11 buildings for optimal space
-                use.</p>
-              <div class="foot">
-                <div class="wrap-btn">
-                  <a href="#" class="link__img outline">View Detail <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                  <a href="#" class="link__img outline">Get a Quote <img
-                      src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-                </div>
-                <div class="count">3<small>/3</small></div>
-              </div>
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
             </div>
           </div>
         </div>
@@ -333,12 +256,10 @@
         <div class="wrapper">
           <div class="slider-project-thumb__box">
             <div class="slider-project-thumb__box-item"><span>Padma Hotels</span></div>
-            <div class="slider-project-thumb__box-item"><span>Bluebird</span></div>
-            <div class="slider-project-thumb__box-item"><span>Gelora Djaja (Wismilak Group)</span></div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <section class="scroller news-update animating-scroll" data-section-name="news-update" id="news-update"
@@ -420,68 +341,11 @@
         </div>
       </div>
     </section>
-    <section class="scroller social-media animating-scroll" data-section-name="social-media" id="social-media"
-      data-animate-trigger=".trigger-7">
-      <div class="trigger trigger-7"></div>
-      <div class="wrapper">
-        <div class="title-section text-center">
-          <div class="title-section__text">
-            <h4>Follow Our Social Media</h4>
-          </div>
-        </div>
-        <a class="title" href="#" target="_blank"><img src="{{ asset('assets/images/material/icon-youtube.svg') }}" alt=""> Bhakti Terang
-          Indonesia</a>
-        <div class="overflow">
-          <div class="social-media__list list-three you">
-            <a class="social-media__list-item popup-video" data-iframe="3mEvyaH8ECc?si=WMkxtXzdudVlvDMR?rel=0">
-              <figure>
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-                <div class="play"><img src="{{ asset('assets/images/material/icon-play.svg') }}" alt=""></div>
-              </figure>
-            </a>
-            <a class="social-media__list-item popup-video" data-iframe="86Z3tTRrakc?si=0AkrBlQ2fyIS52Bk?rel=0">
-              <figure>
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-                <div class="play"><img src="{{ asset('assets/images/material/icon-play.svg') }}" alt=""></div>
-              </figure>
-            </a>
-            <a class="social-media__list-item popup-video" data-iframe="LXwIDU1cz0E?si=_YhFuLIwBKYrZA6x?rel=0">
-              <figure>
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-                <div class="play"><img src="{{ asset('assets/images/material/icon-play.svg') }}" alt=""></div>
-              </figure>
-            </a>
-          </div>
-        </div>
-        <a class="title" href="#" target="_blank"><img src="{{ asset('assets/images/material/icon-instagram.svg') }}" alt=""> Bhakti Terang
-          Indonesia</a>
-        <div class="overflow">
-          <div class="social-media__list four-item">
-            <a class="social-media__list-item" href="#" target="_blank">
-              <figure class="square">
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-              </figure>
-            </a>
-            <a class="social-media__list-item" href="#" target="_blank">
-              <figure class="square">
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-              </figure>
-            </a>
-            <a class="social-media__list-item" href="#" target="_blank">
-              <figure class="square">
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-              </figure>
-            </a>
-            <a class="social-media__list-item" href="#" target="_blank">
-              <figure class="square">
-                <img src="{{ asset('assets/images/homepage/cover_w1280_h720_sun-energy-company-profile.jpg') }}" alt="">
-              </figure>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
+
+
 
   <!-- end of middle -->
 @endsection
+
+

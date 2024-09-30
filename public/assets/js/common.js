@@ -26,4 +26,31 @@ $(document).ready(function(){
         "true" == $(".slider-milestone .slick-prev").attr("aria-disabled") ? $(".arrow.prev").addClass("disabled") : $(".arrow.prev").removeClass("disabled");
         "true" == $(".slider-milestone .slick-next").attr("aria-disabled") ? $(".arrow.next").addClass("disabled") : $(".arrow.next").removeClass("disabled");
     })
+
+
+
+    $(document).ready(function(){
+        $('.test').slick({"slidesToShow": 1, "slidesToScroll": 1, fade: true});
+    });
+
+    $(document).ready(function(){
+        $('.tab.zz').slick({"slidesToShow": 2, "slidesToScroll": 1});
+
+       
+    });
+
+    $(document).ready(function(){
+        $('.inactive').on('click', function () {
+            console.log('test')
+            $('.test').slick('slickGoTo', 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $('.active').on('click', function () {
+            console.log('test')
+            $('.test').slick('slickGoTo', 0);
+        });
+    });
 });
+

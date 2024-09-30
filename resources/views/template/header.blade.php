@@ -14,7 +14,7 @@
   <title>Bhakti Terang Indonesia</title>
 
 
-  <link rel="icon" type="image/png" href="{{ asset('assets/images/logo_home.png') }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ asset('assets/images/icon_bti.png') }}" sizes="32x32">
   <link rel="canonical" href="/" />
 
 
@@ -45,9 +45,6 @@
       <nav>
         <a href="/" class="logo"><img src="{{ asset('assets/images/logo_home.png') }}" alt=""></a>
         <div class="right-header">
-          <div class="top">
-            &nbsp;
-          </div>
           <ul class="menu">
             <li class="have-child">
               <a href="#">Tentang Kami</a>

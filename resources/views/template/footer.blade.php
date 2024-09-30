@@ -6,21 +6,11 @@
           <a href="#" class="img-logo">
             <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
           </a>
-          <div class="wrap-media">
-            <h5>Follow Us</h5>
-            <div class="media">
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-ig-green.svg') }}" alt="icon"></a>
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-yt-green.svg') }}" alt="icon"></a>
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-lnk-green.svg') }}" alt="icon"></a>
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/fb-lnk-green.png') }}" alt="icon"></a>
-
-            </div>
-          </div>
         </div>
         <div class="foot-top__box">
           <h5>Kantor Utama</h5>
           <a href="#" class="icon">
-            <img src="{{ asset('assets/images/material/ic-loc.svg') }}" alt="">
+            <img width="24" height="24" src="{{ asset('assets/images/material/ic-loc.svg') }}" alt="">
             Palmsville Residance Blok AB-2 Lt. 2, Jagabaya III, Bandar, Kec. Way Halim, Kota Bandar Lampung, Lampung
             35132
           </a>
@@ -29,9 +19,20 @@
 
           <h5>Pabrik</h5>
           <a href="#" class="icon">
-            <img src="{{ asset('assets/images/material/ic-loc.svg') }}" alt="">
+            <img width="24" height="24" src="{{ asset('assets/images/material/ic-loc.svg') }}" alt="">
             Srikaton, Kec. Tj. Bintang, Kabupaten Lampung Selatan, Lampung
           </a>
+        </div>
+
+        <div class="foot-top__box">
+
+          <h5>Follow Us</h5>
+            <div class="media">
+              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-ig-green.svg') }}" alt="icon"></a>
+              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-yt-green.svg') }}" alt="icon"></a>
+              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-lnk-green.svg') }}" alt="icon"></a>
+              <a href="#" target="_blank"><img width="22" height="22" src="{{ asset('assets/images/material/fb-lnk.svg') }}" alt="icon"></a>
+            </div>
         </div>
 
       </div>
