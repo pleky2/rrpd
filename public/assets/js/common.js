@@ -30,28 +30,37 @@ $(document).ready(function(){
 
 
     $(document).ready(function(){
-        $('.test').slick({"slidesToShow": 1, "slidesToScroll": 1, fade: true});
+        $('.test').slick({
+            slidesToShow: 6, 
+            slidesToScroll: 1, 
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 8000,
+            pauseOnHover: false,
+            cssEase: 'linear'
+            // fade: true
+        });
     });
 
-    $(document).ready(function(){
-        $('.tab.zz').slick({"slidesToShow": 2, "slidesToScroll": 1});
+    // $(document).ready(function(){
+    //     $('.tab.zz').slick({"slidesToShow": 2, "slidesToScroll": 1});
 
        
-    });
+    // });
 
-    $(document).ready(function(){
-        $('.next').on('click', function () {
-            console.log('test')
-            $('.test').slick('slickGoTo', 1);
-        });
-    });
+    // $(document).ready(function(){
+    //     $('.next').on('click', function () {
+    //         console.log('test')
+    //         $('.test').slick('slickGoTo', 1);
+    //     });
+    // });
 
-    $(document).ready(function(){
-        $('.prev').on('click', function () {
-            console.log('test')
-            $('.test').slick('slickGoTo', 0);
-        });
-    });
+    // $(document).ready(function(){
+    //     $('.prev').on('click', function () {
+    //         console.log('test')
+    //         $('.test').slick('slickGoTo', 0);
+    //     });
+    // });
 
 
     $(document).ready(function(){

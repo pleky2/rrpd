@@ -136,30 +136,32 @@
     <section class="mpek">
       <h3>Client & Partners</h3>
       <div class="client test">
-          <div class="item-wrapper">
+          <!-- <div class="item-wrapper"> -->
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-          
-          </div>
-          <div class="item-wrapper">
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          <!-- </div> -->
+          <!-- <div class="item-wrapper">
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-          </div>
+          </div> -->
       </div>
 
-      <div class="tab zz">
+      <!-- <div class="tab zz">
           <div class="tab-item prev">
             <p>Padma</p>
           </div>
           <div class="tab-item next">
             <p>Ajinomoto</p>
           </div>
-      </div>
+      </div> -->
     </section>
 			
     <!-- <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
