@@ -34,7 +34,7 @@
 
         <div class="banner__slider-item">
           <div class="video-slider">
-            <img src="{{ asset('assets/images/homepage/bn-slide.jpg') }}" alt="" />
+            <img src="{{ asset('assets/images/homepage/bn-slide.jpeg') }}" alt="" />
           </div>
 
           <!-- <div class="wrapper">
