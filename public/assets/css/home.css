@@ -656,6 +656,30 @@ h1.elementor-heading-title.elementor-size-default {
     color: #fc6519;
 }
 
+.gesit {
+    padding: 30px
+}
+
+.gesit .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gesit .box>div {
+    flex: 2;
+}
+
+.gesit .box>figure {
+    flex: 1;
+}
+
+.gesit .box>figure img {
+    flex: 1;
+}
+
+
 .slide-item .content .card-img{
     border-radius: 8px;
     padding: 8px;
@@ -2995,8 +3019,9 @@ img[data-src].lazyloaded {
     margin: 0;
 }
 .about-us {
-    background: url(../images/content/bg-about.png) no-repeat 100% 0, #fff4d4;
-    padding: 78px 0;
+    /* background: url(../images/logo_home.png) no-repeat 95% 20%, #fff4d4; */
+    background: #fff4d4;
+    padding: 30px 0;
 }
 .about-us,
 .about-us .animated-solar-panel {
@@ -3531,11 +3556,11 @@ img[data-src].lazyloaded {
     position: absolute;
     right: 0;
 }
-.about-us:after {
+/* .about-us:after {
     background: #fff;
     content: "";
     height: 150px;
-}
+} */
 .about-us .wrapper {
     z-index: 3;
 }

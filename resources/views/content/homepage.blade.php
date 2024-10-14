@@ -6,31 +6,61 @@
       <div class="banner__slider">
         <div class="banner__slider-item">
           <div class="video-slider">
-            <img src="{{ asset('assets/images/cover_w990_h420_offgrid-kat-birang.jpg') }}" alt="" />
+            <img src="{{ asset('assets/images/homepage/ep-slide.jpg') }}" alt="" />
           </div>
 
-          <div class="wrapper">
+          <!-- <div class="wrapper">
             <div class="banner__slider-item--text">
               <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
               <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
                 through End-to-End Solar System</p>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="banner__slider-item">
           <div class="video-slider">
-            <img src="{{ asset('assets/images/cover_w990_h420_dji_0050.jpg') }}" alt="" />
+            <img src="{{ asset('assets/images/homepage/gh-slide.png') }}" alt="" />
           </div>
 
-          <div class="wrapper">
+          <!-- <div class="wrapper">
             <div class="banner__slider-item--text">
               <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
               <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
                 through End-to-End Solar System</p>
             </div>
-          </div>
+          </div> -->
         </div>
+
+        <div class="banner__slider-item">
+          <div class="video-slider">
+            <img src="{{ asset('assets/images/homepage/bn-slide.jpg') }}" alt="" />
+          </div>
+
+          <!-- <div class="wrapper">
+            <div class="banner__slider-item--text">
+              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
+              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
+                through End-to-End Solar System</p>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="banner__slider-item">
+          <div class="video-slider">
+            <img src="{{ asset('assets/images/homepage/mebi-slide.jpg') }}" alt="" />
+          </div>
+
+          <!-- <div class="wrapper">
+            <div class="banner__slider-item--text">
+              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
+              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
+                through End-to-End Solar System</p>
+            </div>
+          </div> -->
+        </div>
+
+
       </div>
       <div class="banner__slider-arrow">
         <div class="wrapper">
@@ -49,7 +79,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="scroller about-us animating-scroll" data-section-name="about-us" id="about-us"
+    <section class="scroller about-us animating-scroll" data-section-name="about-us" id="about-us"
       data-animate-trigger=".trigger-2">
       <div class="trigger trigger-2"></div>
       <div class="wrapper">
@@ -57,17 +87,38 @@
           <div class="about-us__box-text">
             <h1>TENTANG Bhakti Terang Indonesia</h1>
             <h2>Indonesia berdaya energi listrik</h2>
-            <p>PT Bhakti Terang Indonesia “BTI” adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya</p>
+            <p>BTI memiliki peran aktif dalam menyediakan energi bersih yang dibutuhkan untuk berperan membantu masa depan Indonesia yang berkelanjutan. Atas hal tersebut, BTI telah membangun jaringan bisnis yang terintegrasi, mulai dari bidang Pendidikan, Food and Beverage (F&B) yang berkonsep green café dan layanan jasa konsultasi psikologi. Maka BTI sendiri sebagai holding group saat ini memiliki anak perusahaan bisnis yaitu Café Enpos, Growing Hope School dan Biro Narwastu.</p>
+            <p>Dengan adanya subholding tersebut, ekosistem bisnis pada BTI Group dapat terintegrasi satu sama lain dengan memberikan value nya masing-masing. BTI group memiliki aspirasi ‘One Dream, One Spirit, and to be Great’ yang menggabungkan seluruh energi positif insan BTI group untuk menciptakan competitive advantages dalam menghadapi perubahan lingkungan bisnis, perkembangan teknologi dan iklim persaingan bisnis yang ketat. </p>
             <a href="#" class="button">Learn More</a>
           </div>
           <figure>
             <div class="animated-solar-panel">
-              <img src="{{ asset('assets/images/homepage/light-bg.webp') }}" alt="" style="max-width: 60%;">
+              <img src="{{ asset('assets/images/homepage/lamp.png') }}" alt="" >
             </div>
           </figure>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <section class="gesit">
+      <div class="wrapper">
+        <div class="box">
+          <div>
+          <h2>Nilai Inti Perusahaan</h2>
+          <ul>
+            <li><strong>Green:</strong> Memelihara serta mampu bekerjasama dengan alam (eco green)</li>
+            <li><strong>Smart: </strong> Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value</li>
+            <li><strong>Inklusif: </strong>  Melibatkan orang dan kelompok dengan berkolaborasi (don'be be exclusive)</li>
+            <li><strong>Tangguh : </strong> Memiliki sifat pantang menyerah, karena memiliki ilmu dan pengetahuan</li>
+            <li><strong>Sustainable :</strong> Memiliki karakter berkelanjutan dan berkembang (step by step)</li>
+          </ul>
+          </div>
+        <figure>
+        <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="" >
+          </figure>
+        </div>
+      </div>
+    </section>
 
     <section class="our-company">
       <div class="wrapper">
