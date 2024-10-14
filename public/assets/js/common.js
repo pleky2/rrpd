@@ -72,5 +72,40 @@ $(document).ready(function(){
             centerMode: true,
         });
     });
+
+    $(document).ready(function(){
+        $('.mebi-slider').slick({
+            slidesToShow: 1, 
+            slidesToScroll: 1, 
+            centerMode: true,
+            dots:true,
+            arrows:false,
+            infinite: false,
+
+            // fade: true
+        });
+    })
+
+    $(".prev-btn").click(function () {
+		$(".mebi-slider").slick("slickPrev");
+	});
+
+	$(".next-btn").click(function () {
+		$(".mebi-slider").slick("slickNext");
+	});
+	$(".prev-btn").addClass("slick-disabled");
+	$(".mebi-slider").on("afterChange", function () {
+		if ($(".slick-prev").hasClass("slick-disabled")) {
+			$(".prev-btn").addClass("slick-disabled");
+		} else {
+			$(".prev-btn").removeClass("slick-disabled");
+		}
+		if ($(".slick-next").hasClass("slick-disabled")) {
+			$(".next-btn").addClass("slick-disabled");
+		} else {
+			$(".next-btn").removeClass("slick-disabled");
+		}
+	});
+
 });
 
