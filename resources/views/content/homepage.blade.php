@@ -93,7 +93,7 @@
           </div>
           <figure>
             <div class="animated-solar-panel">
-              <img src="{{ asset('assets/images/homepage/lamp.png') }}" alt="" >
+              <img src="{{ asset('assets/images/homepage/lamp.png') }}" alt="" style="margin-top: 8rem;">
             </div>
           </figure>
         </div>
