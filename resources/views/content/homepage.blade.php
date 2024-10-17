@@ -219,16 +219,12 @@
    
     
     <section class="mpek">
-      <h3>Client & Partners</h3>
+      <h3>Mitra</h3>
       <div class="client test">
           <!-- <div class="item-wrapper"> -->
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/enpos.png') }}" alt=""></div>
+          @foreach ($mitra as $item)
+            <div class="card"><img src="{{ url('upload/images/mitra/'.$item->img) }}" alt=""></div>  
+          @endforeach
           <!-- </div> -->
           <!-- <div class="item-wrapper">
             <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>

@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Mitra;
 
 class HomepageController extends Controller
 {
     //
     public function index() {
-        return view('content.homepage');
+
+        $data['mitra'] = Mitra::all();
+
+        return view('content.homepage', [
+            'mitra' => $data['mitra']
+        ]);
     }
 
     public function profile() {
