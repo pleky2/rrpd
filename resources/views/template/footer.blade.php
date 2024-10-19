@@ -8,17 +8,16 @@
           </a>
           <div class="contact">
             <h5>Kontak BTI</h5>
-            <p>Email : info@btiofficial.co.id</p>
-            <p>No. Telepon 	: 081385389774</p>
+            <p>Email : {{ $profile->email }}</p>
+            <p>No. Telepon 	: {{ $profile->phone }}</p>
           </div>
 
           <div>
             <h5>Sosial Media</h5>
             <div class="media">
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-ig-green.svg') }}" alt="icon"></a>
+              <a href="{{ $profile->instagram }}" target="_blank"><img src="{{ asset('assets/images/material/ic-ig-green.svg') }}" alt="icon"></a>
+              <a href="{{ $profile->linkedin }}" target="_blank"><img src="{{ asset('assets/images/material/ic-lnk-green.svg') }}" alt="icon"></a>
               <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-yt-green.svg') }}" alt="icon"></a>
-              <a href="#" target="_blank"><img src="{{ asset('assets/images/material/ic-lnk-green.svg') }}" alt="icon"></a>
-              <a href="#" target="_blank"><img width="22" height="22" src="{{ asset('assets/images/material/fb-lnk.svg') }}" alt="icon"></a>
             </div>
           </div>
         </div>
@@ -27,11 +26,11 @@
           <div class="row">
             <div class="column">
               <h5>Headquarter</h5>
-              <span>Palmsville Residance Blok AB-2 Lt. 2, Jagabaya III, Bandar, Kec. Way Halim, Kota Bandar Lampung, Lampung 35132</span>
+              <span>{{ $profile->address_ho }}</span>
             </div>
             <div class="column">
               <h5>Pabrik Woodchips </h5>
-              <span>Desa Srikaton, Kec. Tj. Bintang, Kab. Lampung Selatan, Lampung</span>
+              <span>{{ $profile->address_branch }}</span>
 
               <div class="partner">
                 <img src="{{ asset('assets/images/enpos.png') }}" alt="">

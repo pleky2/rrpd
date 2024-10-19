@@ -4,63 +4,21 @@
   <section class="wrap-parallax">
     <section class="scroller banner" data-section-name="banner" id="banner">
       <div class="banner__slider">
-        <div class="banner__slider-item">
-          <div class="video-slider">
-            <img src="{{ asset('assets/images/homepage/ep-slide.jpg') }}" alt="" />
-          </div>
-
-          <!-- <div class="wrapper">
-            <div class="banner__slider-item--text">
-              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
-              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
-                through End-to-End Solar System</p>
+        @foreach ($slider as $slide)
+          <div class="banner__slider-item">
+            <div class="video-slider">
+              <img src="{{ url('upload/images/slider/'.$slide->img) }}" alt="{{ $slide->title }}" />
             </div>
-          </div> -->
-        </div>
 
-        <div class="banner__slider-item">
-          <div class="video-slider">
-            <img src="{{ asset('assets/images/homepage/gh-slide.png') }}" alt="" />
+            <!-- <div class="wrapper">
+              <div class="banner__slider-item--text">
+                <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
+                <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
+                  through End-to-End Solar System</p>
+              </div>
+            </div> -->
           </div>
-
-          <!-- <div class="wrapper">
-            <div class="banner__slider-item--text">
-              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
-              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
-                through End-to-End Solar System</p>
-            </div>
-          </div> -->
-        </div>
-
-        <div class="banner__slider-item">
-          <div class="video-slider">
-            <img src="{{ asset('assets/images/homepage/bn-slide.jpeg') }}" alt="" />
-          </div>
-
-          <!-- <div class="wrapper">
-            <div class="banner__slider-item--text">
-              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
-              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
-                through End-to-End Solar System</p>
-            </div>
-          </div> -->
-        </div>
-
-        <div class="banner__slider-item">
-          <div class="video-slider">
-            <img src="{{ asset('assets/images/homepage/mebi-slide.jpg') }}" alt="" />
-          </div>
-
-          <!-- <div class="wrapper">
-            <div class="banner__slider-item--text">
-              <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
-              <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
-                through End-to-End Solar System</p>
-            </div>
-          </div> -->
-        </div>
-
-
+        @endforeach
       </div>
       <div class="banner__slider-arrow">
         <div class="wrapper">
@@ -122,30 +80,16 @@
 
     <section class="mebi">
       <div class="mebi-slider">
-        <div class="slide">
-          <div class="slide__img">
-            <img src="{{ asset('assets/images/homepage/mebi1.jpg') }}" />
-          </div>
-          <div class="slide__content">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide__img">
-            <img src="{{ asset('assets/images/homepage/mebi1.jpg') }}" />
-          </div>
-          <div class="slide__content">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide__img">
-            <img src="{{ asset('assets/images/homepage/mebi1.jpg') }}" />
-          </div>
-          <div class="slide__content">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
-          </div>
-        </div>
+        @foreach ($slider_mebi as $mebi)
+          <div class="slide">
+            <div class="slide__img">
+              <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
+            </div>
+            <div class="slide__content">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
+            </div>
+          </div>    
+        @endforeach
       </div>
 
       <div class="btn-wrap">

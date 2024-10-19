@@ -4,21 +4,33 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mitra;
+use App\Models\Sliders;
+use App\Models\Profile;
 
 class HomepageController extends Controller
 {
     //
     public function index() {
 
+        $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
+        $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
         $data['mitra'] = Mitra::all();
+        $data['profile'] = Profile::first();
 
         return view('content.homepage', [
-            'mitra' => $data['mitra']
+            'mitra' => $data['mitra'],
+            'slider' => $data['slider'],
+            'slider_mebi' => $data['slider_mebi'],
+            'profile' => $data['profile']
         ]);
     }
 
     public function profile() {
-        return view('content.profile');
+        $data['profile'] = Profile::first();
+
+        return view('content.profile', [
+            'profile' => $data['profile']
+        ]);
     }
 
     public function ceoMessage() {
