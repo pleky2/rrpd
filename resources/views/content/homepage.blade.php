@@ -163,7 +163,7 @@
    
     
     <section class="mpek">
-      <h3>Mitra</h3>
+      <h2>Mitra</h2>
       <div class="client test">
           <!-- <div class="item-wrapper"> -->
           @foreach ($mitra as $item)
@@ -223,86 +223,6 @@
       </div>
     </section> -->
 
-
-    <section class="scroller news-update animating-scroll" data-section-name="news-update" id="news-update"
-      data-animate-trigger=".trigger-6">
-      <div class="trigger trigger-6"></div>
-      <div class="wrapper">
-        <div class="title-section">
-          <div class="title-section__text">
-            <span>NEWS &amp; BLOG</span>
-            <h2>Latest update</h2>
-          </div>
-          <div class="title-section__link">
-            <a href="#" class="link__img">
-              View All
-              <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.7275L1.75469 1L8 7L1.75469 13L1 12.2763L6.48698 7L1 1.7275Z" fill="#818890"
-                  stroke="#818890" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="news-update__list">
-          <a class="news-update__list-item" href="#">
-            <figure>
-              <img
-                src="{{ asset('assets/images/thumbs/cover_w310_h220_tw2029_th1441_x1272_y10_dokumentasi-plts-atap-pt-idec-awi---kaltara-2.jpg') }}"
-                alt="">
-              <figcaption>
-                <span>News</span>
-                <h5>Bhakti Terang Indonesia Operasikan PLTS Atap Sektor Industri Pertama di Kalimantan Utara</h5>
-                <!-- <span class="date">April 1, 2021</span> -->
-              </figcaption>
-            </figure>
-          </a>
-          <a class="news-update__list-item" href="#">
-            <figure>
-              <img src="{{ asset('assets/images/thumbs/cover_w310_h220_tw6382_th4534_x10_y16_suprama-drone-61.jpg') }}" alt="">
-              <figcaption>
-                <span>News</span>
-                <h5>Produksi Mi Burung Dara dan Mi BEST WOK Kini Pakai Energi Surya</h5>
-                <!-- <span class="date">April 1, 2021</span> -->
-              </figcaption>
-            </figure>
-          </a>
-          <a class="news-update__list-item--highlight" href="#">
-            <figure>
-              <img src="{{ asset('assets/images/thumbs/cover_w310_h220_tw6381_th4530_x140_y16_dji_20240227104620_0536_d.jpg') }}" alt="">
-              <figcaption>
-                <span>News</span>
-                <h5>Wujudkan Praktik Bisnis Ramah Lingkungan, PT Namasindo Plas Gunakan Energi Surya d...</h5>
-                <!-- <span class="date">April 1, 2021</span> -->
-              </figcaption>
-            </figure>
-          </a>
-
-          <a class="news-update__list-item" href="#">
-            <figure>
-              <img src="{{ asset('assets/images/thumbs/cover_w310_h220_tw6381_th4530_x140_y16_dji_20240227104620_0536_d.jpg') }}"
-                alt="Bagaimana PLTS Membuat Bisnis Anda Menghemat Biaya Listrik">
-              <figcaption>
-                <span>BLOG</span>
-                <h5>Bagaimana PLTS Membuat Bisnis Anda Menghemat Biaya Listrik</h5>
-                <!-- <span class="date">April 1, 2021</span> -->
-              </figcaption>
-            </figure>
-          </a>
-          <a class="news-update__list-item" href="#">
-            <figure>
-              <img src="{{ asset('assets/images/thumbs/cover_w310_h220_tw6381_th4530_x140_y16_dji_20240227104620_0536_d.jpg') }}"
-                alt="Daftar Perusahaan FMCG Yang Sudah Pasang PLTS">
-              <figcaption>
-                <span>BLOG</span>
-                <h5>Daftar Perusahaan FMCG Yang Sudah Pasang PLTS</h5>
-                <!-- <span class="date">April 1, 2021</span> -->
-              </figcaption>
-            </figure>
-          </a>
-
-        </div>
-      </div>
-    </section>
   </section>
 
 

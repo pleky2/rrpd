@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log('testing')
     $('.our-milestone .slider-dots').slick({
         arrows: false,
         centerMode: true,
@@ -32,11 +31,12 @@ $(document).ready(function(){
     $(document).ready(function(){
         $('.test').slick({
             slidesToShow: 6, 
-            slidesToScroll: 1, 
+            slidesToScroll: 6, 
             autoplay: true,
-            autoplaySpeed: 0,
-            speed: 8000,
+            autoplaySpeed: 2000,
+            speed: 15000,
             pauseOnHover: false,
+            infinite: true,
             cssEase: 'linear'
             // fade: true
         });
@@ -107,5 +107,27 @@ $(document).ready(function(){
 		}
 	});
 
+
+
+    $(document).ready(function() {
+        // Variable to store the currently visible child
+        let currentChild = null;
+
+        $('.menu .parent').hover(
+            function() {
+                // On mouse enter, get the id of the hovered parent
+                const id = $(this).attr("id");
+
+                // Hide the currently visible child if it exists and is different from the new one
+                if (currentChild && currentChild !== `.chd[data-parent="${id}"]`) {
+                    $(currentChild).addClass("d-none").hide(); // Hide the current child
+                }
+
+                // Show the child associated with the current parent
+                currentChild = `.chd[data-parent="${id}"]`;
+                $(currentChild).removeClass("d-none").show(); // Show the new child
+            }
+        );
+    });
 });
 
