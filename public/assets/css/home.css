@@ -86,7 +86,9 @@ header nav ul.menu li.search .search__box {
     z-index: 99;
 }
 header nav ul.menu li.search .search__box:before {
-    background: url(../images/content/bg-news.png) no-repeat 50%;
+
+    /* background: url(../images/icon_bti.png) no-repeat 50%; */
+    background: url(../images/icon_bti.png);
     content: "";
     height: 325px;
     position: absolute;
@@ -178,7 +180,11 @@ header nav ul.menu .child {
     top: 100%;
 }
 header nav ul.menu .child:before {
-    background: url(../images/content/bg-news.png) no-repeat 50%;
+    /* background: url(../images/content/bg-news.png) no-repeat 50%; */
+    /* background:  url(../images/icon_bti.png) no-repeat 50%; */
+    background:  url(../images/icon_bti.png)  no-repeat 100%;
+    opacity: 0.1;
+    filter: grayscale(100%);
     content: "";
     height: 325px;
     position: absolute;
@@ -4308,7 +4314,8 @@ img[data-src].lazyloaded {
 }
 .news-update {
     align-items: center;
-    background: url(../images/content/bg-news.png) no-repeat 100% 0, #fff;
+    /* background: url(../images/icon_bti.png) no-repeat 100% 0, #fff; */
+    background: url(../images/icon_bti.png);
     display: flex;
     padding: 80px 0 86px;
     position: relative;
