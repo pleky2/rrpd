@@ -117,7 +117,6 @@ $(document).ready(function(){
             function() {
                 // On mouse enter, get the id of the hovered parent
                 const id = $(this).attr("id");
-
                 // Hide the currently visible child if it exists and is different from the new one
                 if (currentChild && currentChild !== `.chd[data-parent="${id}"]`) {
                     $(currentChild).addClass("d-none").hide(); // Hide the current child
@@ -128,6 +127,20 @@ $(document).ready(function(){
                 $(currentChild).removeClass("d-none").show(); // Show the new child
             }
         );
+
+
+        $('.menu .parent').mouseenter(function() {
+            // Remove the hovered class from all menu items
+            $('.menu .parent').children('a').removeClass('link-active');
+            
+            // Add the hovered class to the current menu item
+            $(this).children('a').addClass('link-active');
+          });
+        
+          // Optionally, if you want to remove the hovered class when not hovering over any menu item
+          $('.menu').mouseleave(function() {
+            $('.menu .parent').children('a').removeClass('link-active');
+          });
     });
 });
 

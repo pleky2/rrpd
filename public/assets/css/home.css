@@ -567,6 +567,7 @@ header nav .top ul li a.active,
 header nav .top ul li a:hover {
     color: #d8a629;
 }
+
 header nav .top ul li.group {
     position: relative;
 }
@@ -641,7 +642,7 @@ h1.elementor-heading-title.elementor-size-default {
 }
 
 .our-company {
-    background-color: floralwhite;
+    background-color: #FFFFFF;
     padding: 100px 128px;
 }
 
@@ -726,9 +727,9 @@ h1.elementor-heading-title.elementor-size-default {
 }
 
 footer {
-    background-color:#0058ba ;
+    background-color:#fffaef;
     padding: 30px;
-    color: white!important;
+    color: black!important;
 }
 
 footer .row {
@@ -782,7 +783,8 @@ footer .partner img{
     }
 
     .our-company {
-        background-color: floralwhite;
+        /* background-color: floralwhite; */
+        background-color: #FFFFFF;
         padding: 100px 128px;
     }
     
@@ -1136,7 +1138,7 @@ footer .partner img{
     }
 
     .our-company {
-        background-color: floralwhite;
+        background-color: #FFFFFF;
         padding: 100px 128px;
     }
     
@@ -1245,7 +1247,7 @@ footer .partner img{
     }
 
     .our-company {
-        background-color: floralwhite;
+        background-color: #FFFFFF;
         padding: 100px 128px;
     }
     
@@ -1400,7 +1402,7 @@ footer .partner img{
     }
 
     .our-company {
-        background-color: floralwhite;
+        background-color: #FFFFFF;
         padding: 100px 128px;
     }
     
@@ -5367,6 +5369,10 @@ img[data-src].lazyloaded {
 .menu {}
 .child {
     display: none;
+}
+
+.link-active {
+    color: #d8a629!important
 }
 
 
