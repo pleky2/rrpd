@@ -78,26 +78,6 @@
       </div>
     </section>
 
-    <section class="mebi">
-      <div class="mebi-slider">
-        @foreach ($slider_mebi as $mebi)
-          <div class="slide">
-            <div class="slide__img">
-              <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
-            </div>
-            <div class="slide__content">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
-            </div>
-          </div>    
-        @endforeach
-      </div>
-
-      <div class="btn-wrap">
-        <button class="prev-btn">Previous</button>
-        <button class="next-btn">Next</button>
-      </div>
-    </section>
-
     <section class="our-company">
       <div class="wrapper">
         <h2>Our Company</h2>
@@ -160,8 +140,7 @@
         </div>
       </div>
     </section>
-   
-    
+
     <section class="mpek">
       <h2>Mitra</h2>
       <div class="client test">
@@ -188,6 +167,28 @@
           </div>
       </div> -->
     </section>
+    
+    <section class="mebi">
+      <div class="mebi-slider">
+        @foreach ($slider_mebi as $mebi)
+          <div class="slide">
+            <div class="slide__img">
+              <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
+            </div>
+            <div class="slide__content">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
+            </div>
+          </div>    
+        @endforeach
+      </div>
+
+      <div class="btn-wrap">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Next</button>
+      </div>
+    </section>
+    
+    
 			
     <!-- <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
       data-animate-trigger=".trigger-5">
