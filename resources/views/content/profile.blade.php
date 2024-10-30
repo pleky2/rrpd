@@ -11,7 +11,10 @@
     <div class="wrap-banner">
       <div class="wrap-banner__left">
         <!-- <h5>COMPANY AT GLANCE</h5> -->
-        <p>Sejak tahun 2018, BTI telah aktif dalam pembangunan tenaga listrik di Indonesia. Hingga saat ini telah berpartisipasi dalam pembangunan PLTU serta PLTGU dengan total kapasitas 700MW dan pembangunan PLTS dengan total kapasitas 11,181MWp. Tahun 2023, BTI memulai bisnis baru dalam penyediaan bahan bakar biomassa dan sudah bisa mensupply lebih dari 10.000 Ton untuk pembangkit dan industry.</p>
+        <p>Sejak tahun 2018, BTI telah aktif dalam pembangunan tenaga listrik di Indonesia. Hingga saat ini telah
+          berpartisipasi dalam pembangunan PLTU serta PLTGU dengan total kapasitas 700MW dan pembangunan PLTS dengan
+          total kapasitas 11,181MWp. Tahun 2023, BTI memulai bisnis baru dalam penyediaan bahan bakar biomassa dan sudah
+          bisa mensupply lebih dari 10.000 Ton untuk pembangkit dan industry.</p>
         <a href="#" class="button popup-video"
           data-src="https://www.youtube.com/embed/fYyFtb7sZ7A?autoplay=1&rel=0">Company Profile</a>
       </div>
@@ -62,46 +65,54 @@
       </div>
     </div>
 
-    
+
 
   </div>
 
-  
+
   <section class="gesit">
-      <div class="wrapper-small">
-        <div class="box">
-          <div>
+    <div class="wrapper-small">
+      <div class="box">
+        <div>
           <h2>Nilai Inti Perusahaan</h2>
           <ul>
             <li><strong>Green:</strong> Memelihara serta mampu bekerjasama dengan alam (eco green)</li>
-            <li><strong>Smart: </strong> Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value</li>
-            <li><strong>Inklusif: </strong>  Melibatkan orang dan kelompok dengan berkolaborasi (don'be be exclusive)</li>
+            <li><strong>Smart: </strong> Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value
+            </li>
+            <li><strong>Inklusif: </strong> Melibatkan orang dan kelompok dengan berkolaborasi (don'be be exclusive)
+            </li>
             <li><strong>Tangguh : </strong> Memiliki sifat pantang menyerah, karena memiliki ilmu dan pengetahuan</li>
             <li><strong>Sustainable :</strong> Memiliki karakter berkelanjutan dan berkembang (step by step)</li>
           </ul>
-          </div>
-        <figure>
-        <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="" >
-          </figure>
         </div>
-      </div>
-    </section>
-
-  <div class="makna-logo">
-      <div class="text-center">
-        <h3><b>Makna Logo</b></h3>
-      </div>
-      <div class="wrapper-small">
-        <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
-        <h3>Keterangan :</h3>
-        <ol>
-          <li>1. Simbol Listrik menggambarkan elemen yang digunakan untuk menyampaikan makna bahwa BTI mendukung energi
-            listrik dapat tersalurkan sampai ke seluruh pelosok negeri.</li>
-          <li>2. Simbol solar panel sebagai elemen teknologi yang dapat menghasilkan listrik yang ramah lingkungan.</li>
-          <li>3. Simbol daun memiliki makna alam dan salah satu energi terbarukan yang berkelanjutan.</li>
-        </ol>
+        <figure>
+          <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="">
+        </figure>
       </div>
     </div>
+  </section>
+
+  <div class="makna-logo">
+    <div class="text-center">
+      <h3><b>Makna Logo</b></h3>
+    </div>
+    <div class="wrapper-small">
+      <div class="row">
+        <div class="column"> <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
+          <img src="{{ asset('assets/images/about/makna-logo.png') }}" alt="">
+        </div>
+        <div class="column"> </div>
+      </div>
+
+      <h3>Keterangan :</h3>
+      <ol>
+        <li>1. Simbol Listrik menggambarkan elemen yang digunakan untuk menyampaikan makna bahwa BTI mendukung energi
+          listrik dapat tersalurkan sampai ke seluruh pelosok negeri.</li>
+        <li>2. Simbol solar panel sebagai elemen teknologi yang dapat menghasilkan listrik yang ramah lingkungan.</li>
+        <li>3. Simbol daun memiliki makna alam dan salah satu energi terbarukan yang berkelanjutan.</li>
+      </ol>
+    </div>
+  </div>
 
 
   <!-- <div class="wrap-map">
