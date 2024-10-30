@@ -4,9 +4,7 @@
 <section class="middle">
   <div class="banner-page withvideo">
     <figure>
-      <img
-        src="{{ asset('assets/images/about/cover_w1440_h400_tw1366_th379_x10_y1270_headline-banner-about_1366x768px_.png') }}"
-        alt="">
+      <img src="{{ asset('assets/images/about/energy.jpeg') }}" alt="" height="600" style="object-fit: cover;">
     </figure>
     <div class="wrap-banner">
       <div class="wrap-banner__left">
@@ -15,7 +13,7 @@
           berpartisipasi dalam pembangunan PLTU serta PLTGU dengan total kapasitas 700MW dan pembangunan PLTS dengan
           total kapasitas 11,181MWp. Tahun 2023, BTI memulai bisnis baru dalam penyediaan bahan bakar biomassa dan sudah
           bisa mensupply lebih dari 10.000 Ton untuk pembangkit dan industry.</p>
-        
+
       </div>
     </div>
   </div>
@@ -97,10 +95,19 @@
     </div>
     <div class="wrapper-small">
       <div class="row">
-        <div class="column"> <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
+        <div class="column" style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+">
+          <img src="{{ asset('assets/images/logo_home.png') }}" alt="" style="
+    width: 238px;
+    margin-bottom: 20px;
+">
           <img src="{{ asset('assets/images/about/makna-logo.png') }}" alt="">
         </div>
-        <div class="column"> </div>
+       
       </div>
 
       <h3>Keterangan :</h3>
@@ -122,7 +129,7 @@
   </div> -->
 
 
- 
+
 
 </section>
 @endsection
