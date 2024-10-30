@@ -34,14 +34,26 @@ class HomepageController extends Controller
     }
 
     public function ceoMessage() {
-        return view('content.ceo-message');
+        $data['profile'] = Profile::first();
+
+        return view('content.ceo-message', [
+            'profile' => $data['profile']
+        ]);
     }
 
     public function management() {
-        return view('content.management');
+        $data['profile'] = Profile::first();
+
+        return view('content.management', [
+            'profile' => $data['profile']
+        ]);
     }
 
     public function milestone() {
-        return view('content.milestone');
+        $data['profile'] = Profile::first();
+
+        return view('content.milestone', [
+            'profile' => $data['profile']
+        ]);
     }
 }
