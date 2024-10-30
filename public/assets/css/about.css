@@ -3357,3 +3357,8 @@ img[data-src].lazyloaded {
     transform-origin: bottom left;
     cursor: pointer;
 }
+
+
+.makna-logo {
+    margin: 80px 40px 80px;
+}

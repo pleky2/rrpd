@@ -21,7 +21,7 @@
   <!--Style-->
   <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}" preload>
   <link rel="stylesheet" href="{{ asset('assets/css/milligram.css') }}" preload>
-  <!-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload> -->
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload>
   <!--endbuild-->
 
   <!--js-->
