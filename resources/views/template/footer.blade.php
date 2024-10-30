@@ -4,7 +4,7 @@
       <div class="row">
         <div class="column column-40">
           <a href="#" class="img-logo">
-            <img src="{{ asset('assets/images/logo-foot.jpg') }}" alt="">
+            <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
           </a>
           <div class="contact">
             <h5>Kontak BTI</h5>
@@ -34,9 +34,9 @@
 
               <div class="partner">
                 <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+                <img src="{{ asset('assets/images/gh.png') }}" alt="">
+                <img src="{{ asset('assets/images/yys.png') }}" alt="">
+                <img src="{{ asset('assets/images/mebi.jpeg') }}" alt="">
               </div>
               </div>
             </div>

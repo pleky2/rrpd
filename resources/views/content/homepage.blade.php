@@ -4,6 +4,22 @@
   <section class="wrap-parallax">
     <section class="scroller banner" data-section-name="banner" id="banner">
       <div class="banner__slider">
+          <div class="banner__slider-item">
+            <div class="video-slider">
+              <video muted="muted" loop="loop" playsinline="" autoplay="autoplay" width="400">
+              <source src="{{ url('upload/images/slider/video-plts.mp4') }}" type="video/mp4">
+              Your browser does not support HTML video.
+              </video>
+            </div>
+          </div>
+          <div class="banner__slider-item">
+            <div class="video-slider">
+              <video muted="muted" loop="loop" playsinline="" autoplay="autoplay" width="400">
+              <source src="{{ url('upload/images/slider/video-biomassa.MOV') }}" type="video/mp4">
+              Your browser does not support HTML video.
+              </video>
+            </div>
+          </div>
         @foreach ($slider as $slide)
           <div class="banner__slider-item">
             <div class="video-slider">
@@ -78,26 +94,6 @@
       </div>
     </section>
 
-    <section class="mebi">
-      <div class="mebi-slider">
-        @foreach ($slider_mebi as $mebi)
-          <div class="slide">
-            <div class="slide__img">
-              <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
-            </div>
-            <div class="slide__content">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
-            </div>
-          </div>    
-        @endforeach
-      </div>
-
-      <div class="btn-wrap">
-        <button class="prev-btn">Previous</button>
-        <button class="next-btn">Next</button>
-      </div>
-    </section>
-
     <section class="our-company">
       <div class="wrapper">
         <h2>Our Company</h2>
@@ -106,12 +102,12 @@
         <div class="slide-item">
             <div class="content">
               <div class="card-img">
-                <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
+                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
               </div>
               <div class="text">
-                <h3>Sun Terra</h3>
-                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
-                <p class="rm">Read More</p>
+                <h3>Café Enpos</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="rm">Lihat selengkapnya</p>
               </div>
             </div>
           </div>
@@ -120,25 +116,12 @@
         <div class="slide-item">
             <div class="content">
               <div class="card-img">
-                <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              </div>
-              <div class="text">
-                <h3>Sun Terra</h3>
-                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
-                <p class="rm">Read More</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="content">
-              <div class="card-img">
                 <img src="{{ asset('assets/images/gh.png') }}" alt="">
               </div>
               <div class="text">
-                <h3>Sun Terra</h3>
-                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
-                <p class="rm">Read More</p>
+                <h3>Growing Hope</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="rm">Lihat selengkapnya</p>
               </div>
             </div>
           </div>
@@ -149,19 +132,17 @@
                 <img src="{{ asset('assets/images/yys.png') }}" alt="">
               </div>
               <div class="text">
-                <h3>Sun Terra</h3>
-                <p>SUN Terra is Indonesia's leading residential, social, and commercial solar developer. Our mission is to promote solar energy as an eco-friendly alternative for all, with a focus on installing solar energy systems in small-scale buildings and leveraging application-based technology.</p>
-                <p class="rm">Read More</p>
+                <h3>Biro Narwastu</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="rm">Lihat selengkapnya</p>
               </div>
             </div>
           </div>
-          
-         
+
         </div>
       </div>
     </section>
-   
-    
+
     <section class="mpek">
       <h2>Mitra</h2>
       <div class="client test">
@@ -188,6 +169,28 @@
           </div>
       </div> -->
     </section>
+
+    <section class="mebi">
+      <div class="mebi-slider">
+        @foreach ($slider_mebi as $mebi)
+          <div class="slide">
+            <div class="slide__img">
+              <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
+            </div>
+            <div class="slide__content">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
+            </div>
+          </div>    
+        @endforeach
+      </div>
+
+      <div class="btn-wrap">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Next</button>
+      </div>
+    </section>
+    
+    
 			
     <!-- <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
       data-animate-trigger=".trigger-5">
