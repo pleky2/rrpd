@@ -10,8 +10,8 @@
     </figure>
     <div class="wrap-banner">
       <div class="wrap-banner__left">
-        <h5>COMPANY AT GLANCE</h5>
-        <h2>SUN Energy is The Leading Solar Project Developer in Indonesia</h2>
+        <!-- <h5>COMPANY AT GLANCE</h5> -->
+        <p>Sejak tahun 2018, BTI telah aktif dalam pembangunan tenaga listrik di Indonesia. Hingga saat ini telah berpartisipasi dalam pembangunan PLTU serta PLTGU dengan total kapasitas 700MW dan pembangunan PLTS dengan total kapasitas 11,181MWp. Tahun 2023, BTI memulai bisnis baru dalam penyediaan bahan bakar biomassa dan sudah bisa mensupply lebih dari 10.000 Ton untuk pembangkit dan industry.</p>
         <a href="#" class="button popup-video"
           data-src="https://www.youtube.com/embed/fYyFtb7sZ7A?autoplay=1&rel=0">Company Profile</a>
       </div>
