@@ -68,7 +68,7 @@
 
   
   <section class="gesit">
-      <div class="wrapper">
+      <div class="wrapper-small">
         <div class="box">
           <div>
           <h2>Nilai Inti Perusahaan</h2>
