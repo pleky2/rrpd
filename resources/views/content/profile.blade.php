@@ -10,13 +10,12 @@
     </figure>
     <div class="wrap-banner">
       <div class="wrap-banner__left">
-        <!-- <h5>COMPANY AT GLANCE</h5> -->
+        <h5>Tentang Kami</h5>
         <p>Sejak tahun 2018, BTI telah aktif dalam pembangunan tenaga listrik di Indonesia. Hingga saat ini telah
           berpartisipasi dalam pembangunan PLTU serta PLTGU dengan total kapasitas 700MW dan pembangunan PLTS dengan
           total kapasitas 11,181MWp. Tahun 2023, BTI memulai bisnis baru dalam penyediaan bahan bakar biomassa dan sudah
           bisa mensupply lebih dari 10.000 Ton untuk pembangkit dan industry.</p>
-        <a href="#" class="button popup-video"
-          data-src="https://www.youtube.com/embed/fYyFtb7sZ7A?autoplay=1&rel=0">Company Profile</a>
+        
       </div>
     </div>
   </div>
@@ -123,23 +122,7 @@
   </div> -->
 
 
-  <div class="banner-bottom">
-    <div class="wrapper">
-      <figure>
-        <img src="{{ asset('assets/images/content/banner-bottom-about.jpg') }}" alt="img">
-      </figure>
-      <div class="row row-wrap">
-        <div class="column">
-          <h4>Company Profile</h4>
-          <p>Download our company profile to learn more about us, including our history, missions, values, and what
-            distinguishes us from the competitors.</p>
-        </div>
-        <div class="column">
-          <a class="button">Download</a>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
 </section>
 @endsection
