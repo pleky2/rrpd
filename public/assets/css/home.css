@@ -770,6 +770,7 @@ footer .partner {
 
 footer .partner img{
     width: 80px;
+    object-fit: scale-down;
 }
 
 @media (max-width: 2500px) {
@@ -5375,6 +5376,8 @@ img[data-src].lazyloaded {
     color: #d8a629!important
 }
 
+.makna-logo {
 
+}
 
 /*# sourceMappingURL=home.css.map*/
