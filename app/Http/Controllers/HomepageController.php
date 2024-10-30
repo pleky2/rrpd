@@ -72,4 +72,12 @@ class HomepageController extends Controller
             'profile' => $data['profile']
         ]);
     }
+
+    public function mitra() {
+        $data['profile'] = Profile::first();
+
+        return view('content.mitra', [
+            'profile' => $data['profile']
+        ]);
+    }
 }

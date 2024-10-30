@@ -21,4 +21,6 @@ Route::get('/management', [HomepageController::class, 'management']);
 Route::get('/milestone', [HomepageController::class, 'milestone']);
 Route::get('/organization', [HomepageController::class, 'organization']);
 Route::get('/superiority', [HomepageController::class, 'superiority']);
+Route::get('/mitra', [HomepageController::class, 'mitra']);
+
 
