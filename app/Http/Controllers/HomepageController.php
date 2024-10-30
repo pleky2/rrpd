@@ -56,4 +56,20 @@ class HomepageController extends Controller
             'profile' => $data['profile']
         ]);
     }
+
+    public function organization() {
+        $data['profile'] = Profile::first();
+
+        return view('content.organization', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function superiority() {
+        $data['profile'] = Profile::first();
+
+        return view('content.superiority', [
+            'profile' => $data['profile']
+        ]);
+    }
 }

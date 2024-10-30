@@ -19,4 +19,6 @@ Route::get('/profile', [HomepageController::class, 'profile']);
 Route::get('/ceo-message', [HomepageController::class, 'ceoMessage']);
 Route::get('/management', [HomepageController::class, 'management']);
 Route::get('/milestone', [HomepageController::class, 'milestone']);
+Route::get('/organization', [HomepageController::class, 'organization']);
+Route::get('/superiority', [HomepageController::class, 'superiority']);
 
