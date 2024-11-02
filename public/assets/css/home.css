@@ -2487,6 +2487,12 @@ footer .partner img{
     display: block;
     width: 100%;
 }
+
+.org-img-middle img {
+    display: block;
+    width: 100%;
+}
+
 img[data-src] {
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -5379,5 +5385,32 @@ img[data-src].lazyloaded {
 .makna-logo {
 
 }
+
+.mitra-slider .slider-item .slider-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.mitra-wrapper .slider-dots {
+    margin-top: 30px;
+}
+
+.mitra-wrapper .slider-dots .tab.slick-current {
+    position: relative;
+} 
+
+.mitra-wrapper .slider-dots .tab {
+    height: 50px;
+}
+.mitra-wrapper .slider-dots .tab.slick-current::after {
+    content: "  ";
+    position: absolute;
+    top: 40px;
+    width: 50%;
+    height: 5px;
+    background-color: #0059ba;
+    border-radius: 5px;
+} 
 
 /*# sourceMappingURL=home.css.map*/
