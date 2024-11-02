@@ -1,129 +1,219 @@
 @extends('template.index')
 
 @section('content')
-<section class="middle gap-bottom">
-    <div class="banner-page center">
+<section class="middle">
+    <div class="banner-page">
       <figure>
-        <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
+        <img src="images/cover_w1440_h400_headline-banner_engineer_1366x380px_appl_.png" alt="">
       </figure>
-      <figcaption>
-        <h5>TENTANG KAMI</h5>
-        <h2>Milestone</h2>
-      </figcaption>
-    </div>
-    <div class="inner-content">
-      <div class="bg-top"><img src="{{ asset('assets/images/material/bg-top.svg') }}"></div>
-
-      <div class="wrapper wrapper-small content-pages">
-        <h3><b>Sejarah Kita</b></h3>
-        <p>PT Bhakti Terang Indonesia “BTI” adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018.
-        </p>
-
-        <figure class="img-middle">
-          <img src="{{ asset('assets/images/cover_w990_h480_hero-login.jpg') }}" alt="">
-        </figure>
-
-        <p>BTI memiliki cita-cita memberikan manfaat dan dampak positif bagi keseimbangan alam untuk kehidupan berkelanjutan di Indonesia dengan turut andil dalam mengakselerasi transisi ke sumber energi bersih dan ramah lingkungan. Demi mewujudkan hal tersebut, BTI hadir dalam memberikan solusi pengembangan energi surya dan penyedia bahan bakar biomassa.</p>
-      </div>
-      <div class="our-milestone">
-        <div class="wrapper wrapper-small">
-          <h3><b>&nbsp;</b></h3>
-          <div class="slider-dots">
-
-            <div class="list">
-              <span class="year">2018</span>
-              <span class="bullet"></span>
-            </div>
-            <div class="list">
-              <span class="year">2020</span>
-              <span class="bullet"></span>
-            </div>
-            <div class="list">
-              <span class="year">2023</span>
-              <span class="bullet"></span>
-            </div>
-            <div class="list">
-              <span class="year">2024</span>
-              <span class="bullet"></span>
+      <div class="wrap-banner">
+        <div class="wrap-banner__left">
+          <h1>Woodchips</h1>
+          <h2>Pengurangan Limbah dan Polusi yang Terkecil</h2>
+        </div>
+        <div class="wrap-banner__right slider">
+          <div class="slider__card">
+            <figure><img src="images/cover_w360_h200_sidomuncul-5.jpg" alt=""></figure>
+            <div class="slider__card--text">
+              <h5>Sidomuncul</h5>
+              <a href="sido-muncul.html" class="link__img">Lihat<img src="images/material/icon-angle-right-green.svg"
+                  alt=""></a>
             </div>
           </div>
-          <div class="slider-container">
-            <span class="arrow prev"></span>
-            <span class="arrow next"></span>
-            <div class="slider-center-content">
-
-              <div class="list">
-                <div class="slider-milestone">
-                  <div class="slider">
-                    <div class="inner">
-                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
-                      </figure>
-                      <div class="text">
-                        <p>BTI didirikan pada tanggal 27 Agustus 2018 di Jakarta. Bisnis utama BTI adalah sebagai
-                          penyedia jasa konstruksi pembangunan Pembangkit Listrik Tenaga Uap (PLTU) dan Pembangkit
-                          Listrik Tenaga Gas Uap (PLTGU)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="slider-milestone">
-                  <div class="slider">
-                    <div class="inner">
-                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
-                      </figure>
-                      <div class="text">
-                        <p>BTI melakukan relokasi head office ke Bandar Lampung. BTI juga mengembangkan bisnisnya ke
-                          bidang Energi Baru Terbarukan (EBT) khususnya pada pembangunan Pembangkit Listrik Tenaga Surya
-                          (PLTS)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list">
-                <div class="slider-milestone">
-                  <div class="slider">
-                    <div class="inner">
-                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
-                      </figure>
-                      <div class="text">
-                        <p>BTI terus berupaya mendukung penggunaan energi hijau dengan penambahan lini bisnis sebagai
-                          penyedia bahan bakar biomassa. Hal tersebut dibuktikan dengan pembangunan Pabrik Biomassa
-                          (Woodchips) di Tanjung Bintang, Lampung Selatan.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="list">
-                <div class="slider-milestone">
-                  <div class="slider">
-                    <div class="inner">
-                      <figure><img src="{{ asset('assets/images/cover_w273_h274_offgrid-kat-birang.jpg') }}" alt="">
-                      </figure>
-                      <div class="text">
-                        <h4>Hutan Tanaman Energi (HTE)
-                        </h4>
-                        <p>Sinergi merupakan kunci strategis BTI dalam melebarkan sayap di kancah Nasional. Pada bulan Agustus BTI dan ITERA menandatangani kesepakatan Bersama dalam riset pengembangan tanaman Kaliandra Merah sebagai alternatif bahan bakar biomassa masa depan. Selain itu, BTI bergabung ke dalam organisasi nasional yang peduli terhadap penggunaan energi bersih yaitu Masyarakat Energi Biomassa Indonesia (MEBI). Dimana, Direktur Utama BTI menjadi ketua MEBI Wilayah Lampung.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          <div class="slider__card">
+            <figure><img src="images/cover_w360_h200_dji_0037.jpg" alt=""></figure>
+            <div class="slider__card--text">
+              <h5>Djarum</h5>
+              <a href="djarum.html" class="link__img">Lihat<img src="images/material/icon-angle-right-green.svg"
+                  alt=""></a>
+            </div>
+          </div>
+          <div class="slider__card">
+            <figure><img src="images/cover_w360_h200_kia1.jpg" alt=""></figure>
+            <div class="slider__card--text">
+              <h5>KIA Keramik</h5>
+              <a href="kia-keramik.html" class="link__img">Lihat<img src="images/material/icon-angle-right-green.svg"
+                  alt=""></a>
             </div>
           </div>
         </div>
       </div>
-      
+    </div>
+    <div class="inner-content">
+      <div class="bg-top"><img src="images/material/bg-top.svg"></div>
+
+      <div class="wrapper-small content-pages">
+        <div class="wrap">
+          <div class="wrap__text">
+            <h3>Pembangkit Listrik Tenaga Surya (PLTS)</h3>
+            <p>PLTS adalah sebuah sistem yang digunakan untuk mengubah energi sinar matahari menjadi energi listrik yang
+              dapat dipakai guna memenuhi kebutuhan listrik dalam berbagai skala, baik kecil maupun besar. PLTS
+              merupakan sumber energi yang ramah lingkungan karena sumber energi utamanya berupa sinar matahari.</p>
+          </div>
+          <div class="wrap__img">
+            <figure><img src="images/cover_w520_h340_project-1.jpg" alt=""></figure>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="bg-light-green">
+        <div class="wrapper-small">
+          <div class="wrap-tab ">
+            <div class="sortby">
+              <label for="">Sort by</label>
+              <form method="GET" id="filterForm">
+                <select name="location" onchange='document.getElementById("filterForm").submit();'>
+                  <option value="all">All Location</option>
+                  <option value="7">Bali</option>
+                  <option value="14">East Kalimantan</option>
+                  <option value="15">West Sulawesi</option>
+                  <option value="5">Riau Island</option>
+                </select>
+              </form>
+            </div>
+
+
+
+            <div class="listing-project-full">
+              <div class="card">
+                <figure>
+                  <img src="images/wc-tarahan-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/pln.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>(PLTU) Tarahan </h4>
+                    <p>Supply Woodchips ke Pembangkit Listrik Tenaga Uap (PLTU) Tarahan</p>
+                    <p>Lokasi : Tarahan, Lampung Selatan</p>
+                  </div>
+                  <a href="pt-itdc-nusantara-utilitas.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/wc-sebalang-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/pln.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>(PLTU) Sebalang </h4>
+                    <p>Supply Woodchips ke Pembangkit Listrik Tenaga Uap (PLTU) Sebalang</p>
+                    <p>Lokasi : Sebalang, Lampung Selatan</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/cj-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/cj.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>PT. CJ Feed & Care Indonesia</h4>
+                    <p>Supply Woodchips ke PT. CJ Feed & Care Indonesia</p>
+                    <p>Lokasi : Tanjung Bintang, Lampung Selatan</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/peffeti-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/peffeti.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>PT. Perfetti Van Melle Indonesia</h4>
+                    <p>Supply Woodchips ke PT. Perfetti Van Melle Indonesia</p>
+                    <p>Lokasi   : Bogor, Jawa Barat</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/nestle-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/nestle.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>PT. Nestle Indonesia</h4>
+                    <p>Supply Woodchips ke PT. Nestle Indonesia Karawang Factory</p>
+                    <p>Lokasi : Karawang, Jawa Barat</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/utp-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/utp.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>PLTS Universitas Tanjung Pura</h4>
+                    <p>Universitas Tanjung Pura</p>
+                    <p>Lokasi : Pontianak, Kalimantan Barat</p>
+                    <p>Kapasitas : 1.51MWp</p>
+                    <p>Luas Lahan : 11.075m2</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+              <div class="card">
+                <figure>
+                  <img src="images/sampoerna-bg.png" height="370" width="100%" alt="">
+                  <div class="logo">
+                    <img src="images/sampoerna.png" alt="">
+                  </div>
+                </figure>
+                <figcaption>
+                  <div class="left-c">
+                    <h4>PLTS SAMPOERNA</h4>
+                    <p>HM Sampoerna</p>
+                    <p>Lokasi : Pasuruan, Jawa Timur</p>
+                    <p>Kapasitas : 7 MWp</p>
+                    <p>Luas Lahan : 70.000m2</p>
+                  </div>
+                  <a href="kat-birang.html" class="link__img">View Detail<img
+                      src="images/material/icon-angle-right-white.svg" alt=""></a>
+                </figcaption>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
   @endsection
