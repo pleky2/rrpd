@@ -142,5 +142,20 @@ $(document).ready(function(){
             $('.menu .parent').children('a').removeClass('link-active');
           });
     });
+
+    $('.mitra-slider').slick({
+        slidesToShow: 1,
+        dots: false
+    })
+
+    $('.mitra-wrapper .slider-dots').slick({
+        arrows: false,
+        centerMode: false,
+        slidesToShow: 4,
+        infinite: false,
+        asNavFor: ".mitra-slider",
+        dots: false,
+        focusOnSelect: true,
+    })
 });
 

@@ -2446,6 +2446,7 @@ img[data-src].lazyloaded {
     overflow: hidden;
     position: relative;
     z-index: 2;
+    padding-bottom: 60px;
 }
 .wrap-visimisi__visi {
     background-color: #f5f5f5;
