@@ -22,5 +22,7 @@ Route::get('/milestone', [HomepageController::class, 'milestone']);
 Route::get('/organization', [HomepageController::class, 'organization']);
 Route::get('/superiority', [HomepageController::class, 'superiority']);
 Route::get('/mitra', [HomepageController::class, 'mitra']);
+Route::get('/procurement', [HomepageController::class, 'procurement']);
+Route::get('/competitive', [HomepageController::class, 'competitiveAdv']);
 
 

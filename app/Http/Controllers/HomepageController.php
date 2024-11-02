@@ -80,4 +80,20 @@ class HomepageController extends Controller
             'profile' => $data['profile']
         ]);
     }
+
+    public function procurement() {
+        $data['profile'] = Profile::first();
+
+        return view('content.procurement', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function competitiveAdv() {
+        $data['profile'] = Profile::first();
+
+        return view('content.competitiveAdv', [
+            'profile' => $data['profile']
+        ]);
+    }
 }
