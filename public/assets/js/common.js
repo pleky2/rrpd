@@ -145,17 +145,10 @@ $(document).ready(function(){
 
     $('.mitra-slider').slick({
         slidesToShow: 1,
-        dots: false
+        dots: true,
+        arrows: true
     })
 
-    $('.mitra-wrapper .slider-dots').slick({
-        arrows: false,
-        centerMode: false,
-        slidesToShow: 4,
-        infinite: false,
-        asNavFor: ".mitra-slider",
-        dots: false,
-        focusOnSelect: true,
-    })
+  
 });
 
