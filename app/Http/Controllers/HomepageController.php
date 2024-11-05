@@ -16,7 +16,7 @@ class HomepageController extends Controller
         $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
         $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
         $data['mitra'] = Mitra::all();
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.homepage', [
             'mitra' => $data['mitra'],
@@ -27,7 +27,7 @@ class HomepageController extends Controller
     }
 
     public function profile($id) {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
         $data['about'] = Profile::where('code', $id)->first();
 
         if(!$data['about']) {
@@ -41,7 +41,7 @@ class HomepageController extends Controller
     }
 
     public function ceoMessage() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.ceo-message', [
             'profile' => $data['profile']
@@ -49,7 +49,7 @@ class HomepageController extends Controller
     }
 
     public function management() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.management', [
             'profile' => $data['profile']
@@ -57,7 +57,7 @@ class HomepageController extends Controller
     }
 
     public function milestone() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.milestone', [
             'profile' => $data['profile']
@@ -65,7 +65,7 @@ class HomepageController extends Controller
     }
 
     public function organization() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.organization', [
             'profile' => $data['profile']
@@ -73,7 +73,7 @@ class HomepageController extends Controller
     }
 
     public function superiority() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.superiority', [
             'profile' => $data['profile']
@@ -81,7 +81,7 @@ class HomepageController extends Controller
     }
 
     public function mitra() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.mitra', [
             'profile' => $data['profile']
@@ -89,7 +89,7 @@ class HomepageController extends Controller
     }
 
     public function procurement() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.procurement', [
             'profile' => $data['profile']
@@ -97,7 +97,7 @@ class HomepageController extends Controller
     }
 
     public function competitiveAdv() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.competitiveAdv', [
             'profile' => $data['profile']
@@ -105,23 +105,25 @@ class HomepageController extends Controller
     }
 
     public function collaboration() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.collaboration', [
             'profile' => $data['profile']
         ]);
     }
 
-    public function contactUs() {
-        $data['profile'] = Contact::first();
+    public function contactUs($id) {
+        $data['profile'] = Contact::where('code', 'homep')->first();
+        $data['contactUs'] = Contact::where('code', $id)->get();
 
         return view('content.contactUs', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'contactUs' => $data['contactUs']
         ]);
     }
 
     public function business() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.business', [
             'profile' => $data['profile']
@@ -129,7 +131,7 @@ class HomepageController extends Controller
     }
 
     public function media() {
-        $data['profile'] = Contact::first();
+        $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.media', [
             'profile' => $data['profile']
