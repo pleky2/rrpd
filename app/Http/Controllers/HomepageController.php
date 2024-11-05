@@ -127,4 +127,12 @@ class HomepageController extends Controller
             'profile' => $data['profile']
         ]);
     }
+
+    public function media() {
+        $data['profile'] = Contact::first();
+
+        return view('content.media', [
+            'profile' => $data['profile']
+        ]);
+    }
 }

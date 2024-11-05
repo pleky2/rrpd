@@ -184,6 +184,26 @@
               </div>
             </li>
             <li class="have-child">
+              <a href="#">Media</a>
+              <div class="child" style="">
+                <div class="title">
+                  <h4>Media</h4>
+                </div>
+
+                <div class="wrap-row">
+                  <div class="col">
+                    <ul>
+                      <li class="parent" id="bti"><a href="/media/bti">BTI</a></li>
+                      <li class="parent" id="enpos"><a href="/media/enpos">Cafe Enpos</a></li>
+                      <li class="parent" id="gh"><a href="/media/gh">Growing Hope</a></li>
+                      <li class="parent" id="nw"><a href="/media/nw">Biro Narwastu</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="have-child">
               <a href="#">Hubungi Kami</a>
               <div class="child" style="">
                 <div class="title">
