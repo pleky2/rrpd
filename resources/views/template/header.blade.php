@@ -82,12 +82,12 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile">Info Perusahaan</a></li>
-                        <li><a href="/ceo-message">Manajemen</a></li>
-                        <li><a href="/ceo-message">Struktur Organisasi</a></li>
-                        <li><a href="/ceo-message">Keunggulan</a></li>
-                        <li><a href="/ceo-message">Mitra</a></li>
-                        <li><a href="/ceo-message">Perolehan Proyek</a></li>
+                        <li><a href="/profile/bti">Info Perusahaan</a></li>
+                        <li><a href="/management/bti">Manajemen</a></li>
+                        <li><a href="/organization/bti">Struktur Organisasi</a></li>
+                        <li><a href="/superiority/bti">Keunggulan</a></li>
+                        <li><a href="/mitra/bti">Mitra</a></li>
+                        <li><a href="/competitive/bti">Perolehan Proyek</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="enpos">
@@ -95,11 +95,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile">Info Perusahaan</a></li>
-                        <li><a href="/ceo-message">Manajemen</a></li>
-                        <li><a href="/ceo-message">Struktur Organisasi</a></li>
-                        <li><a href="/ceo-message">Keunggulan</a></li>
-                        <li><a href="/ceo-message">Mitra</a></li>
+                        <li><a href="/profile/enpos">Info Perusahaan</a></li>
+                        <li><a href="/management/enpos">Manajemen</a></li>
+                        <li><a href="/organization/enpos">Struktur Organisasi</a></li>
+                        <li><a href="/superiority/enpos">Keunggulan</a></li>
+                        <li><a href="/mitra/enpos">Mitra</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="gh">
@@ -107,11 +107,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile">Info Perusahaan</a></li>
-                        <li><a href="/ceo-message">Manajemen</a></li>
-                        <li><a href="/ceo-message">Struktur Organisasi</a></li>
-                        <li><a href="/ceo-message">Keunggulan</a></li>
-                        <li><a href="/ceo-message">Mitra</a></li>
+                        <li><a href="/profile/gh">Info Perusahaan</a></li>
+                        <li><a href="/management/gh">Manajemen</a></li>
+                        <li><a href="/organization/gh">Struktur Organisasi</a></li>
+                        <li><a href="/superiority/gh">Keunggulan</a></li>
+                        <li><a href="/mitra/gh">Mitra</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="nw">
@@ -119,11 +119,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile">Info Perusahaan</a></li>
-                        <li><a href="/ceo-message">Manajemen</a></li>
-                        <li><a href="/ceo-message">Struktur Organisasi</a></li>
-                        <li><a href="/ceo-message">Keunggulan</a></li>
-                        <li><a href="/ceo-message">Mitra</a></li>
+                        <li><a href="/profile/nw">Info Perusahaan</a></li>
+                        <li><a href="/management/nw">Manajemen</a></li>
+                        <li><a href="/organization/nw">Struktur Organisasi</a></li>
+                        <li><a href="/superiority/nw">Keunggulan</a></li>
+                        <li><a href="/mitra/nw">Mitra</a></li>
                       </ul>
                     </div>
                   </div>
@@ -193,10 +193,10 @@
                 <div class="wrap-row">
                   <div class="col">
                     <ul>
-                      <li class="parent" id="bti"><a href="#">Alamat</a></li>
-                      <li class="parent" id="enpos"><a href="#">Email</a></li>
-                      <li class="parent" id="gh"><a href="#">No Telpon</a></li>
-                      <li class="parent" id="nw"><a href="#">Social Media</a></li>
+                      <li class="parent" id="bti"><a href="#">BTI</a></li>
+                      <li class="parent" id="enpos"><a href="#">Café Enpos</a></li>
+                      <li class="parent" id="gh"><a href="#">Growing Hope</a></li>
+                      <li class="parent" id="nw"><a href="#">Narwastu</a></li>
                     </ul>
                   </div>
                 </div>

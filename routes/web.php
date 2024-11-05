@@ -15,14 +15,18 @@ use App\Http\Controllers\HomepageController;
 */
 
 Route::get('/', [HomepageController::class, 'index']);
-Route::get('/profile', [HomepageController::class, 'profile']);
-Route::get('/ceo-message', [HomepageController::class, 'ceoMessage']);
-Route::get('/management', [HomepageController::class, 'management']);
-Route::get('/milestone', [HomepageController::class, 'milestone']);
-Route::get('/organization', [HomepageController::class, 'organization']);
-Route::get('/superiority', [HomepageController::class, 'superiority']);
-Route::get('/mitra', [HomepageController::class, 'mitra']);
-Route::get('/procurement', [HomepageController::class, 'procurement']);
-Route::get('/competitive', [HomepageController::class, 'competitiveAdv']);
+Route::get('/profile/{id}', [HomepageController::class, 'profile']);
+Route::get('/management/{id}', [HomepageController::class, 'management']);
+Route::get('/organization/{id}', [HomepageController::class, 'organization']);
+Route::get('/superiority/{id}', [HomepageController::class, 'superiority']);
+Route::get('/mitra/{id}', [HomepageController::class, 'mitra']);
+Route::get('/competitive/{id}', [HomepageController::class, 'competitiveAdv']);
+
+
+
+Route::get('/ceo-message/{id}', [HomepageController::class, 'ceoMessage']);
+Route::get('/milestone/{id}', [HomepageController::class, 'milestone']);
+Route::get('/procurement/{id}', [HomepageController::class, 'procurement']);
+
 
 

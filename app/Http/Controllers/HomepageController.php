@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Mitra;
 use App\Models\Sliders;
 use App\Models\Profile;
+use App\Models\Contact;
 
 class HomepageController extends Controller
 {
@@ -15,7 +16,7 @@ class HomepageController extends Controller
         $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
         $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
         $data['mitra'] = Mitra::all();
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.homepage', [
             'mitra' => $data['mitra'],
@@ -25,16 +26,22 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function profile() {
-        $data['profile'] = Profile::first();
+    public function profile($id) {
+        $data['profile'] = Contact::first();
+        $data['about'] = Profile::where('code', $id)->first();
 
+        if(!$data['about']) {
+            abort(404);
+        }
+        
         return view('content.profile', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'about' => $data['about']
         ]);
     }
 
     public function ceoMessage() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.ceo-message', [
             'profile' => $data['profile']
@@ -42,7 +49,7 @@ class HomepageController extends Controller
     }
 
     public function management() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.management', [
             'profile' => $data['profile']
@@ -50,7 +57,7 @@ class HomepageController extends Controller
     }
 
     public function milestone() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.milestone', [
             'profile' => $data['profile']
@@ -58,7 +65,7 @@ class HomepageController extends Controller
     }
 
     public function organization() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.organization', [
             'profile' => $data['profile']
@@ -66,7 +73,7 @@ class HomepageController extends Controller
     }
 
     public function superiority() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.superiority', [
             'profile' => $data['profile']
@@ -74,7 +81,7 @@ class HomepageController extends Controller
     }
 
     public function mitra() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.mitra', [
             'profile' => $data['profile']
@@ -82,7 +89,7 @@ class HomepageController extends Controller
     }
 
     public function procurement() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.procurement', [
             'profile' => $data['profile']
@@ -90,7 +97,7 @@ class HomepageController extends Controller
     }
 
     public function competitiveAdv() {
-        $data['profile'] = Profile::first();
+        $data['profile'] = Contact::first();
 
         return view('content.competitiveAdv', [
             'profile' => $data['profile']
