@@ -20,7 +20,7 @@ Route::get('/management/{id}', [HomepageController::class, 'management']);
 Route::get('/organization/{id}', [HomepageController::class, 'organization']);
 Route::get('/superiority/{id}', [HomepageController::class, 'superiority']);
 Route::get('/mitra/{id}', [HomepageController::class, 'mitra']);
-Route::get('/competitive/{id}', [HomepageController::class, 'competitiveAdv']);
+Route::get('/procurement/{id}', [HomepageController::class, 'procurement']);
 Route::get('/collaboration/{id}', [HomepageController::class, 'collaboration']);
 Route::get('/contact-us/{id}', [HomepageController::class, 'contactUs']);
 Route::get('/business/{parent}/{id}', [HomepageController::class, 'business']);
@@ -29,7 +29,7 @@ Route::get('/media/{id}', [HomepageController::class, 'media']);
 
 Route::get('/ceo-message/{id}', [HomepageController::class, 'ceoMessage']);
 Route::get('/milestone/{id}', [HomepageController::class, 'milestone']);
-Route::get('/procurement/{id}', [HomepageController::class, 'procurement']);
+Route::get('/competitive/{id}', [HomepageController::class, 'competitiveAdv']);
 
 
 

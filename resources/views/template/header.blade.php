@@ -87,7 +87,7 @@
                         <li><a href="/organization/bti">Struktur Organisasi</a></li>
                         <li><a href="/superiority/bti">Keunggulan</a></li>
                         <li><a href="/mitra/bti">Mitra</a></li>
-                        <li><a href="/competitive/bti">Perolehan Proyek</a></li>
+                        <li><a href="/procurement/bti">Perolehan Proyek</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="enpos">
