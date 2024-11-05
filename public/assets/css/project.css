@@ -1882,6 +1882,11 @@ footer .foot-link a:last-child:after {
 .middle.gap-bottom {
     margin-bottom: 130px;
 }
+
+.middle.gap-top {
+    margin-top: 130px;
+}
+
 .banner-page {
     overflow: hidden;
     position: relative;
