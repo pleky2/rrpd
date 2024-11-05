@@ -152,10 +152,10 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="#">PLTGU & PLTU</a></li>
-                        <li><a href="#">PLTS</a></li>
-                        <li><a href="#">Biomassa</a></li>
-                        <li><a href="#">Maps Project</a></li>
+                        <li><a href="/business/bti/pltu">PLTGU & PLTU</a></li>
+                        <li><a href="/business/bti/plts">PLTS</a></li>
+                        <li><a href="/business/bti/bio">Biomassa</a></li>
+                        <li><a href="/business/bti/maps">Maps Project</a></li>
                       </ul>
                     </div>
                   </div>
@@ -173,10 +173,10 @@
                 <div class="wrap-row">
                   <div class="col">
                     <ul>
-                      <li class="parent" id="bti"><a href="#">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="#">Cafe Enpos</a></li>
-                      <li class="parent" id="gh"><a href="#">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="#">Biro Narwastu</a></li>
+                      <li class="parent" id="bti"><a href="/collaboration/bti">BTI</a></li>
+                      <li class="parent" id="enpos"><a href="/collaboration/enpos">Cafe Enpos</a></li>
+                      <li class="parent" id="gh"><a href="/collaboration/gh">Growing Hope</a></li>
+                      <li class="parent" id="nw"><a href="/collaboration/nw">Biro Narwastu</a></li>
                     </ul>
                   </div>
                 </div>
@@ -193,10 +193,10 @@
                 <div class="wrap-row">
                   <div class="col">
                     <ul>
-                      <li class="parent" id="bti"><a href="#">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="#">Café Enpos</a></li>
-                      <li class="parent" id="gh"><a href="#">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="#">Narwastu</a></li>
+                      <li class="parent" id="bti"><a href="/contact-us/bti">BTI</a></li>
+                      <li class="parent" id="enpos"><a href="/contact-us/enpos">Café Enpos</a></li>
+                      <li class="parent" id="gh"><a href="/contact-us/gh">Growing Hope</a></li>
+                      <li class="parent" id="nw"><a href="/contact-us/nw">Narwastu</a></li>
                     </ul>
                   </div>
                 </div>

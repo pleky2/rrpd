@@ -33,7 +33,7 @@ class HomepageController extends Controller
         if(!$data['about']) {
             abort(404);
         }
-        
+
         return view('content.profile', [
             'profile' => $data['profile'],
             'about' => $data['about']
@@ -100,6 +100,30 @@ class HomepageController extends Controller
         $data['profile'] = Contact::first();
 
         return view('content.competitiveAdv', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function collaboration() {
+        $data['profile'] = Contact::first();
+
+        return view('content.collaboration', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function contactUs() {
+        $data['profile'] = Contact::first();
+
+        return view('content.contactUs', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function business() {
+        $data['profile'] = Contact::first();
+
+        return view('content.business', [
             'profile' => $data['profile']
         ]);
     }
