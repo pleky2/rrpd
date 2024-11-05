@@ -11,9 +11,10 @@
     </figcaption>
   </div>
   <div class="inner-content">
-    <div class="wrapper  content-pages mitra-wrapper">
+    <div class="wrapper content-pages mitra-wrapper">
       <div class="mitra-slider">
         <div class="slider-item">
+          <h4 class="title">Mitra 1</h4>
           <div class="slider-grid">
             <img src="{{ asset('assets/images/logo_home.png') }}" />
             <img src="{{ asset('assets/images/logo_home.png') }}" />
@@ -26,6 +27,7 @@
           </div>
         </div>
         <div class="slider-item">
+          <h4 class="title">Mitra 2</h4>
           <div class="slider-grid">
             <img src="{{ asset('assets/images/gh.png') }}" />
             <img src="{{ asset('assets/images/gh.png') }}" />
@@ -34,6 +36,7 @@
           </div>
         </div>
         <div class="slider-item">
+          <h4 class="title">Mitra 3</h4>
           <div class="slider-grid">
             <img src="{{ asset('assets/images/enpos.png') }}" />
             <img src="{{ asset('assets/images/enpos.png') }}" />
@@ -43,11 +46,6 @@
         </div>
       </div>
 
-      <div class="slider-dots">
-        <div class="tab">Tab 1</div>
-        <div class="tab">Tab 2</div>
-        <div class="tab">Tab 3</div>
-      </div>
     </div>
 
 

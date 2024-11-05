@@ -5413,4 +5413,30 @@ img[data-src].lazyloaded {
     border-radius: 5px;
 } 
 
+.mitra-wrapper .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 27px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mitra-wrapper .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+.mitra-wrapper .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=home.css.map*/
