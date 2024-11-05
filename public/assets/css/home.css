@@ -5474,5 +5474,52 @@ img[data-src].lazyloaded {
 }
 
 
+.contact-us {
+    background-color: #fff4d4;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.contact-us p {
+    margin-bottom: 5px;
+}
+
+.contact-us h5 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.contact-us .item .title{
+    margin-right: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contact-us .item .content {
+    display: flex;
+    align-items: start;
+    
+}
+.contact-us .item span {
+   min-width: 30px;
+    
+}
+
+.top-contact {
+    margin-top: 100px;
+}
+
+
+
+
 
 /*# sourceMappingURL=home.css.map*/
