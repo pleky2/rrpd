@@ -2098,6 +2098,9 @@ footer .partner img{
 .middle.gap-bottom {
     margin-bottom: 130px;
 }
+.middle.gap-top {
+    margin-top: 130px;
+}
 .banner-page {
     overflow: hidden;
     position: relative;
@@ -5438,5 +5441,38 @@ img[data-src].lazyloaded {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.superior {
+    background-color: #fff4d4;
+    padding: 120px 0 90px;
+    position: relative;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.superior .img-wrapper {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.superior h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.superior .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 
 /*# sourceMappingURL=home.css.map*/
