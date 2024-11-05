@@ -87,7 +87,7 @@
                         <li><a href="/organization/bti">Struktur Organisasi</a></li>
                         <li><a href="/superiority/bti">Keunggulan</a></li>
                         <li><a href="/mitra/bti">Mitra</a></li>
-                        <li><a href="/competitive/bti">Perolehan Proyek</a></li>
+                        <li><a href="/procurement/bti">Perolehan Proyek</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="enpos">
@@ -177,6 +177,26 @@
                       <li class="parent" id="enpos"><a href="/collaboration/enpos">Cafe Enpos</a></li>
                       <li class="parent" id="gh"><a href="/collaboration/gh">Growing Hope</a></li>
                       <li class="parent" id="nw"><a href="/collaboration/nw">Biro Narwastu</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li class="have-child">
+              <a href="#">Media</a>
+              <div class="child" style="">
+                <div class="title">
+                  <h4>Media</h4>
+                </div>
+
+                <div class="wrap-row">
+                  <div class="col">
+                    <ul>
+                      <li class="parent" id="bti"><a href="/media/bti">BTI</a></li>
+                      <li class="parent" id="enpos"><a href="/media/enpos">Cafe Enpos</a></li>
+                      <li class="parent" id="gh"><a href="/media/gh">Growing Hope</a></li>
+                      <li class="parent" id="nw"><a href="/media/nw">Biro Narwastu</a></li>
                     </ul>
                   </div>
                 </div>
