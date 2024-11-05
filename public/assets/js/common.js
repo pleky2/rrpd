@@ -149,6 +149,11 @@ $(document).ready(function(){
         arrows: true
     })
 
+    $('.overlay-bg.link').on('click', function(e) {
+        e.preventDefault();
+        var content = $(this).parents('.grid-item').find(".data-popup").html();
+        $("#popup-bod .content-popup").html(content), openPopup("#popup-bod")
+    })
   
 });
 

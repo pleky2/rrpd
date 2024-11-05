@@ -39,6 +39,7 @@
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/home.css') }}" preload>
   <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
+  <script async type="text/javascript" src="{{ asset('assets/js/about.js') }}"></script>
 </head>
 
 <body>
