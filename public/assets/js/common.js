@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    // gsap.registerPlugin(ScrollToPlugin,Draggable)
+
     $('.our-milestone .slider-dots').slick({
         arrows: false,
         centerMode: true,
@@ -41,27 +43,6 @@ $(document).ready(function(){
             // fade: true
         });
     });
-
-    // $(document).ready(function(){
-    //     $('.tab.zz').slick({"slidesToShow": 2, "slidesToScroll": 1});
-
-       
-    // });
-
-    // $(document).ready(function(){
-    //     $('.next').on('click', function () {
-    //         console.log('test')
-    //         $('.test').slick('slickGoTo', 1);
-    //     });
-    // });
-
-    // $(document).ready(function(){
-    //     $('.prev').on('click', function () {
-    //         console.log('test')
-    //         $('.test').slick('slickGoTo', 0);
-    //     });
-    // });
-
 
     $(document).ready(function(){
         $('.multiple-items').slick({ 
@@ -154,6 +135,10 @@ $(document).ready(function(){
         var content = $(this).parents('.grid-item').find(".data-popup").html();
         $("#popup-bod .content-popup").html(content), openPopup("#popup-bod")
     })
-  
+
+
+
+
+    
 });
 
