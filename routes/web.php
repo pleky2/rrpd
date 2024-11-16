@@ -29,6 +29,7 @@ Route::get('/business/{parent}/{id}', [HomepageController::class, 'business']);
 Route::get('/media/{id}', [HomepageController::class, 'media']);
 Route::get('/project-detail/{id}', [HomepageController::class, 'projectDetail']);
 Route::get('/media-detail/{id}', [HomepageController::class, 'mediaDetail']);
+Route::get('/locale/{lang}', [HomepageController::class, 'changeLanguage']);
 
 
 Route::get('/ceo-message/{id}', [HomepageController::class, 'ceoMessage']);

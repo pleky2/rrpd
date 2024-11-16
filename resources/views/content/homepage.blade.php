@@ -78,7 +78,7 @@
       <div class="wrapper">
         <div class="box">
           <div>
-          <h2>Nilai Inti Perusahaan</h2>
+          <h2>{{ __('content.nilai_inti') }}</h2>
           <ul>
             <li><strong>Green:</strong> Memelihara serta mampu bekerjasama dengan alam (eco green)</li>
             <li><strong>Smart: </strong> Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value</li>

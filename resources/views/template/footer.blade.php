@@ -56,6 +56,17 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 
+<script>
+    function redirectToUrl(selectElement) {
+        const selectedValue = selectElement.value;
+        
+        // Check if the value is not empty
+        if (selectedValue) {
+            window.location.href = selectedValue;  // Redirect to the selected URL
+        }
+    }
+</script>
+
 </body>
 
 </html>

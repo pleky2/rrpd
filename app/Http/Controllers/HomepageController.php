@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use App\Models\Mitra;
 use App\Models\Sliders;
 use App\Models\Profile;
 use App\Models\Contact;
+use Illuminate\Support\Facades\Session;
 
 class HomepageController extends Controller
 {
@@ -156,5 +158,14 @@ class HomepageController extends Controller
         return view('content.projectDetail', [
             'profile' => $data['profile']
         ]);
+    }
+
+    public function changeLanguage($lang) {
+        if(in_array($lang, ['id', 'en'])) {
+            App::setLocale($lang);
+            Session::put('locale', $lang);
+        }
+        
+        return back();
     }
 }

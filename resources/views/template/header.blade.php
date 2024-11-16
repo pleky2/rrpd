@@ -53,10 +53,10 @@
           <div class="top">
             <ul>
               <li class="language">
-                <select name="" id="lang" onchange="mylang()">
-                  <option selected value="index.html">EN
+                <select name="" id="lang" onchange="redirectToUrl(this);">
+                  <option {{ Session::get('locale') == 'id' ? 'selected' : '' }} value="{{ url('/locale/id') }}">ID
               </li>
-              <option value="id.html">ID</li>
+              <option {{ Session::get('locale') == 'en' ? 'selected' : '' }} value="{{ url('/locale/en') }}">EN</li>
                 </select> </li>
             </ul>
           </div>
