@@ -96,6 +96,14 @@ class HomepageController extends Controller
         ]);
     }
 
+    public function procurementDetail() {
+        $data['profile'] = Contact::where('code', 'homep')->first();
+
+        return view('content.procurementDetail', [
+            'profile' => $data['profile']
+        ]);
+    }
+
     public function competitiveAdv() {
         $data['profile'] = Contact::where('code', 'homep')->first();
 

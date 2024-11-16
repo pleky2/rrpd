@@ -138,7 +138,22 @@ $(document).ready(function(){
 
 
 
+    $('.detail .detail-big').slick({
+        arrows: false,
+        
+        slidesToScroll: 1,
+        slidesToShow: 1
+    })
 
+    $('.detail .detail-nav').slick({
+        arrows: false,
+        fade: false,
+        slidesToScroll: 1,
+        slidesToShow: 5,
+        asNavFor: '.detail .detail-big',
+        // centerMode: true,
+        focusOnSelect: true
+    })
     
 });
 

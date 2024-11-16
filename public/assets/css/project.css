@@ -2630,7 +2630,7 @@ img[data-src].lazyloaded {
     z-index: 2;
 }
 .bg-light-green:after {
-    background: url(../images/content/bg-asset-projek.png) no-repeat 50%;
+    
     content: "";
     height: 370px;
     position: absolute;
