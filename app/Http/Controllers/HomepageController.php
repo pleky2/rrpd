@@ -15,7 +15,7 @@ class HomepageController extends Controller
 
         $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
         $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
-        $data['mitra'] = Mitra::all();
+        $data['mitra'] = Mitra::where('code', 'homep')->get();
         $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.homepage', [
@@ -82,9 +82,13 @@ class HomepageController extends Controller
 
     public function mitra() {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $data['title_mitra'] = Mitra::where('code', 'bti')->first();
+        $data['mitra'] = Mitra::where('code', 'bti')->get();
 
         return view('content.mitra', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'title_mitra' => $data['title_mitra'],
+            'mitra' => $data['mitra']
         ]);
     }
 
@@ -142,6 +146,14 @@ class HomepageController extends Controller
         $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.media', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function projectDetail() {
+        $data['profile'] = Contact::where('code', 'homep')->first();
+
+        return view('content.projectDetail', [
             'profile' => $data['profile']
         ]);
     }

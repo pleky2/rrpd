@@ -14,7 +14,7 @@
     <div class="wrapper content-pages mitra-wrapper">
       <div class="mitra-slider">
         <div class="slider-item">
-          <h4 class="title">Mitra 1</h4>
+          <h4 class="title">{{ $title_mitra->description }}</h4>
           <div class="slider-grid">
             <img src="{{ asset('assets/images/logo_home.png') }}" />
             <img src="{{ asset('assets/images/logo_home.png') }}" />
