@@ -2,14 +2,6 @@
 
 @section('content')
 <section class="middle gap-bottom gap-top">
-  <div class="banner-page center">
-    <figure>
-      <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
-    </figure>
-    <figcaption>
-      <h2>Keunggulan</h2>
-    </figcaption>
-  </div>
   <div class="superior">
     <div class="wrapper">
       <div class="row">

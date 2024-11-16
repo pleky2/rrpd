@@ -5544,14 +5544,22 @@ img[data-src].lazyloaded {
     width: 700px;
     z-index: 99;
     position: absolute;
-    top: 200px;
-    margin-left: 300px;
+    top: 50%;
+    transform: translateY(-50%);
     border: 2px solid #FFFF;
     background-color: RGBA(255,255,255,0);
     border-radius: 10px;
     padding: 20px;
     backdrop-filter: blur(8px);
     color: white;
+}
+
+.business.left {
+    left: 300px;
+}
+
+.business.right {
+    right: 300px;
 }
 
 .business h3 {
@@ -5561,8 +5569,12 @@ img[data-src].lazyloaded {
 .media-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 60px 0;
+    
     gap: 20px;
+}
+
+.media {
+    padding: 20px 0;
 }
 
 .media-wrapper .card-media {
@@ -5575,6 +5587,15 @@ img[data-src].lazyloaded {
     position: relative;
     overflow: hidden;
     min-height: 400px;
+}
+
+.media-wrapper .card-media .chip {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
 }
 
 .media-wrapper .img-wrapper {
@@ -5591,6 +5612,27 @@ img[data-src].lazyloaded {
    object-fit: cover;
    width:100%; 
    height:100%;
+}
+
+.media-wrapper .card-media .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    min-height: 150px;
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper.media h4{
+    font-weight: bold;
+}
+
+.media-wrapper .card-media .content span {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .detail-nav {
@@ -5620,6 +5662,50 @@ img[data-src].lazyloaded {
     font-weight: bold;
 }
 
+
+.kerjasama-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.kerjasama-wrapper .card {
+    overflow: hidden;
+    min-height: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
+    box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
+}
+
+.kerjasama-wrapper .card .img-wrapper {
+    height: 100%;
+}
+
+.kerjasama-wrapper .card .img-wrapper img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.kerjasama-wrapper .card .desc {
+    padding: 10px;
+}
+
+.kerjasama-title h5 {
+    margin: 0;
+    font-size: 30px;
+    
+}
+
+.kerjasama-title h6 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.kerjasama {
+    margin-bottom: 20px;
+}
 
 
 /*# sourceMappingURL=home.css.map*/
