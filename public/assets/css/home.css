@@ -5447,7 +5447,7 @@ img[data-src].lazyloaded {
     padding: 120px 0 90px;
     position: relative;
     text-align: center;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
 .superior .img-wrapper {

@@ -33,7 +33,16 @@ return [
 
 
     'inti_nw' => 'Truth, Precious, Greatful, Respect, Totality',
-    
+    'bio' => 'Biomass',
+    'maps' => 'Maps Project',
+    'terapi_gh' => 'Growing Hope Therapy',
+    'pklk' => 'Growing Hope PKLK School',
+    'psiko' => 'Psychological Examination',
+    'konsul' => 'Consultation',
+    'art' => 'Art Therapy',
+    'seminar' => 'Seminar Speaker',
+    'workshop' => 'Presenter of Employee Psychological Testing Workshop Activities',
+
 
     'nilai_inti' => 'Company Core Values',
     'green' => 'Maintaining and being able to cooperate with nature (eco green)',

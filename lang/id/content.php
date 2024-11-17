@@ -31,7 +31,17 @@ return [
     'man_desc' => 'Memperkenalkan individu-individu berbakat yang telah berkontribusi',
     'man_desc_dua' => 'Di BTI, karyawan kami bersemangat dalam mendorong pertumbuhan dan perkembangan industri tenaga surya.&nbsp;<br>Kami bekerja sama dengan perusahaan anggota kami dan pemangku kepentingan lainnya untuk mempromosikan penggunaan energi surya secara lebih luas di seluruh wilayah.<br>&nbsp;',
 
+
     'inti_nw' => 'Kebenaran, Berharga, Bersyukur, Hormat, Totalitas',
+    'bio' => 'Biomassa',
+    'maps' => 'Proyek Peta',
+    'terapi_gh' => 'Terapi Growing Hope',
+    'pklk' => 'Sekolah PKLK Growing Hope',
+    'psiko' => 'Pemeriksaan Psikologi',
+    'konsul' => 'Konsultasi',
+    'art' => 'Terapi Seni',
+    'seminar' => 'Pembicara Seminar',
+    'workshop' => 'Pemateri Kegiatan Workshop Psikotes Karyawan',
 
 
     'nilai_inti' => 'Nilai Inti Perusahaan',

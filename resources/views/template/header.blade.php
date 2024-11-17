@@ -149,14 +149,26 @@
                   </div>
                   <div class="col">
                     <div class="chd d-none" data-parent="bti">
-                      <!-- <h4>PT Bhakti Terang Indonesia “BTI” asdd</h4>
-                      <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
-                      <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/business/bti/pltu">PLTGU & PLTU</a></li>
                         <li><a href="/business/bti/plts">PLTS</a></li>
-                        <li><a href="/business/bti/bio">Biomassa</a></li>
-                        <li><a href="/business/bti/maps">Maps Project</a></li>
+                        <li><a href="/business/bti/bio">{{ __('content.bio') }}</a></li>
+                        <li><a href="/business/bti/maps">{{ __('content.maps') }}</a></li>
+                      </ul>
+                    </div>
+                    <div class="chd d-none" data-parent="gh">
+                      <ul>
+                        <li><a href="/business/bti/pltu">{{ __('content.terapi_gh') }}</a></li>
+                        <li><a href="/business/bti/plts">{{ __('content.pklk') }}</a></li>
+                      </ul>
+                    </div>
+                    <div class="chd d-none" data-parent="nw">
+                      <ul>
+                        <li><a href="/business/bti/pltu">{{ __('content.psiko') }}</a></li>
+                        <li><a href="/business/bti/plts">{{ __('content.konsul') }}</a></li>
+                        <li><a href="/business/bti/plts">{{ __('content.art') }}</a></li>
+                        <li><a href="/business/bti/plts">{{ __('content.seminar') }}</a></li>
+                        <li><a href="/business/bti/plts">{{ __('content.workshop') }}</a></li>
                       </ul>
                     </div>
                   </div>

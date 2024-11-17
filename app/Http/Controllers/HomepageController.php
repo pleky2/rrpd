@@ -13,6 +13,7 @@ use App\Models\Profile;
 use App\Models\Contact;
 use App\Models\Management;
 use App\Models\ManagementDetail;
+use App\Models\Superiority;
 
 
 class HomepageController extends Controller
@@ -60,12 +61,6 @@ class HomepageController extends Controller
         $manag = Management::where('code', $id)->get();
         $managDetail = ManagementDetail::where('code', $id)->get();
 
-        // $data['management'] = DB::table('management')
-        //                         ->select('management.id', 'management.name', 'management.title', 'management.img', 'management_detail.desc', 'management_detail.history_type')
-        //                         ->leftJoin('management_detail', 'management.id', '=', 'management_detail.management_id')
-        //                         ->where('code', 'bti')
-        //                         ->get();
-
         return view('content.management', [
             'profile' => $data['profile'],
             'manag' => $manag,
@@ -81,19 +76,23 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function organization() {
+    public function organization($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $organ = Sliders::where('type', $id)->where('menu', 'org')->first();
 
         return view('content.organization', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'organ' => $organ
         ]);
     }
 
-    public function superiority() {
+    public function superiority($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $super = superiority::where('code', $id)->where('lang', Session::get('locale'))->get();
 
         return view('content.superiority', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'super' => $super
         ]);
     }
 
