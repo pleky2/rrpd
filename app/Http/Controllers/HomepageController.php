@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Mitra;
 use App\Models\Sliders;
 use App\Models\Profile;
 use App\Models\Contact;
-use Illuminate\Support\Facades\Session;
+use App\Models\Management;
+use App\Models\ManagementDetail;
+
 
 class HomepageController extends Controller
 {
@@ -30,7 +35,7 @@ class HomepageController extends Controller
 
     public function profile($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $data['about'] = Profile::where('code', $id)->first();
+        $data['about'] = Profile::where('code', $id)->where('lang', Session::get('locale'))->first();
 
         if(!$data['about']) {
             abort(404);
@@ -50,11 +55,21 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function management() {
+    public function management($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $manag = Management::where('code', $id)->get();
+        $managDetail = ManagementDetail::where('code', $id)->get();
+
+        // $data['management'] = DB::table('management')
+        //                         ->select('management.id', 'management.name', 'management.title', 'management.img', 'management_detail.desc', 'management_detail.history_type')
+        //                         ->leftJoin('management_detail', 'management.id', '=', 'management_detail.management_id')
+        //                         ->where('code', 'bti')
+        //                         ->get();
 
         return view('content.management', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'manag' => $manag,
+            'managDetail' => $managDetail,
         ]);
     }
 

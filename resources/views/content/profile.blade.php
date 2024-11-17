@@ -53,11 +53,24 @@
       </div>
     </div>
     </section>
+  @elseif($about->code == 'nw')
+    <section class="gesit">
+      <div class="wrapper-small">
+        <div class="box">
+          <div>
+            <h2>{{ __('content.nilai_inti') }}</h2>
+            <ul>
+              <li>{{ __('content.inti_nw') }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   @endif
 
   <div class="makna-logo">
     <div class="text-center">
-      <h3><b>Makna Logo</b></h3>
+      <h3><b>{{ __('content.makna_logo') }}</b></h3>
     </div>
     <div class="wrapper-small">
       <div class="row">
@@ -78,7 +91,7 @@
 
       </div>
 
-      <h3>Keterangan :</h3>
+      <h3>{{ __('content.keterangan') }} :</h3>
       {!! $about->desc_logo !!}
     </div>
   </div>

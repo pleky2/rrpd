@@ -78,14 +78,14 @@
       <div class="wrapper">
         <div class="box">
           <div>
-          <h2>{{ __('content.nilai_inti') }}</h2>
-          <ul>
-            <li><strong>Green:</strong> {{ __('content.green') }}</li>
-            <li><strong>Smart: </strong> {{ __('content.smart') }}</li>
-            <li><strong>Inklusif: </strong>  {{ __('content.inklusif') }}</li>
-            <li><strong>Tangguh : </strong> {{ __('content.tangguh') }}</li>
-            <li><strong>Sustainable :</strong> {{ __('content.sustainable') }}</li>
-          </ul>
+            <h2>{{ __('content.nilai_inti') }}</h2>
+            <ul>
+              <li><strong>Green:</strong> {{ __('content.green') }}</li>
+              <li><strong>Smart: </strong> {{ __('content.smart') }}</li>
+              <li><strong>Inklusif: </strong>  {{ __('content.inklusif') }}</li>
+              <li><strong>Tangguh : </strong> {{ __('content.tangguh') }}</li>
+              <li><strong>Sustainable :</strong> {{ __('content.sustainable') }}</li>
+            </ul>
           </div>
         <figure>
         <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="" >
