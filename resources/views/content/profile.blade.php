@@ -37,18 +37,16 @@
     <section class="gesit">
     <div class="wrapper-small">
       <div class="box">
-      <div>
-        <h2>Nilai Inti Perusahaan</h2>
-        <ul>
-        <li><strong>Green:</strong> Memelihara serta mampu bekerjasama dengan alam (eco green)</li>
-        <li><strong>Smart: </strong> Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value
-        </li>
-        <li><strong>Inklusif: </strong> Melibatkan orang dan kelompok dengan berkolaborasi (don'be be exclusive)
-        </li>
-        <li><strong>Tangguh : </strong> Memiliki sifat pantang menyerah, karena memiliki ilmu dan pengetahuan</li>
-        <li><strong>Sustainable :</strong> Memiliki karakter berkelanjutan dan berkembang (step by step)</li>
-        </ul>
-      </div>
+        <div>
+          <h2>{{ __('content.nilai_inti') }}</h2>
+          <ul>
+            <li><strong>Green:</strong> {{ __('content.green') }}</li>
+            <li><strong>Smart: </strong> {{ __('content.smart') }}</li>
+            <li><strong>Inklusif: </strong>  {{ __('content.inklusif') }}</li>
+            <li><strong>Tangguh : </strong> {{ __('content.tangguh') }}</li>
+            <li><strong>Sustainable :</strong> {{ __('content.sustainable') }}</li>
+          </ul>
+        </div>
       <figure>
         <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="">
       </figure>

@@ -59,11 +59,11 @@
       <div class="wrapper">
         <div class="about-us__box">
           <div class="about-us__box-text">
-            <h1>TENTANG Bhakti Terang Indonesia</h1>
-            <h2>Indonesia berdaya energi listrik</h2>
-            <p>BTI memiliki peran aktif dalam menyediakan energi bersih yang dibutuhkan untuk berperan membantu masa depan Indonesia yang berkelanjutan. Atas hal tersebut, BTI telah membangun jaringan bisnis yang terintegrasi, mulai dari bidang Pendidikan, Food and Beverage (F&B) yang berkonsep green café dan layanan jasa konsultasi psikologi. Maka BTI sendiri sebagai holding group saat ini memiliki anak perusahaan bisnis yaitu Café Enpos, Growing Hope School dan Biro Narwastu.</p>
-            <p>Dengan adanya subholding tersebut, ekosistem bisnis pada BTI Group dapat terintegrasi satu sama lain dengan memberikan value nya masing-masing. BTI group memiliki aspirasi ‘One Dream, One Spirit, and to be Great’ yang menggabungkan seluruh energi positif insan BTI group untuk menciptakan competitive advantages dalam menghadapi perubahan lingkungan bisnis, perkembangan teknologi dan iklim persaingan bisnis yang ketat. </p>
-            <a href="#" class="button">Learn More</a>
+            <h1>{{ __('content.tentang') }} Bhakti Terang Indonesia</h1>
+            <h2>{{ __('content.indo_berdaya') }}</h2>
+            <p>{!! __('content.desc_satu') !!}</p>
+            <p>{!! __('content.desc_dua') !!}</p>
+            <a href="{{ url('/profile/bti') }}" class="button">{{ __('content.learn') }}</a>
           </div>
           <figure>
             <div class="animated-solar-panel">

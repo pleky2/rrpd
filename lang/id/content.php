@@ -16,6 +16,12 @@ return [
     'hub_kami' => 'Hubungi Kami',
     'perusahaan_kami' => 'Perusahaan Kami',
 
+    'tentang' => 'TENTANG',
+    'indo_berdaya' => 'Indonesia berdaya energi listrik',
+    'desc_satu' => 'BTI memiliki peran aktif dalam menyediakan energi bersih yang dibutuhkan untuk berperan membantu masa depan Indonesia yang berkelanjutan. Atas hal tersebut, BTI telah membangun jaringan bisnis yang terintegrasi, mulai dari bidang Pendidikan, Food and Beverage (F&B) yang berkonsep green café dan layanan jasa konsultasi psikologi. Maka BTI sendiri sebagai holding group saat ini memiliki anak perusahaan bisnis yaitu <strong>Café Enpos, Growing Hope School dan Biro Narwastu.</strong>',
+    'desc_dua' => 'Dengan adanya subholding tersebut, ekosistem bisnis pada BTI Group dapat terintegrasi satu sama lain dengan memberikan value nya masing-masing. BTI group memiliki aspirasi <i>`One Dream, One Spirit, and to be Great`</i> yang menggabungkan seluruh energi positif insan BTI group untuk menciptakan competitive advantages dalam menghadapi perubahan lingkungan bisnis, perkembangan teknologi dan iklim persaingan bisnis yang ketat.',
+    'learn' => 'Selengkapnya',
+
 
     'nilai_inti' => 'Nilai Inti Perusahaan',
     'green' => 'Memelihara serta mampu bekerjasama dengan alam (eco green)',
