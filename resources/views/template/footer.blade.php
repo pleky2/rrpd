@@ -7,13 +7,13 @@
           <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
         </a>
         <div class="contact">
-          <h5>Kontak BTI</h5>
-          <p>Email : {{ $profile->email }}</p>
-          <p>No. Telepon : {{ $profile->phone }}</p>
+          <h5>{{ __('footer.kontak') }}</h5>
+          <p>{{ __('footer.email') }} : {{ $profile->email }}</p>
+          <p>{{ __('footer.telepon') }} : {{ $profile->phone }}</p>
         </div>
 
         <div>
-          <h5>Sosial Media</h5>
+          <h5>{{ __('footer.sosmed') }}</h5>
           <div class="media">
             <a href="{{ $profile->instagram }}" target="_blank"><img
                 src="{{ asset('assets/images/material/ic-ig-green.svg') }}" alt="icon"></a>
@@ -24,14 +24,14 @@
         </div>
       </div>
       <div class="column column-70">
-        <h5>Alamat</h5>
+        <h5>{{ __('footer.alamat') }}</h5>
         <div class="row">
           <div class="column">
-            <h5>Headquarter</h5>
+            <h5>{{ __('footer.pusat') }}</h5>
             <span>{{ $profile->address_ho }}</span>
           </div>
           <div class="column">
-            <h5>Pabrik Woodchips </h5>
+            <h5>{{ __('footer.pabrik') }}</h5>
             <span>{{ $profile->address_branch }}</span>
 
             <div class="partner">

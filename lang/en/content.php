@@ -2,18 +2,27 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Pagination Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used by the paginator library to build
-    | the simple pagination links. You are free to change them to anything
-    | you want to customize your views to better match your application.
-    |
-    */
+    'tentang_kami' => 'About Us',
+    'info_perusahaan' => 'Company Info',
+    'manajemen' => 'Management',
+    'organ' => 'Organizational Structure',
+    'keunggulan' => 'Superiority',
+    'mitra' => 'Partner',
+    'proyek' => 'Project',
 
+    
+    'bisnis' => 'Business',
+    'kerjasama' => 'Cooperation',
+    'media' => 'Media',
+    'hub_kami' => 'Contact Us',
+    'perusahaan_kami' => 'Our Company',
+
+    
     'nilai_inti' => 'Company Core Values',
-    'next' => 'Next &raquo;',
+    'green' => 'Maintaining and being able to cooperate with nature (eco green)',
+    'smart' => 'Think and work carefully, intelligently and precisely to increase value',
+    'inklusif' => 'Involve people and groups by collaborating (don`t be exclusive)',
+    'tangguh' => 'Has the nature of never giving up, because he has knowledge and knowledge',
+    'sustainable' => 'Has a sustainable and developing character (step by step)'
 
 ];

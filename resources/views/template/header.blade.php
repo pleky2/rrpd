@@ -62,10 +62,10 @@
           </div>
           <ul class="menu">
             <li class="have-child">
-              <a href="#">Tentang Kami</a>
+              <a href="#">{{ __('content.tentang_kami') }}</a>
               <div class="child" style="">
                 <div class="title">
-                  <h4>Tentang Kami</h4>
+                  <h4>{{ __('content.tentang_kami') }}</h4>
                 </div>
                 <div class="wrap-row">
                   <div class="col">
@@ -83,12 +83,12 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile/bti">Info Perusahaan</a></li>
-                        <li><a href="/management/bti">Manajemen</a></li>
-                        <li><a href="/organization/bti">Struktur Organisasi</a></li>
-                        <li><a href="/superiority/bti">Keunggulan</a></li>
-                        <li><a href="/mitra/bti">Mitra</a></li>
-                        <li><a href="/procurement/bti">Perolehan Proyek</a></li>
+                        <li><a href="/profile/bti">{{ __('content.info_perusahaan') }}</a></li>
+                        <li><a href="/management/bti">{{ __('content.manajemen') }}</a></li>
+                        <li><a href="/organization/bti">{{ __('content.organ') }}</a></li>
+                        <li><a href="/superiority/bti">{{ __('content.keunggulan') }}</a></li>
+                        <li><a href="/mitra/bti">{{ __('content.mitra') }}</a></li>
+                        <li><a href="/procurement/bti">{{ __('content.proyek') }}</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="enpos">
@@ -96,11 +96,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile/enpos">Info Perusahaan</a></li>
-                        <li><a href="/management/enpos">Manajemen</a></li>
-                        <li><a href="/organization/enpos">Struktur Organisasi</a></li>
-                        <li><a href="/superiority/enpos">Keunggulan</a></li>
-                        <li><a href="/mitra/enpos">Mitra</a></li>
+                        <li><a href="/profile/enpos">{{ __('content.info_perusahaan') }}</a></li>
+                        <li><a href="/management/enpos">{{ __('content.manajemen') }}</a></li>
+                        <li><a href="/organization/enpos">{{ __('content.organ') }}</a></li>
+                        <li><a href="/superiority/enpos">{{ __('content.keunggulan') }}</a></li>
+                        <li><a href="/mitra/enpos">{{ __('content.mitra') }}</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="gh">
@@ -108,11 +108,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile/gh">Info Perusahaan</a></li>
-                        <li><a href="/management/gh">Manajemen</a></li>
-                        <li><a href="/organization/gh">Struktur Organisasi</a></li>
-                        <li><a href="/superiority/gh">Keunggulan</a></li>
-                        <li><a href="/mitra/gh">Mitra</a></li>
+                        <li><a href="/profile/gh">{{ __('content.info_perusahaan') }}</a></li>
+                        <li><a href="/management/gh">{{ __('content.manajemen') }}</a></li>
+                        <li><a href="/organization/gh">{{ __('content.organ') }}</a></li>
+                        <li><a href="/superiority/gh">{{ __('content.keunggulan') }}</a></li>
+                        <li><a href="/mitra/gh">{{ __('content.mitra') }}</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="nw">
@@ -120,11 +120,11 @@
                       <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
-                        <li><a href="/profile/nw">Info Perusahaan</a></li>
-                        <li><a href="/management/nw">Manajemen</a></li>
-                        <li><a href="/organization/nw">Struktur Organisasi</a></li>
-                        <li><a href="/superiority/nw">Keunggulan</a></li>
-                        <li><a href="/mitra/nw">Mitra</a></li>
+                        <li><a href="/profile/nw">{{ __('content.info_perusahaan') }}</a></li>
+                        <li><a href="/management/nw">{{ __('content.manajemen') }}</a></li>
+                        <li><a href="/organization/nw">{{ __('content.organ') }}</a></li>
+                        <li><a href="/superiority/nw">{{ __('content.keunggulan') }}</a></li>
+                        <li><a href="/mitra/nw">{{ __('content.mitra') }}</a></li>
                       </ul>
                     </div>
                   </div>
@@ -132,10 +132,10 @@
               </div>
             </li>
             <li class="have-child">
-              <a href="#">Bisnis</a>
+              <a href="#">{{ __('content.bisnis') }}</a>
               <div class="child" style="">
                 <div class="title">
-                  <h4>Bisnis</h4>
+                  <h4>{{ __('content.bisnis') }}</h4>
                 </div>
 
                 <div class="wrap-row">
@@ -165,10 +165,10 @@
               </div>
             </li>
             <li class="have-child">
-              <a href="#">Kerjasama</a>
+              <a href="#">{{ __('content.kerjasama') }}</a>
               <div class="child" style="">
                 <div class="title">
-                  <h4>Kerjasama</h4>
+                  <h4>{{ __('content.kerjasama') }}</h4>
                 </div>
 
                 <div class="wrap-row">
@@ -185,10 +185,10 @@
               </div>
             </li>
             <li class="have-child">
-              <a href="#">Media</a>
+              <a href="#">{{ __('content.media') }}</a>
               <div class="child" style="">
                 <div class="title">
-                  <h4>Media</h4>
+                  <h4>{{ __('content.media') }}</h4>
                 </div>
 
                 <div class="wrap-row">
@@ -205,10 +205,10 @@
               </div>
             </li>
             <li class="have-child">
-              <a href="#">Hubungi Kami</a>
+              <a href="#">{{ __('content.hub_kami') }}</a>
               <div class="child" style="">
                 <div class="title">
-                  <h4>Hubungi Kami</h4>
+                  <h4>{{ __('content.hub_kami') }}</h4>
                 </div>
 
                 <div class="wrap-row">
