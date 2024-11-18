@@ -26,6 +26,7 @@ Route::get('/collaboration/{id}', [HomepageController::class, 'collaboration']);
 Route::get('/contact-us/{id}', [HomepageController::class, 'contactUs']);
 Route::get('/business/{parent}/{id}', [HomepageController::class, 'business']);
 Route::get('/media/{id}', [HomepageController::class, 'media']);
+Route::get('/media/{id}/{detail}', [HomepageController::class, 'mediaDetail']);
 
 
 Route::get('/ceo-message/{id}', [HomepageController::class, 'ceoMessage']);
