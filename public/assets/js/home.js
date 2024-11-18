@@ -11160,10 +11160,10 @@
                         s;
                     var a = e()(".wrap-parallax");
                     if (a.length) {
-                        // var l = e()(window).scrollTop();
-                        // if (window.innerWidth > 1280) var u = a.find(".news-update").offset().top + 92;
-                        // else u = a.find(".news-update").offset().top;
-                        // l > u ? (e()(".indicator").addClass("stick"), e()(".indicator__box-item:last-child").addClass("active")) : e()(".indicator").removeClass("stick");
+                        var l = e()(window).scrollTop();
+                        if (window.innerWidth > 1280) var u = a.find(".news-update").offset().top + 92;
+                        else u = a.find(".news-update").offset().top;
+                        l > u ? (e()(".indicator").addClass("stick"), e()(".indicator__box-item:last-child").addClass("active")) : e()(".indicator").removeClass("stick");
                     }
                 });
             }),
