@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PT Raja Teknik Aditama - Custom Made Parts Specialist</title>
-    <link rel="icon" href="{{ asset('assets/images/icon.jpg') }}" />
+    <title>Bhakti Terang Indonesia</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/icon_bti.png') }}" sizes="32x32">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
 </head>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>RTA | Admin</title>
+  <title>BTI | Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{ asset("/dist/admin/summernote/summernote-bs4.css")}}">
 
   <!-- Google Font: Source Sans Pro -->
+  <link rel="icon" type="image/png" href="{{ asset('assets/images/icon_bti.png') }}" sizes="32x32">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -32,7 +33,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <span class="brand-text font-weight-light">CMS RTA</span>
+      <span class="brand-text font-weight-light">CMS BTI</span>
     </a>
 
     <!-- Sidebar -->
@@ -51,48 +52,79 @@
             <li class="nav-item">
                 <a href="{{ url('/menu') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Menu</p>
+                  <p>Slider</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ url('/contents') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Content</p>
+                  <p>Our Company</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ url('/banner') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Banner</p>
+                  <p>Mitra</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="{{ url('/galleries') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project References</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          <li class="nav-item has-treeview  menu-open">
-            <a href="#" class="nav-link">
-              <p>
-                Company
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
             <li class="nav-item">
                 <a href="{{ url('/about/edit') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>About Us</p>
+                  <p>Info Company</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ url('/profile/edit') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
+                  <p>Management</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Struktur Organisasi</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Keunggulan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mitra</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Proyek</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Business</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cooperation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Media</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Contact Us</p>
                 </a>
               </li>
             </ul>
@@ -146,10 +178,10 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2020 </strong>
+    <strong>Copyright &copy; 2024 </strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 0.0.1
+      <b>Version</b> 1.0.0
     </div>
   </footer>
 

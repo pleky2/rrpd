@@ -3,10 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Mitra;
 use App\Models\Sliders;
 use App\Models\Profile;
 use App\Models\Contact;
+use App\Models\Management;
+use App\Models\ManagementDetail;
+use App\Models\Superiority;
+
 
 class HomepageController extends Controller
 {
@@ -15,7 +23,7 @@ class HomepageController extends Controller
 
         $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
         $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
-        $data['mitra'] = Mitra::all();
+        $data['mitra'] = Mitra::where('code', 'homep')->get();
         $data['profile'] = Contact::where('code', 'homep')->first();
 
         return view('content.homepage', [
@@ -28,7 +36,7 @@ class HomepageController extends Controller
 
     public function profile($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $data['about'] = Profile::where('code', $id)->first();
+        $data['about'] = Profile::where('code', $id)->where('lang', Session::get('locale'))->first();
 
         if(!$data['about']) {
             abort(404);
@@ -48,11 +56,15 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function management() {
+    public function management($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $manag = Management::where('code', $id)->get();
+        $managDetail = ManagementDetail::where('code', $id)->get();
 
         return view('content.management', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'manag' => $manag,
+            'managDetail' => $managDetail,
         ]);
     }
 
@@ -64,27 +76,35 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function organization() {
+    public function organization($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $organ = Sliders::where('type', $id)->where('menu', 'org')->first();
 
         return view('content.organization', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'organ' => $organ
         ]);
     }
 
-    public function superiority() {
+    public function superiority($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $super = superiority::where('code', $id)->where('lang', Session::get('locale'))->get();
 
         return view('content.superiority', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'super' => $super
         ]);
     }
 
     public function mitra() {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $data['title_mitra'] = Mitra::where('code', 'bti')->first();
+        $data['mitra'] = Mitra::where('code', 'bti')->get();
 
         return view('content.mitra', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'title_mitra' => $data['title_mitra'],
+            'mitra' => $data['mitra']
         ]);
     }
 
@@ -152,5 +172,22 @@ class HomepageController extends Controller
         return view('content.mediaDetail', [
             'profile' => $data['profile']
         ]);
+    }
+
+    public function projectDetail() {
+        $data['profile'] = Contact::where('code', 'homep')->first();
+
+        return view('content.projectDetail', [
+            'profile' => $data['profile']
+        ]);
+    }
+
+    public function changeLanguage($lang) {
+        if(in_array($lang, ['id', 'en'])) {
+            App::setLocale($lang);
+            Session::put('locale', $lang);
+        }
+        
+        return back();
     }
 }

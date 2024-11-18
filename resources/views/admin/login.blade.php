@@ -7,17 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="About Us - PT Raja Teknik Aditama (RTA)">
+  <meta property="og:title" content="BTI">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="PT Raja Teknik Aditama specializes in custom-made parts, engineering products and spare&nbsp; parts. We offer high-tech precision machinery parts for specific application toimprove parts lifetime, machine efficiency and productivity. Our flexibilty allow us to provide the best services to our customer for new build or repair parts programme to set the most economical solutions. &nbsp;">
-  <meta property="og:site_name" content="PT Raja Teknik Aditama (RTA)">
-  <meta property="og:url" content="https://rtateknik.com/">
-  <link rel="canonical" href="https://rtateknik.com/">
-  <title>RTA | Log in</title>
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Bhakti Terang Indonesia">
+  <meta property="og:url" content="https://btiofficial.co.id/">
+  <link rel="canonical" href="https://btiofficial.co.id/">
+  <title>BTI | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="{{ asset("/dist/css/adminlte.min.css")}}">
+  <link rel="stylesheet" href="{{ asset("/dist/admin/fontawesome-free/css/all.min.css")}}">
+  
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -29,7 +31,7 @@
 @endif
 <div class="login-box">
   <div class="login-logo">
-    <p><b>CMS </b>RTA</p>
+    <p><b>CMS </b>BTI</p>
   </div>
   <!-- /.login-logo -->
   <div class="card">
