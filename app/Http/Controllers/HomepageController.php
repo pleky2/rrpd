@@ -166,6 +166,14 @@ class HomepageController extends Controller
         ]);
     }
 
+    public function mediaDetail() {
+        $data['profile'] = Contact::where('code', 'homep')->first();
+
+        return view('content.mediaDetail', [
+            'profile' => $data['profile']
+        ]);
+    }
+
     public function projectDetail() {
         $data['profile'] = Contact::where('code', 'homep')->first();
 

@@ -5713,5 +5713,13 @@ img[data-src].lazyloaded {
     margin-bottom: 20px;
 }
 
+.news-wrapper {
+    margin-top: 20px;
+}
+
+.news-wrapper .news-image {
+    margin-bottom: 20px;
+}
+
 
 /*# sourceMappingURL=home.css.map*/
