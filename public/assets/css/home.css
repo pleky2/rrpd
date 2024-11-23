@@ -5673,7 +5673,7 @@ img[data-src].lazyloaded {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
+    gap: 60px;
 }
 
 .kerjasama-wrapper h4{
