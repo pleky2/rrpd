@@ -5420,7 +5420,22 @@ img[data-src].lazyloaded {
     height: 5px;
     background-color: #0059ba;
     border-radius: 5px;
-} 
+}
+
+.mitra-wrapper .mitra-tab .slick-track {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 12px */
+    min-width: 750px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mitra-wrapper .mitra-tab .mitra-tab-item{
+    border: 1px solid #333;
+    padding: 12px;
+}
 
 .mitra-wrapper .slick-dots li button:before {
     font-family: 'slick';
@@ -5680,6 +5695,7 @@ img[data-src].lazyloaded {
    margin-top: 12px;
    font-weight: bold;
 }
+
 
 
 .kerjasama-wrapper .card {

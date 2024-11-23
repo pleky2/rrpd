@@ -38,6 +38,18 @@
         </div>
       </div>
 
+      <div class="center mitra-tab">
+        <div class="mitra-tab-item">
+          <span>PLTGU & PLTU</span>
+        </div>
+        <div class="mitra-tab-item">
+          <span>PLTS</span>
+        </div>
+        <div class="mitra-tab-item">
+          <span>BIOMASSA</span>
+        </div>
+      </div>
+
     </div>
 
 

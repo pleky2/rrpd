@@ -126,8 +126,17 @@ $(document).ready(function(){
 
     $('.mitra-slider').slick({
         slidesToShow: 1,
-        dots: true,
+        dots: false,
         arrows: true
+    })
+
+    $('.mitra-tab').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        asNavFor: ".mitra-slider",
+        focusOnSelect: true
     })
 
     $('.overlay-bg.link').on('click', function(e) {
