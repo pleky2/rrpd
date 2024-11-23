@@ -14,13 +14,13 @@
     <div class="wrapper content-pages mitra-wrapper">
       <div class="mitra-slider">
         <div class="slider-item">
-          <h4 class="title">PLTGU dan PLTU</h4>
+         
           <div class="slider-grid">
             <img src="{{ url('upload/images/mitra/Logo-WIKA.png') }}" />
           </div>
         </div>
         <div class="slider-item">
-          <h4 class="title">PLTS</h4>
+          
           <div class="slider-grid">
             <img src="{{ url('upload/images/mitra/Logo Winner.jpeg') }}" />
             <img src="{{ url('upload/images/mitra/Logo SUN.jpeg') }}" />
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="slider-item">
-          <h4 class="title">BIOMASSA</h4>
+          
           <div class="slider-grid">
             <img src="{{ url('upload/images/mitra/Logo Nestle.jpeg') }}" />
           </div>

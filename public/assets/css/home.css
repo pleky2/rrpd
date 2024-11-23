@@ -5421,6 +5421,9 @@ img[data-src].lazyloaded {
     background-color: #0059ba;
     border-radius: 5px;
 }
+.mitra-wrapper .mitra-tab {
+    margin-top: 20px;
+}
 
 .mitra-wrapper .mitra-tab .slick-track {
     /* display: flex; */
@@ -5433,8 +5436,15 @@ img[data-src].lazyloaded {
 }
 
 .mitra-wrapper .mitra-tab .mitra-tab-item{
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     padding: 12px;
+}
+
+.mitra-wrapper .mitra-tab .mitra-tab-item.slick-current{
+    border-bottom: 5px solid #d8a629;
+    color: #d8a629;
+    font-weight: bold;
+    /* padding: 12px; */
 }
 
 .mitra-wrapper .slick-dots li button:before {
