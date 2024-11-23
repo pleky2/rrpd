@@ -3,10 +3,16 @@
 @section('content')
 <section class="middle kerjasama">
 
-  <div class="center kerjasama-title">
-    <h5>Kerjasama</h5>
-    <h6>MoU BTI-ITERA</h6>
+  <div class="banner-page center">
+    <figure>
+      <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
+    </figure>
+    <figcaption>
+      <h1><b>Kerjasama</b></h1>
+      <h5>MoU BTI-ITERA</h5>
+    </figcaption>
   </div>
+
   <div class="wrapper kerjasama-wrapper">
 
     <div>
@@ -65,7 +71,7 @@
         "rumah"
         mereka, mulai dari tarik tambang hingga permainan air yang sama sekali tidak boleh ada yang kering</p>
     </div>
-    
+
 
 
   </div>
