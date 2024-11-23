@@ -5672,9 +5672,15 @@ img[data-src].lazyloaded {
 .kerjasama-wrapper {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
 }
+
+.kerjasama-wrapper h4{
+   margin-top: 12px;
+   font-weight: bold;
+}
+
 
 .kerjasama-wrapper .card {
     overflow: hidden;
@@ -5683,15 +5689,18 @@ img[data-src].lazyloaded {
     -webkit-box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
     -moz-box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
     box-shadow: 0px 0px 2px 1px rgba(207,196,207,0.92);
+    position: relative;
 }
 
 .kerjasama-wrapper .card .img-wrapper {
     height: 100%;
+    position: absolute;
 }
 
 .kerjasama-wrapper .card .img-wrapper img{
     object-fit: cover;
     height: 100%;
+    bottom: 0;
 }
 
 .kerjasama-wrapper .card .desc {
