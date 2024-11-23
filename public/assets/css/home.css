@@ -756,7 +756,6 @@ footer .media a{
 
 footer .img-logo img {
     width: 200px;
-    margin-bottom: 20px;
 }
 
 footer .partner {
@@ -771,6 +770,13 @@ footer .partner {
 footer .partner img{
     width: 80px;
     object-fit: scale-down;
+}
+
+footer .img-title {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #d7a337;
+    font-weight: 600;
 }
 
 @media (max-width: 2500px) {

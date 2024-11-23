@@ -20,8 +20,8 @@ return [
 
     'tentang' => 'ABOUT',
     'indo_berdaya' => 'Indonesia is powered by electrical energy',
-    'desc_satu' => 'BTI has an active role in providing the clean energy needed to play a role in helping Indonesia`s sustainable future. Due to this, BTI has built an integrated business network, starting from the fields of Education, Food and Beverage (F&B) with a green café concept and psychological consulting services. So BTI itself as a holding group currently has business subsidiaries, namely Café Enpos, Growing Hope School and Narwastu',
-    'desc_dua' => 'With this subholding, the business ecosystems in the BTI Group can be integrated with each other by providing their own values. BTI group has the aspiration <i>`One Dream, One Spirit, and to be Great`</i> which combines all the positive energy of BTI group people to create competitive advantages in facing changes in the business environment, technological developments and a climate of intense business competition.',
+    'desc_satu' => 'BTI (Bhakti Terang Indonesia) has an active role in providing the clean energy needed to play a role in helping Indonesia`s sustainable future. To date, BTI has built an integrated business network, starting from the fields of Education, <i>Food and Beverage</i> (F&B) and clinical psychology consulting services. BTI as a holding company currently has business subsidiaries, namely <strong>Café Enpos, Growing Hope School and Klinik Narwastu.</strong>',
+    'desc_dua' => 'With this subholding, the business ecosystems in the BTI Group can be integrated with each other by providing their own values. BTI group has the aspiration of <i>`One Dream, One Spirit, and to be Great`</i> which combines all the positive energy of BTI group people to create <i>competitive advantages.</i>',
     'learn' => 'Learn More',
     
 
@@ -35,8 +35,8 @@ return [
     'inti_nw' => 'Truth, Precious, Greatful, Respect, Totality',
     'bio' => 'Biomass',
     'maps' => 'Maps Project',
-    'terapi_gh' => 'Growing Hope Therapy',
-    'pklk' => 'Growing Hope PKLK School',
+    'terapi_gh' => 'Therapy',
+    'pklk' => 'PKLK School',
     'psiko' => 'Psychological Examination',
     'konsul' => 'Consultation',
     'art' => 'Art Therapy',
@@ -45,9 +45,9 @@ return [
 
 
     'nilai_inti' => 'Company Core Values',
-    'green' => 'Maintaining and being able to cooperate with nature (eco green)',
+    'green' => 'Maintaining and being able to cooperate with nature (<i>eco green</i>)',
     'smart' => 'Think and work carefully, intelligently and precisely to increase value',
-    'inklusif' => 'Involve people and groups by collaborating (don`t be exclusive)',
+    'inklusif' => 'Involve people and groups by collaborating (<i>don`t be exclusive</i>)',
     'tangguh' => 'Has the nature of never giving up, because he has knowledge and knowledge',
     'sustainable' => 'Has a sustainable and developing character (step by step)'
 

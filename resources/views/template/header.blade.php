@@ -71,9 +71,9 @@
                   <div class="col">
                     <ul>
                       <li class="parent" id="bti"><a>BTI</a></li>
-                      <li class="parent" id="enpos"><a>Enpos</a></li>
+                      <li class="parent" id="enpos"><a>Café Enpos</a></li>
                       <li class="parent" id="gh"><a>Growing Hope</a></li>
-                      <li class="parent" id="nw"><a>Narwastu</a></li>
+                      <li class="parent" id="nw"><a>Klinik Narwastu</a></li>
 
                     </ul>
                   </div>
@@ -84,8 +84,8 @@
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/bti">{{ __('content.info_perusahaan') }}</a></li>
-                        <li><a href="/management/bti">{{ __('content.manajemen') }}</a></li>
                         <li><a href="/organization/bti">{{ __('content.organ') }}</a></li>
+                        <li><a href="/management/bti">{{ __('content.manajemen') }}</a></li>
                         <li><a href="/superiority/bti">{{ __('content.keunggulan') }}</a></li>
                         <li><a href="/mitra/bti">{{ __('content.mitra') }}</a></li>
                         <li><a href="/procurement/bti">{{ __('content.proyek') }}</a></li>
@@ -97,7 +97,6 @@
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/enpos">{{ __('content.info_perusahaan') }}</a></li>
-                        <li><a href="/management/enpos">{{ __('content.manajemen') }}</a></li>
                         <li><a href="/organization/enpos">{{ __('content.organ') }}</a></li>
                         <li><a href="/superiority/enpos">{{ __('content.keunggulan') }}</a></li>
                         <li><a href="/mitra/enpos">{{ __('content.mitra') }}</a></li>
@@ -109,7 +108,6 @@
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/gh">{{ __('content.info_perusahaan') }}</a></li>
-                        <li><a href="/management/gh">{{ __('content.manajemen') }}</a></li>
                         <li><a href="/organization/gh">{{ __('content.organ') }}</a></li>
                         <li><a href="/superiority/gh">{{ __('content.keunggulan') }}</a></li>
                         <li><a href="/mitra/gh">{{ __('content.mitra') }}</a></li>
@@ -121,7 +119,6 @@
                       <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/nw">{{ __('content.info_perusahaan') }}</a></li>
-                        <li><a href="/management/nw">{{ __('content.manajemen') }}</a></li>
                         <li><a href="/organization/nw">{{ __('content.organ') }}</a></li>
                         <li><a href="/superiority/nw">{{ __('content.keunggulan') }}</a></li>
                         <li><a href="/mitra/nw">{{ __('content.mitra') }}</a></li>
@@ -142,9 +139,9 @@
                   <div class="col">
                     <ul>
                       <li class="parent" id="bti"><a href="#">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="#">Cafe Enpos</a></li>
+                      <li class="parent" id="enpos"><a href="#">Café Enpos</a></li>
                       <li class="parent" id="gh"><a href="#">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="#">Biro Narwastu</a></li>
+                      <li class="parent" id="nw"><a href="#">Klinik Narwastu</a></li>
                     </ul>
                   </div>
                   <div class="col">
@@ -153,7 +150,12 @@
                         <li><a href="/business/bti/pltu">PLTGU & PLTU</a></li>
                         <li><a href="/business/bti/plts">PLTS</a></li>
                         <li><a href="/business/bti/bio">{{ __('content.bio') }}</a></li>
-                        <li><a href="/business/bti/maps">{{ __('content.maps') }}</a></li>
+                      </ul>
+                    </div>
+                    <div class="chd d-none" data-parent="enpos">
+                      <ul>
+                        <li><a href="/business/bti/pltu">Café</a></li>
+                        <li><a href="/business/bti/plts">Layanan Konsultasi Psikolog</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="gh">
@@ -166,9 +168,7 @@
                       <ul>
                         <li><a href="/business/bti/pltu">{{ __('content.psiko') }}</a></li>
                         <li><a href="/business/bti/plts">{{ __('content.konsul') }}</a></li>
-                        <li><a href="/business/bti/plts">{{ __('content.art') }}</a></li>
                         <li><a href="/business/bti/plts">{{ __('content.seminar') }}</a></li>
-                        <li><a href="/business/bti/plts">{{ __('content.workshop') }}</a></li>
                       </ul>
                     </div>
                   </div>
@@ -187,9 +187,9 @@
                   <div class="col">
                     <ul>
                       <li class="parent" id="bti"><a href="/collaboration/bti">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="/collaboration/enpos">Cafe Enpos</a></li>
+                      <li class="parent" id="enpos"><a href="/collaboration/enpos">Café Enpos</a></li>
                       <li class="parent" id="gh"><a href="/collaboration/gh">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="/collaboration/nw">Biro Narwastu</a></li>
+                      <li class="parent" id="nw"><a href="/collaboration/nw">Klinik Narwastu</a></li>
                     </ul>
                   </div>
                 </div>
@@ -207,9 +207,9 @@
                   <div class="col">
                     <ul>
                       <li class="parent" id="bti"><a href="/media/bti">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="/media/enpos">Cafe Enpos</a></li>
+                      <li class="parent" id="enpos"><a href="/media/enpos">Café Enpos</a></li>
                       <li class="parent" id="gh"><a href="/media/gh">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="/media/nw">Biro Narwastu</a></li>
+                      <li class="parent" id="nw"><a href="/media/nw">Klinik Narwastu</a></li>
                     </ul>
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                       <li class="parent" id="bti"><a href="/contact-us/bti">BTI</a></li>
                       <li class="parent" id="enpos"><a href="/contact-us/enpos">Café Enpos</a></li>
                       <li class="parent" id="gh"><a href="/contact-us/gh">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="/contact-us/nw">Narwastu</a></li>
+                      <li class="parent" id="nw"><a href="/contact-us/nw">Klinik Narwastu</a></li>
                     </ul>
                   </div>
                 </div>

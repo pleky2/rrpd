@@ -6,6 +6,8 @@
         <a href="#" class="img-logo">
           <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
         </a>
+        <p class="img-title">Contractor and Trading Company</p>
+
         <div class="contact">
           <h5>{{ __('footer.kontak') }}</h5>
           <p>{{ __('footer.email') }} : {{ $profile->email }}</p>

@@ -80,11 +80,11 @@
           <div>
             <h2>{{ __('content.nilai_inti') }}</h2>
             <ul>
-              <li><strong>Green:</strong> {{ __('content.green') }}</li>
-              <li><strong>Smart: </strong> {{ __('content.smart') }}</li>
-              <li><strong>Inklusif: </strong>  {{ __('content.inklusif') }}</li>
-              <li><strong>Tangguh : </strong> {{ __('content.tangguh') }}</li>
-              <li><strong>Sustainable :</strong> {{ __('content.sustainable') }}</li>
+              <li><strong>Green:</strong> {!! __('content.green') !!}</li>
+              <li><strong>Smart: </strong> {!! __('content.smart') !!}</li>
+              <li><strong>Inklusif: </strong>  {!! __('content.inklusif') !!}</li>
+              <li><strong>Tangguh : </strong> {!! __('content.tangguh') !!}</li>
+              <li><strong>Sustainable :</strong> {!! __('content.sustainable') !!}</li>
             </ul>
           </div>
         <figure>
@@ -107,7 +107,7 @@
               <div class="text">
                 <h3>Café Enpos</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p class="rm">Lihat selengkapnya</p>
+                <a href="{{ url('/profile/enpos') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
               <div class="text">
                 <h3>Growing Hope</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p class="rm">Lihat selengkapnya</p>
+                <a href="{{ url('/profile/gh') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
           </div>
@@ -129,12 +129,12 @@
           <div class="slide-item">
             <div class="content">
               <div class="card-img">
-                <img src="{{ asset('assets/images/yys.png') }}" alt="">
+                <img src="{{ asset('upload/images/logo/narwastu.png') }}" alt="" style="max-width: 70%;">
               </div>
               <div class="text">
-                <h3>Biro Narwastu</h3>
+                <h3>Klinik Narwastu</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p class="rm">Lihat selengkapnya</p>
+                <a href="{{ url('/profile/nw') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
           </div>

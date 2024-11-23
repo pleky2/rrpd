@@ -7,7 +7,7 @@
       <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
     </figure>
     <figcaption>
-      <h2>Hubungi Kami</h2>
+      <h1><b>{{ __('content.hub_kami') }}</b></h1>
     </figcaption>
   </div>
 
@@ -26,11 +26,13 @@
                     {{ $item->address_ho }}
                   </p>
                   <p class="content"><span><img src="{{ asset('assets/images/material/mail-s.svg') }}"
-                        alt=""></span> info@btiofficial.co.id</p>
+                        alt=""></span> {{ $item->email }}</p>
                   <p class="content"><span><img src="{{ asset('assets/images/material/ic-phone.svg') }}"
-                        alt=""></span> 081385389774</p>
-                  <p class="content"><span><img src="{{ asset('assets/images/material/icon-instagram.svg') }}"
-                        alt=""></span> btioffial</p>
+                        alt=""></span> {{ $item->phone }}</p>
+                  <p class="content"><span><img src="{{ asset('assets/images/material/icon-instagram.svg') }}" alt=""></span> 
+                        <a target="_blank" style="color: #191a1c;"
+                        href="{{ $item->instagram }}">{{ $item->instagram_title }}</a>
+                  </p>
 
                 </div>
 

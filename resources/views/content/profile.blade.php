@@ -40,11 +40,11 @@
         <div>
           <h2>{{ __('content.nilai_inti') }}</h2>
           <ul>
-            <li><strong>Green:</strong> {{ __('content.green') }}</li>
-            <li><strong>Smart: </strong> {{ __('content.smart') }}</li>
-            <li><strong>Inklusif: </strong>  {{ __('content.inklusif') }}</li>
-            <li><strong>Tangguh : </strong> {{ __('content.tangguh') }}</li>
-            <li><strong>Sustainable :</strong> {{ __('content.sustainable') }}</li>
+            <li><strong>Green:</strong> {!! __('content.green') !!}</li>
+            <li><strong>Smart: </strong> {!! __('content.smart') !!}</li>
+            <li><strong>Inklusif: </strong>  {!! __('content.inklusif') !!}</li>
+            <li><strong>Tangguh : </strong> {!! __('content.tangguh') !!}</li>
+            <li><strong>Sustainable :</strong> {!! __('content.sustainable') !!}</li>
           </ul>
         </div>
       <figure>
@@ -79,6 +79,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-bottom: 35px;
         ">
           <img src="{{ url('upload/images/logo/' . $about->logo) }}" alt="" style="
         width: 238px;
@@ -91,7 +92,6 @@
 
       </div>
 
-      <h3>{{ __('content.keterangan') }} :</h3>
       {!! $about->desc_logo !!}
     </div>
   </div>
