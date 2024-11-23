@@ -5439,6 +5439,10 @@ img[data-src].lazyloaded {
     /* border: 1px solid #333; */
     padding: 12px;
 }
+.mitra-wrapper .mitra-tab .mitra-tab-item:hover{
+    /* border: 1px solid #333; */
+    cursor: pointer;
+}
 
 .mitra-wrapper .mitra-tab .mitra-tab-item.slick-current{
     border-bottom: 5px solid #d8a629;
