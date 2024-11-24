@@ -773,6 +773,34 @@ footer .foot-partner {
     justify-content: space-between;
 }
 
+footer .pipline {
+    position: relative;
+    padding-left: 10px;
+}
+
+footer .foot-partner .pipline img {
+    position: relative;
+    object-fit: cover;
+}
+footer .pipline::before {
+    content: "";
+    height: 40px;
+    position: absolute;
+    width: 2px;
+    background-color: #999999;
+    top: 8px;
+    left: 0px;
+}
+
+footer .pipline::after {
+    content: "Member of Mebi :";
+        height: 40px;
+        position: absolute;
+        font-size: 10px;
+        top: -26px;
+        left: 0px;
+}
+
 footer .member {
     display: flex;
     width: 100%;

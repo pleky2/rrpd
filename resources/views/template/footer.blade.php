@@ -31,23 +31,18 @@
           <div class="column">
             <h5>{{ __('footer.pusat') }}</h5>
             <span>{{ $profile->address_ho }}</span>
-            <div class="foot-partner">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/gh.png') }}" alt="">
-              <img src="{{ asset('assets/images/yys.png') }}" alt="">
-              <img src="{{ asset('assets/images/yys.png') }}" alt="">
-            </div>
+
           </div>
           <div class="column">
             <h5>{{ __('footer.pabrik') }}</h5>
             <span>{{ $profile->address_branch }}</span>
 
-            <div class="member">
-              <div class="member-wrapper">
-                <p style="margin-bottom:10px">Member of Mebi:</p>
-                <figure>
-                  <img src="{{ asset('assets/images/mebi.jpeg') }}" alt="">
-                </figure>
+            <div class="foot-partner">
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              <img src="{{ asset('assets/images/gh.png') }}" alt="">
+              <img src="{{ asset('assets/images/yys.png') }}" alt="">
+              <div class="pipline">
+                <img src="{{ asset('assets/images/yys.png') }}" alt="">
               </div>
             </div>
           </div>
