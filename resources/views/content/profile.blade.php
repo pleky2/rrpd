@@ -33,41 +33,6 @@
 
   </div>
 
-  @if($about->code == 'bti')
-    <section class="gesit">
-    <div class="wrapper-small">
-      <div class="box">
-        <div>
-          <h2>{{ __('content.nilai_inti') }}</h2>
-          <ul>
-            <li><strong>Green:</strong> {!! __('content.green') !!}</li>
-            <li><strong>Smart: </strong> {!! __('content.smart') !!}</li>
-            <li><strong>Inklusif: </strong>  {!! __('content.inklusif') !!}</li>
-            <li><strong>Tangguh : </strong> {!! __('content.tangguh') !!}</li>
-            <li><strong>Sustainable :</strong> {!! __('content.sustainable') !!}</li>
-          </ul>
-        </div>
-      <figure>
-        <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="">
-      </figure>
-      </div>
-    </div>
-    </section>
-  @elseif($about->code == 'nw')
-    <section class="gesit">
-      <div class="wrapper-small">
-        <div class="box">
-          <div>
-            <h2>{{ __('content.nilai_inti') }}</h2>
-            <ul>
-              <li>{{ __('content.inti_nw') }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  @endif
-
   <div class="makna-logo">
     <div class="text-center">
       <h3><b>{{ __('content.makna_logo') }}</b></h3>
