@@ -26,13 +26,11 @@
               <img src="{{ url('upload/images/slider/'.$slide->img) }}" alt="{{ $slide->title }}" />
             </div>
 
-            <!-- <div class="wrapper">
+            <div class="wrapper">
               <div class="banner__slider-item--text">
-                <h2>Empower Your Business with Indonesia&#039;s Largest Solar Developer Company</h2>
-                <p>Expanding Solar Energy Implementation as Electricity Sources for Commercial &amp; Industrial Sectors
-                  through End-to-End Solar System</p>
+                <h2>{{ $slide->description }}</h2>
               </div>
-            </div> -->
+            </div>
           </div>
         @endforeach
       </div>
@@ -106,7 +104,7 @@
               </div>
               <div class="text">
                 <h3>Café Enpos</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Cafe Enpos merupakan sebuah industri <i>food & beverage</i> (F&B) yang memiliki konsep <i>green café</i> dengan menyajikan berbagai hidangan yang sehat di konsumsi. Café ikonik ini merupakan salah satu pelopor industri F&B yang memiliki ruang baca (perpustakaan) dan ruang terbuka hijau yang luas di Bandar Lampung.</p>
                 <a href="{{ url('/profile/enpos') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
@@ -120,7 +118,7 @@
               </div>
               <div class="text">
                 <h3>Growing Hope</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Growing Hope School berkecimpung sebagai wadah Pendidikan dan Pemberdayaan dengan fokus pada Anak Berkebutuhan Khusus (ABK) yang terletak di Bandar Lampung. Saat ini terdapat banyak kurikulum dan fasilitas yang disediakan untuk menunjang kegiatan sekolah.</p>
                 <a href="{{ url('/profile/gh') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
@@ -133,7 +131,7 @@
               </div>
               <div class="text">
                 <h3>Klinik Narwastu</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p>Klinik Narwastu menyediakan layanan <i>Psychological Service</i> untuk umum maupun Anak Berkebutuhan Khusus. Saat ini terdapat beberapa layanan antara lain adalah pemeriksaan psikologis, konsultasi dan seminar.</p>
                 <a href="{{ url('/profile/nw') }}" class="button">{{ __('content.learn') }}</a>
               </div>
             </div>
@@ -151,23 +149,7 @@
             <div class="card"><img src="{{ url('upload/images/mitra/'.$item->img) }}" alt=""></div>  
           @endforeach
           <!-- </div> -->
-          <!-- <div class="item-wrapper">
-            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-            <div class="card"><img src="{{ asset('assets/images/itera.png') }}" alt=""></div>
-          </div> -->
       </div>
-
-      <!-- <div class="tab zz">
-          <div class="tab-item prev">
-            <p>Padma</p>
-          </div>
-          <div class="tab-item next">
-            <p>Ajinomoto</p>
-          </div>
-      </div> -->
     </section>
 
     <section class="mebi">
@@ -178,7 +160,7 @@
               <img src="{{ url('upload/images/slider/'.$mebi->img) }}" />
             </div>
             <div class="slide__content">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eos earum iure sit at ex eius dolor recusandae.</h2>
+              <h2>{{ $mebi->description }}</h2>
             </div>
           </div>    
         @endforeach
