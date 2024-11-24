@@ -3704,10 +3704,10 @@ img[data-src].lazyloaded {
 .about-us__box-text span {
     color: #d8a629;
     display: block;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: bold;
     letter-spacing: 0.2em;
-    line-height: 18px;
+    
     margin-bottom: 20px;
 }
 .about-us__box-text h2 {
