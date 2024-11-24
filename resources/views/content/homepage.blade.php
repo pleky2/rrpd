@@ -1,7 +1,7 @@
 @extends('template.index')
 
 @section('content')
-<section class="wrap-parallax">
+<section >
   <section class="scroller banner" data-section-name="banner" id="banner">
     <div class="banner__slider">
       <div class="banner__slider-item">
