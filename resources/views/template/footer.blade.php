@@ -31,16 +31,24 @@
           <div class="column">
             <h5>{{ __('footer.pusat') }}</h5>
             <span>{{ $profile->address_ho }}</span>
+            <div class="foot-partner">
+              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
+              <img src="{{ asset('assets/images/gh.png') }}" alt="">
+              <img src="{{ asset('assets/images/yys.png') }}" alt="">
+              <img src="{{ asset('assets/images/yys.png') }}" alt="">
+            </div>
           </div>
           <div class="column">
             <h5>{{ __('footer.pabrik') }}</h5>
             <span>{{ $profile->address_branch }}</span>
 
-            <div class="partner">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/gh.png') }}" alt="">
-              <img src="{{ asset('assets/images/yys.png') }}" alt="">
-              <img src="{{ asset('assets/images/mebi.jpeg') }}" alt="">
+            <div class="member">
+              <div class="member-wrapper">
+                <p style="margin-bottom:10px">Member of Mebi:</p>
+                <figure>
+                  <img src="{{ asset('assets/images/mebi.jpeg') }}" alt="">
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -52,17 +60,16 @@
 </footer>
 <script type="text/javascript" src="{{ asset('assets/js/common.js') }}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 
 <script>
-    function redirectToUrl(selectElement) {
-        const selectedValue = selectElement.value;
-        
-        // Check if the value is not empty
-        if (selectedValue) {
-            window.location.href = selectedValue;  // Redirect to the selected URL
-        }
+  function redirectToUrl(selectElement) {
+    const selectedValue = selectElement.value;
+
+    // Check if the value is not empty
+    if (selectedValue) {
+      window.location.href = selectedValue;  // Redirect to the selected URL
     }
+  }
 </script>
 
 </body>

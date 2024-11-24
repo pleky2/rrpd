@@ -667,6 +667,14 @@ h1.elementor-heading-title.elementor-size-default {
     padding: 30px
 }
 
+.gesit ul {
+    text-align: left; 
+    margin-left:auto; 
+    margin-right:auto;
+    display:inline-block;
+    margin-top:20px;
+}
+
 .gesit .box {
     display: flex;
     flex-direction: row;
@@ -758,16 +766,41 @@ footer .img-logo img {
     width: 200px;
 }
 
-footer .partner {
-    margin-top: 80px;
+footer .foot-partner {
+    margin-top:55px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+footer .member {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 65px;
+}
+
+footer .member .member-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .member .member-wrapper p {
+    font-size: 12px;
+}
+
+footer .member .member-wrapper img {
+    width: 55px;
+}
 
 
-footer .partner img{
+
+
+
+footer .foot-partner img{
     width: 80px;
     object-fit: scale-down;
 }

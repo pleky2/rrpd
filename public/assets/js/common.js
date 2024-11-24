@@ -35,6 +35,7 @@ $(document).ready(function(){
             slidesToShow: 6, 
             slidesToScroll: 6, 
             autoplay: true,
+            arrows:false,
             autoplaySpeed: 2000,
             speed: 15000,
             pauseOnHover: false,
