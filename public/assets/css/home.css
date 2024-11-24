@@ -5550,7 +5550,6 @@ img[data-src].lazyloaded {
 .superior .img-wrapper {
     width: 150px;
     height: 150px;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
