@@ -14,6 +14,7 @@ class Management extends Model
         'name',
         'title',
         'img',
+        'history',
         'created_at',
         'updated_at',
         'deleted_at'

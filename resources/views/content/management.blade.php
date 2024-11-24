@@ -42,32 +42,7 @@
                 <div class="text">
                   <h4><b>{{ $itemManag->name }}</b></h4>
                   <small>{{ $itemManag->title }}</small>
-                  <p>Riwayat Pendidikan:</p>
-                  <ul>
-                    @foreach ($managDetail as $itemDetail)
-                      @if($itemDetail->management_id == $itemManag->id && $itemDetail->history_type == 1)
-                        <li>{{ $itemDetail->desc }}</li>
-                      @endif
-                    @endforeach
-                  </ul>
-
-                  <p>Riwayat Pekerjaan :</p>
-                  <ul>
-                    @foreach ($managDetail as $itemDetail)
-                      @if($itemDetail->management_id == $itemManag->id && $itemDetail->history_type == 2)
-                        <li>{{ $itemDetail->desc }}</li>
-                      @endif
-                    @endforeach
-                  </ul>
-
-                  <p>Riwayat Organisasi :</p>
-                  <ul>
-                    @foreach ($managDetail as $itemDetail)
-                      @if($itemDetail->management_id == $itemManag->id && $itemDetail->history_type == 3)
-                        <li>{{ $itemDetail->desc }}</li>
-                      @endif
-                    @endforeach
-                  </ul>
+                  {!! $itemManag->history !!}
                 </div>
               </div>
             </div>

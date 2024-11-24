@@ -60,12 +60,10 @@ class HomepageController extends Controller
     public function management($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
         $manag = Management::where('code', $id)->get();
-        $managDetail = ManagementDetail::where('code', $id)->get();
 
         return view('content.management', [
             'profile' => $data['profile'],
-            'manag' => $manag,
-            'managDetail' => $managDetail,
+            'manag' => $manag
         ]);
     }
 
