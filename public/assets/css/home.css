@@ -767,7 +767,7 @@ footer .img-logo img {
 }
 
 footer .foot-partner {
-    margin-top:55px;
+    margin-top:155px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -5460,6 +5460,7 @@ img[data-src].lazyloaded {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+    align-items: center;
 }
 
 .mitra-wrapper .slider-dots {
