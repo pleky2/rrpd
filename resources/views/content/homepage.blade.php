@@ -58,7 +58,7 @@
       <div class="about-us__box">
         <div class="about-us__box-text">
           <h1>{{ __('content.tentang') }} Bhakti Terang Indonesia</h1>
-          <h2>{{ __('content.indo_berdaya') }}</h2>
+          <!-- <h2>{{ __('content.indo_berdaya') }}</h2> -->
           <p>{!! __('content.desc_satu') !!}</p>
           <p>{!! __('content.desc_dua') !!}</p>
           <a href="{{ url('/profile/bti') }}" class="button">{{ __('content.learn') }}</a>
