@@ -5,15 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ManagementDetail extends Model
+class Media extends Model
 {
     use SoftDeletes;
     //
-    protected $table = 'management_detail';
+    protected $table = 'Media';
     protected $fillable = [
-        'management_id',
-        'desc',
-        'history_type',
+        'title',
+        'menu',
+        'code',
+        'description',
+        'img',
         'created_at',
         'updated_at',
         'deleted_at'

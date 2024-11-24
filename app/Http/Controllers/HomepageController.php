@@ -14,6 +14,7 @@ use App\Models\Contact;
 use App\Models\Management;
 use App\Models\ManagementDetail;
 use App\Models\Superiority;
+use App\Models\Media;
 
 
 class HomepageController extends Controller
@@ -59,12 +60,10 @@ class HomepageController extends Controller
     public function management($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
         $manag = Management::where('code', $id)->get();
-        $managDetail = ManagementDetail::where('code', $id)->get();
 
         return view('content.management', [
             'profile' => $data['profile'],
-            'manag' => $manag,
-            'managDetail' => $managDetail,
+            'manag' => $manag
         ]);
     }
 
@@ -132,11 +131,13 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function collaboration() {
+    public function collaboration($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $colab = Media::where('menu', 'kerjasama')->where('code', $id)->get();
 
         return view('content.collaboration', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'colab' => $colab
         ]);
     }
 
