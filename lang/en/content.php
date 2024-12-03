@@ -20,8 +20,9 @@ return [
 
     'tentang' => 'ABOUT',
     'indo_berdaya' => 'Indonesia is powered by electrical energy',
-    'desc_satu' => 'BTI (Bhakti Terang Indonesia) has an active role in providing the clean energy needed to play a role in helping Indonesia`s sustainable future. To date, BTI has built an integrated business network, starting from the fields of Education, <i>Food and Beverage</i> (F&B) and clinical psychology consulting services. BTI as a holding company currently has business subsidiaries, namely <strong>Café Enpos, Growing Hope School and Klinik Narwastu.</strong>',
-    'desc_dua' => 'With this subholding, the business ecosystems in the BTI Group can be integrated with each other by providing their own values. BTI group has the aspiration of <i>`One Dream, One Spirit, and to be Great`</i> which combines all the positive energy of BTI group people to create <i>competitive advantages.</i>',
+    'desc_satu' => 'BTI (Bhakti Terang Indonesia) has an active role in providing the clean energy needed to play a role in helping Indonesia`s sustainable future. To date, BTI has built an integrated business network, starting from the fields of Education, <i>Food and Beverage</i> (F&B) and clinical psychology consulting services.',
+    'desc_dua' => 'BTI as a holding company currently has business subsidiaries, namely <strong>Café Enpos, Growing Hope School and Klinik Narwastu.</strong>',
+    'desc_tiga' => 'With this subholding, the business ecosystems in the BTI Group can be integrated with each other by providing their own values. BTI group has the aspiration of <i>`One Dream, One Spirit, and to be Great`</i> which combines all the positive energy of BTI group people to create <i>competitive advantages.</i>',
     'learn' => 'Learn More',
     
 

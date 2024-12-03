@@ -22,14 +22,13 @@ Route::get('/organization/{id}', [HomepageController::class, 'organization']);
 Route::get('/superiority/{id}', [HomepageController::class, 'superiority']);
 Route::get('/mitra/{id}', [HomepageController::class, 'mitra']);
 Route::get('/procurement/{id}', [HomepageController::class, 'procurement']);
-Route::get('/procurement/{id}/{detail}', [HomepageController::class, 'procurementDetail']);
+Route::get('/procurement-detail/{id}', [HomepageController::class, 'procurementDetail']);
 Route::get('/collaboration/{id}', [HomepageController::class, 'collaboration']);
 Route::get('/contact-us/{id}', [HomepageController::class, 'contactUs']);
 Route::get('/business/{parent}/{id}', [HomepageController::class, 'business']);
 Route::get('/media/{id}', [HomepageController::class, 'media']);
-Route::get('/media/{id}/{detail}', [HomepageController::class, 'mediaDetail']);
 Route::get('/project-detail/{id}', [HomepageController::class, 'projectDetail']);
-Route::get('/media-detail/{id}', [HomepageController::class, 'mediaDetail']);
+Route::get('/media-detail/{id}/{slug}', [HomepageController::class, 'mediaDetail']);
 Route::get('/locale/{lang}', [HomepageController::class, 'changeLanguage']);
 
 

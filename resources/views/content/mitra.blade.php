@@ -13,41 +13,23 @@
   <div class="inner-content">
     <div class="wrapper content-pages mitra-wrapper">
       <div class="mitra-slider">
+      @foreach ($mitra['tab'] as $tab)
         <div class="slider-item">
-         
           <div class="slider-grid">
-            <img src="{{ url('upload/images/mitra/Logo-WIKA.png') }}" />
+            @foreach($tab['detail_mitra'] as $item)
+              <img style="max-width: 150px;" src="{{ url('upload/images/mitra/' . $item->img) }}" />
+            @endforeach
           </div>
-        </div>
-        <div class="slider-item">
-          
-          <div class="slider-grid">
-            <img src="{{ url('upload/images/mitra/Logo Winner.jpeg') }}" />
-            <img src="{{ url('upload/images/mitra/Logo SUN.jpeg') }}" />
-            <img src="{{ url('upload/images/mitra/Logo Syntek.jpeg') }}" />
-            <img src="{{ url('upload/images/mitra/Logo HM Sampoerna.jpeg') }}" />
-            <img src="{{ url('upload/images/mitra/Logo Emits.jpeg') }}" />
-            <img src="{{ url('upload/images/mitra/Logo UNIMA.jpeg') }}" />
-          </div>
-        </div>
-        <div class="slider-item">
-          
-          <div class="slider-grid">
-            <img src="{{ url('upload/images/mitra/Logo Nestle.jpeg') }}" />
-          </div>
-        </div>
+        </div>  
+      @endforeach
       </div>
 
       <div class="center mitra-tab">
-        <div class="mitra-tab-item">
-          <span>PLTGU & PLTU</span>
-        </div>
-        <div class="mitra-tab-item">
-          <span>PLTS</span>
-        </div>
-        <div class="mitra-tab-item">
-          <span>BIOMASSA</span>
-        </div>
+        @foreach ($mitra['tab'] as $tab)
+          <div class="mitra-tab-item">
+            <span>{{ $tab->description }}</span>
+          </div>    
+        @endforeach
       </div>
 
     </div>

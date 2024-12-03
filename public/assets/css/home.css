@@ -793,12 +793,13 @@ footer .pipline::before {
 }
 
 footer .pipline::after {
-    content: "Member of Mebi :";
+    content: "Member of :";
         height: 40px;
         position: absolute;
-        font-size: 10px;
+        font-size: 8px;
+        font-weight: 600;
         top: -26px;
-        left: 0px;
+        left: 17px;
 }
 
 footer .member {
@@ -829,7 +830,7 @@ footer .member .member-wrapper img {
 
 
 footer .foot-partner img{
-    width: 80px;
+    width: 60px;
     object-fit: scale-down;
 }
 

@@ -20,8 +20,9 @@ return [
 
     'tentang' => 'TENTANG',
     'indo_berdaya' => 'Indonesia berdaya energi listrik',
-    'desc_satu' => 'BTI (Bhakti Terang Indonesia) memiliki peran aktif dalam menyediakan energi bersih yang dibutuhkan untuk berperan membantu masa depan Indonesia yang berkelanjutan. Sampai dengan saat ini, BTI telah membangun jaringan bisnis yang terintegrasi, mulai dari bidang Pendidikan, <i>Food and Beverage</i> (F&B) dan layanan jasa konsultasi psikologi klinis. BTI sebagai holding perussahaan saat ini memiliki anak perusahaan bisnis yaitu <strong>Café Enpos, Growing Hope School dan Klinik Narwastu.</strong>',
-    'desc_dua' => 'Dengan adanya subholding tersebut, ekosistem bisnis pada BTI Group dapat terintegrasi satu sama lain dengan memberikan value nya masing-masing. BTI group memiliki aspirasi <i>`One Dream, One Spirit, and to be Great`</i> yang menggabungkan seluruh energi positif insan BTI group untuk menciptakan <i>competitive advantages.</i>',
+    'desc_satu' => 'BTI (Bhakti Terang Indonesia) memiliki peran aktif dalam menyediakan energi bersih yang dibutuhkan untuk berperan membantu masa depan Indonesia yang berkelanjutan. Sampai dengan saat ini, BTI telah membangun jaringan bisnis yang terintegrasi, mulai dari bidang Pendidikan, <i>Food and Beverage</i> (F&B) dan layanan jasa konsultasi psikologi klinis.',
+    'desc_dua' => 'BTI sebagai holding perussahaan saat ini memiliki anak perusahaan bisnis yaitu <strong>Café Enpos, Growing Hope School dan Klinik Narwastu.</strong>',
+    'desc_tiga' => 'Dengan adanya subholding tersebut, ekosistem bisnis pada BTI Group dapat terintegrasi satu sama lain dengan memberikan value nya masing-masing. BTI group memiliki aspirasi <i>`One Dream, One Spirit, and to be Great`</i> yang menggabungkan seluruh energi positif insan BTI group untuk menciptakan <i>competitive advantages.</i>',
     'learn' => 'Selengkapnya',
 
 

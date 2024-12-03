@@ -19,64 +19,21 @@
             </form>
           </div> -->
         <div class="listing-project-full">
-          <div class="card">
-            <figure>
-              <img src="{{ asset('assets/images/cover_w990_h420_offgrid-kat-birang.jpg') }}" height="370" width="100%"
-                alt="">
-              <div class="logo">
-                <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
-              </div>
-            </figure>
-            <figcaption>
-              <div class="left-c">
-                <h4>(PLTU) Tarahan </h4>
-                <p>Supply Woodchips ke Pembangkit Listrik Tenaga Uap (PLTU) Tarahan</p>
-                <p>Lokasi : Tarahan, Lampung Selatan</p>
-              </div>
-              <a href="bti/detail" class="link__img">View Detail<img
-                  src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-            </figcaption>
-          </div>
-          <div class="card">
-            <figure>
-              <img src="{{ asset('assets/images/cover_w990_h420_offgrid-kat-birang.jpg') }}" height="370" width="100%"
-                alt="">
-              <div class="logo">
-                <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
-              </div>
-            </figure>
-            <figcaption>
-              <div class="left-c">
-                <h4>(PLTU) Tarahan </h4>
-                <p>Supply Woodchips ke Pembangkit Listrik Tenaga Uap (PLTU) Tarahan</p>
-                <p>Lokasi : Tarahan, Lampung Selatan</p>
-              </div>
-              <a href="/detail" class="link__img">View Detail<img
-                  src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-            </figcaption>
-          </div>
-          <div class="card">
-            <figure>
-              <img src="{{ asset('assets/images/cover_w990_h420_offgrid-kat-birang.jpg') }}" height="370" width="100%"
-                alt="">
-              <div class="logo">
-                <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
-              </div>
-            </figure>
-            <figcaption>
-              <div class="left-c">
-                <h4>(PLTU) Tarahan </h4>
-                <p>Supply Woodchips ke Pembangkit Listrik Tenaga Uap (PLTU) Tarahan</p>
-                <p>Lokasi : Tarahan, Lampung Selatan</p>
-              </div>
-              <a href="/detail" class="link__img">View Detail<img
-                  src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
-            </figcaption>
-          </div>
-
-          
-
-
+          @foreach ($project as $item)
+            <div class="card">
+              <figure>
+                <img src="{{ url('upload/images/project/' . $item->img_1) }}" height="370" width="100%"alt="">
+              </figure>
+              <figcaption>
+                <div class="left-c">
+                  <h4>{{ $item->name }}</h4>
+                  <p>Lokasi : {{ $item->address }}</p>
+                </div>
+                <a href="{{ url('/procurement-detail/' . $item->slug) }}" class="link__img">View Detail<img
+                    src="{{ asset('assets/images/material/icon-angle-right-white.svg') }}" alt=""></a>
+              </figcaption>
+            </div>
+          @endforeach
         </div>
       </div>
 

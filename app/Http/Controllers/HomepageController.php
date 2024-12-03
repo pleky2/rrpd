@@ -12,9 +12,10 @@ use App\Models\Sliders;
 use App\Models\Profile;
 use App\Models\Contact;
 use App\Models\Management;
-use App\Models\ManagementDetail;
 use App\Models\Superiority;
 use App\Models\Media;
+use App\Models\Project;
+use App\Models\Business;
 
 
 class HomepageController extends Controller
@@ -95,31 +96,40 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function mitra() {
+    public function mitra($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $data['title_mitra'] = Mitra::where('code', 'bti')->first();
-        $data['mitra'] = Mitra::where('code', 'bti')->get();
+        $tabs = Mitra::select('description')->where('code', $id)->groupBy('description')->orderBy('type', 'ASC')->get();
+        
+        
+        $mitra['tab'] = $tabs;
 
-        return view('content.mitra', [
+        foreach($tabs as $key => $tab) {
+            $mitra['tab'][$key]['detail_mitra'] = Mitra::where('code', $id)->where('description', $tab->description)->orderBy('is_order', 'ASC')->get();
+        }
+
+        return view('content.mitra', [  
             'profile' => $data['profile'],
-            'title_mitra' => $data['title_mitra'],
-            'mitra' => $data['mitra']
+            'mitra' => $mitra,
         ]);
     }
 
     public function procurement() {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $project = Project::paginate(5);
 
         return view('content.procurement', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'project' => $project
         ]);
     }
 
-    public function procurementDetail() {
+    public function procurementDetail($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-
+        $proDetail = Project::where('slug', $id)->first();
+        
         return view('content.procurementDetail', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'proDetail' => $proDetail
         ]);
     }
 
@@ -151,27 +161,33 @@ class HomepageController extends Controller
         ]);
     }
 
-    public function business() {
+    public function business($parent, $id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $business = Business::where('code', $parent)->where('menu', $id)->get();
 
         return view('content.business', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'buss' => $business
         ]);
     }
 
-    public function media() {
+    public function media($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $media = Media::where('menu', 'media')->where('code', $id)->get();
 
         return view('content.media', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'media' => $media
         ]);
     }
 
-    public function mediaDetail() {
+    public function mediaDetail($id, $slug) {
         $data['profile'] = Contact::where('code', 'homep')->first();
+        $mediaDetail = Media::where('menu', 'media')->where('code', $id)->where('slug', $slug)->first();
 
         return view('content.mediaDetail', [
-            'profile' => $data['profile']
+            'profile' => $data['profile'],
+            'mediaDetail' => $mediaDetail
         ]);
     }
 

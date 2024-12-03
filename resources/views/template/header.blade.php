@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from sunenergy.id/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Aug 2024 13:03:05 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:locale" content="id">
+  <meta property="og:title" content="@yield('title', 'Bhakti Terang Indonesia - Contractor and Trading Company')">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="@yield('meta-description', 'Bhakti Terang Indonesia specializes in Contractor and Trading Company.')">
+  <meta property="og:site_name" content="Bhakti Terang Indonesia">
+  <meta property="og:url" content="https://btiofficial.co.id/">
 
   <title>Bhakti Terang Indonesia</title>
 
-
   <link rel="icon" type="image/png" href="{{ asset('assets/images/icon_bti.png') }}" sizes="32x32">
-  <link rel="canonical" href="/" />
+  <link rel="canonical" href="https://btiofficial.co.id/">
 
-
-  <!--Style-->
   <link rel="stylesheet" href="{{ asset('assets/css/reset.css') }}" preload>
   <link rel="stylesheet" href="{{ asset('assets/css/milligram.css') }}" preload>
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload>
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/project.css') }}" preload>
-  <!--endbuild-->
 
-  <!--js-->
   <script async type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-
-  <!--endbuild-->
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/home.css') }}" preload>
   <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
@@ -43,9 +34,7 @@
 </head>
 
 <body>
-  <!-- header -->
   <header>
-
     <div class="wrapper">
       <nav>
         <a href="/" class="logo"><img src="{{ asset('assets/images/logo_home.png') }}" alt=""></a>
@@ -79,9 +68,6 @@
                   </div>
                   <div class="col">
                     <div class="chd d-none" data-parent="bti">
-                      <!-- <h4>PT Bhakti Terang Indonesia “BTI” asdd</h4>
-                      <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
-                      <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/bti">{{ __('content.info_perusahaan') }}</a></li>
                         <li><a href="/organization/bti">{{ __('content.organ') }}</a></li>
@@ -92,9 +78,6 @@
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="enpos">
-                      <!-- <h4>PT Bhakti Terang Indonesia “BTI” asdd</h4>
-                      <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
-                      <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/enpos">{{ __('content.info_perusahaan') }}</a></li>
                         <li><a href="/organization/enpos">{{ __('content.organ') }}</a></li>
@@ -103,9 +86,6 @@
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="gh">
-                      <!-- <h4>PT Bhakti Terang Indonesia “BTI” asdd</h4>
-                      <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
-                      <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/gh">{{ __('content.info_perusahaan') }}</a></li>
                         <li><a href="/organization/gh">{{ __('content.organ') }}</a></li>
@@ -114,9 +94,6 @@
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="nw">
-                      <!-- <h4>PT Bhakti Terang Indonesia “BTI” asdd</h4>
-                      <p>adalah salah satu perusahaan nasional Indonesia yang berkomitmen dalam menyediakan solusi energi khususnya pada sektor industri dan pengembangan Energi Baru Terbarukan (EBT) sesuai dengan kebutuhan klien dan mitranya. BTI sendiri didirikan sejak tahun 2018</p>
-                      <a href="#" class="link__img">Read More <img src="#" alt=""></a> -->
                       <ul>
                         <li><a href="/profile/nw">{{ __('content.info_perusahaan') }}</a></li>
                         <li><a href="/organization/nw">{{ __('content.organ') }}</a></li>
@@ -154,21 +131,21 @@
                     </div>
                     <div class="chd d-none" data-parent="enpos">
                       <ul>
-                        <li><a href="/business/bti/pltu">Café</a></li>
-                        <li><a href="/business/bti/plts">Layanan Konsultasi Psikolog</a></li>
+                        <li><a href="/business/enpos/cafe">Café</a></li>
+                        <li><a href="/business/enpos/psikolog">Layanan Konsultasi Psikolog</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="gh">
                       <ul>
-                        <li><a href="/business/bti/pltu">{{ __('content.terapi_gh') }}</a></li>
-                        <li><a href="/business/bti/plts">{{ __('content.pklk') }}</a></li>
+                        <li><a href="/business/gh/terapi">{{ __('content.terapi_gh') }}</a></li>
+                        <li><a href="/business/gh/pklk">{{ __('content.pklk') }}</a></li>
                       </ul>
                     </div>
                     <div class="chd d-none" data-parent="nw">
                       <ul>
-                        <li><a href="/business/bti/pltu">{{ __('content.psiko') }}</a></li>
-                        <li><a href="/business/bti/plts">{{ __('content.konsul') }}</a></li>
-                        <li><a href="/business/bti/plts">{{ __('content.seminar') }}</a></li>
+                        <li><a href="/business/nw/psikolog">{{ __('content.psiko') }}</a></li>
+                        <li><a href="/business/nw/konsul">{{ __('content.konsul') }}</a></li>
+                        <li><a href="/business/nw/seminar">{{ __('content.seminar') }}</a></li>
                       </ul>
                     </div>
                   </div>
