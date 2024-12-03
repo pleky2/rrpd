@@ -47,15 +47,16 @@
           </div>
         </div>
 
-
-        <div>
-          {!! $proDetail->description !!}
-
-          <h6>Spesifikasi</h6>
-          <p>Lokasi : {{ $proDetail->address }}</p>
+        <div class="row">
+          <div class="column">
+            <div class="list-spek">
+              {!! $proDetail->description !!}
+            </div>
+          </div>
+          <div class="column">
+            <p><strong>Lokasi:</strong>  {{ $proDetail->address }}</p>
+          </div>
         </div>
-
-
       </div>
 
     </div>

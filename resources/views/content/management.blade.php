@@ -4,7 +4,7 @@
 <section class="middle gap-bottom">
   <div class="banner-page center">
     <figure>
-      <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
+      <img src="{{ asset('upload/images/logo/bg-' . Request::segment(2) . '.jpeg') }}" alt="" style="max-height: 400px;object-fit: cover;">
     </figure>
     <figcaption>
       <h1><b>{{ __('content.manajemen') }}</b></h1>

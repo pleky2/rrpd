@@ -26,7 +26,7 @@
                     {{ $item->address_ho }}
                   </p>
                   <p class="content"><span><img src="{{ asset('assets/images/material/mail-s.svg') }}"
-                        alt=""></span> {{ $item->email }}</p>
+                        alt=""></span> {!! $item->email !!}</p>
                   <p class="content"><span><img src="{{ asset('assets/images/material/ic-phone.svg') }}"
                         alt=""></span> {{ $item->phone }}</p>
                   <p class="content"><span><img src="{{ asset('assets/images/material/icon-instagram.svg') }}" alt=""></span> 
