@@ -2,14 +2,23 @@
 
 @section('content')
 <section class="middle">
+  <div class="banner-page center">
+    <figure>
+      <img src="{{ asset('upload/images/logo/bg-bti.jpeg') }}" alt="">
+    </figure>
+    <figcaption>
+      <h5>TENTANG KAMI</h5>
+      <h2>Milestone</h2>
+    </figcaption>
+  </div>
   <div class="inner-content">
     <div class="wrapper-small content-pages">
-      <figure class="img-middle"><img src="{{ asset('assets/images/about/profile.jpg') }}" alt="">
-      </figure>
-
       {!! $about->description !!}
+    </div>
 
-      <div class="wrap-visimisi">
+    <div class="visi-misi">
+      <figure class="bg"><img src="https://sunenergy.id/images/content/bg-businessmodel.jpg" alt=""></figure>
+      <div class="wrap-visimisi wrapper-small">
         <div class="wrap-visimisi__visi">
           <div class="wrap-img">
             <figure><img src="{{ asset('assets/images/cover_w66_h66_icon-vision.png') }}" alt=""></figure>
@@ -28,7 +37,6 @@
         </div>
       </div>
     </div>
-
 
 
   </div>

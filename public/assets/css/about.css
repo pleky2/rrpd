@@ -2442,6 +2442,7 @@ img[data-src].lazyloaded {
     }
 }
 .wrap-visimisi {
+    padding-top: 50px;
     border-radius: 24px;
     display: flex;
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.1));

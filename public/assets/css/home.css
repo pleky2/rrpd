@@ -717,6 +717,48 @@ h1.elementor-heading-title.elementor-size-default {
  .slide-item .content .text h3{
     font-weight: bold;
  }
+
+.visi-misi {
+position: relative;
+}
+
+.visi-misi .bg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.visi-misi .bg:before {
+    background: linear-gradient(180deg, hsla(0, 0%, 97%, 0), hsla(0, 0%, 97%, .71) 43.4%, #fff 86.8%);
+    bottom: 0;
+    content: "";
+    height: 80%;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.visi-misi .bg img {
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.detail-big figure {
+    position: relative;
+}
+
+.detail-big figure span {
+    right: 20px;
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    z-index: 99;
+}
+
 @media (max-width: 767px) {
     .body_wrapper {
         height: 60px;
@@ -5647,7 +5689,7 @@ img[data-src].lazyloaded {
     background-color: RGBA(255,255,255,0);
     border-radius: 10px;
     padding: 20px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px);
     color: white;
 }
 
@@ -5787,12 +5829,13 @@ img[data-src].lazyloaded {
 .kerjasama-wrapper .card .img-wrapper {
     height: 100%;
     position: absolute;
+    width: 100%;
 }
 
 .kerjasama-wrapper .card .img-wrapper img{
     object-fit: cover;
     height: 100%;
-    bottom: 0;
+    width: 100%;
 }
 
 .kerjasama-wrapper .card .desc {
