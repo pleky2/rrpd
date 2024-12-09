@@ -5656,7 +5656,7 @@ img[data-src].lazyloaded {
 
 
 .contact-us {
-    background-color: #fff4d4;
+    background-color: #d6a337;
     padding: 20px;
     width: 800px;
 }
@@ -5722,7 +5722,7 @@ img[data-src].lazyloaded {
 }
 
 .business {
-    width: 700px;
+    width: 750px;
     z-index: 99;
     position: absolute;
     top: 50%;
@@ -5731,7 +5731,7 @@ img[data-src].lazyloaded {
     background-color: RGBA(255,255,255,0);
     border-radius: 10px;
     padding: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     color: white;
 }
 
@@ -5743,8 +5743,12 @@ img[data-src].lazyloaded {
     right: 300px;
 }
 
-.business h3 {
+.business h1 {
     font-weight: bold;
+}
+
+.business p {
+    font-size: 20px;
 }
 
 .media-wrapper {
@@ -5922,6 +5926,11 @@ img[data-src].lazyloaded {
     position: absolute;
     top: 8px;
     width: 10px;
+}
+
+.header-title-menu {
+    max-height: 460px !important;
+    object-fit: cover !important; 
 }
 
 

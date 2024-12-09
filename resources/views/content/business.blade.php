@@ -11,7 +11,7 @@
             <img src="{{ asset('assets/images/about/energy.jpeg') }}" alt="" />
           @endif
           <div class="business left">
-            <h3>{{ $item->name }}</h3>
+            <h1>{{ $item->name }}</h1>
             <p>
               {{ $item->description }}
             </p>

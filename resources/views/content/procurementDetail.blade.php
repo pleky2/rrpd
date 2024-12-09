@@ -12,19 +12,25 @@
           <div class="card">
             <figure>
               <img src="{{ url('upload/images/project/' . $proDetail->img_1) }}" height="500" width="100%" alt="">
-              <span>Sumber Foto : PT Wijaya Karya (Persero)</span>
+              @if($proDetail->source)
+                <span>Sumber Foto : {{ $proDetail->source }}</span>
+              @endif
             </figure>
           </div>
           <div class="card">
             <figure>
               <img src="{{ url('upload/images/project/' . $proDetail->img_2) }}" height="500" width="100%" alt="">
-              <span>Sumber Foto : PT Wijaya Karya (Persero)</span>
+              @if($proDetail->source)
+                <span>Sumber Foto : {{ $proDetail->source }}</span>
+              @endif
             </figure>
           </div>
           <div class="card">
             <figure>
               <img src="{{ url('upload/images/project/' . $proDetail->img_3) }}" height="500" width="100%" alt="">
-              <span>Sumber Foto : PT Wijaya Karya (Persero)</span>
+              @if($proDetail->source)
+                <span>Sumber Foto : {{ $proDetail->source }}</span>
+              @endif
             </figure>
           </div>
         </div>

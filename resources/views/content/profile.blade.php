@@ -4,11 +4,10 @@
 <section class="middle">
   <div class="banner-page center">
     <figure>
-      <img src="{{ asset('upload/images/logo/bg-bti.jpeg') }}" alt="">
+      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(2) . '.jpeg') }}" alt="">
     </figure>
     <figcaption>
-      <h5>TENTANG KAMI</h5>
-      <h2>Milestone</h2>
+      <h1><b>{{ __('content.tentang_kami') }}</b></h1>
     </figcaption>
   </div>
   <div class="inner-content">
@@ -17,20 +16,18 @@
     </div>
 
     <div class="visi-misi">
-      <figure class="bg"><img src="https://sunenergy.id/images/content/bg-businessmodel.jpg" alt=""></figure>
+      <figure class="bg"><img src="{{ asset('upload/images/logo/bg2-' . Request::segment(2) . '.jpeg') }}" alt="" style="object-fit: cover;"></figure>
       <div class="wrap-visimisi wrapper-small">
         <div class="wrap-visimisi__visi">
           <div class="wrap-img">
-            <figure><img src="{{ asset('assets/images/cover_w66_h66_icon-vision.png') }}" alt=""></figure>
-            <h3>Visi</h3>
+            <h3><b>Visi</b></h3>
           </div>
           {!! $about->visi !!}
         </div>
 
         <div class="wrap-visimisi__misi">
           <div class="wrap-img">
-            <figure><img src="{{ asset('assets/images/cover_w66_h66_icon-mission.png') }}" alt=""></figure>
-            <h3>Misi</h3>
+            <h3><b>Misi</b></h3>
           </div>
 
           {!! $about->misi !!}

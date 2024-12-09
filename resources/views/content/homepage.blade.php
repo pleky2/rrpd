@@ -11,6 +11,11 @@
             Your browser does not support HTML video.
           </video>
         </div>
+        <div class="wrapper">
+          <div class="banner__slider-item--text">
+          <h2>BTI - Pembangkit Listrik Tenaga Surya (PLTS)</h2>
+        </div>
+      </div>
       </div>
       <div class="banner__slider-item">
         <div class="video-slider">
@@ -18,6 +23,11 @@
             <source src="{{ url('upload/images/slider/video-biomassa.MOV') }}" type="video/mp4">
             Your browser does not support HTML video.
           </video>
+        </div>
+        <div class="wrapper">
+          <div class="banner__slider-item--text">
+          <h2>BTI - Supply Woodchip</h2>
+        </div>
         </div>
       </div>
       @foreach ($slider as $slide)
@@ -57,7 +67,7 @@
     <div class="wrapper">
       <div class="about-us__box">
         <div class="about-us__box-text">
-          <h1>{{ __('content.tentang') }} Bhakti Terang Indonesia</h1>
+          <h1>Bhakti Terang Indonesia Group</h1>
           <p>{!! __('content.desc_satu') !!}</p>
           <p>{!! __('content.desc_dua') !!}</p>
           <p>{!! __('content.desc_tiga') !!}</p>

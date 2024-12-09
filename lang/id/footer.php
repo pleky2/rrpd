@@ -8,5 +8,5 @@ return [
     'sosmed' => 'Sosial Media',
     'alamat' => 'Alamat',
     'pusat' => 'Kantor Pusat',
-    'pabrik' => 'Pabrik Woodchips',
+    'pabrik' => 'Pabrik Woodchip',
 ];

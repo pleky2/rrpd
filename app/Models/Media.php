@@ -9,7 +9,7 @@ class Media extends Model
 {
     use SoftDeletes;
     //
-    protected $table = 'Media';
+    protected $table = 'media';
     protected $fillable = [
         'title',
         'menu',
