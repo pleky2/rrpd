@@ -15,7 +15,7 @@ return [
     'kerjasama' => 'Cooperation',
     'media' => 'Media',
     'hub_kami' => 'Contact Us',
-    'perusahaan_kami' => 'Our Company',
+    'perusahaan_kami' => 'Our Group of Companies',
 
 
     'tentang' => 'ABOUT',

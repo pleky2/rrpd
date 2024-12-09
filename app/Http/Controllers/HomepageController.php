@@ -23,8 +23,8 @@ class HomepageController extends Controller
     //
     public function index() {
 
-        $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'DESC')->get();
-        $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'DESC')->get();
+        $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'ASC')->get();
+        $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'ASC')->get();
         $data['mitra'] = Mitra::where('code', 'homep')->get();
         $data['profile'] = Contact::where('code', 'homep')->first();
 
