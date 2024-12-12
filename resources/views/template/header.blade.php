@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload>
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/project.css') }}" preload>
 
-  <script async type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
+  <!-- <script async type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
