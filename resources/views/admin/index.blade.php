@@ -104,7 +104,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/business') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Business</p>
                 </a>

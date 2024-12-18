@@ -4,10 +4,10 @@
 <section class="middle gap-bottom">
   <div class="banner-page center">
     <figure>
-      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(1) . '-' . Request::segment(2) . '.jpeg') }}" alt="">
+      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(1) . '-' . Request::segment(2) . '.png') }}" alt="">
     </figure>
     <figcaption>
-      <h1><b>{{ __('content.manajemen') }}</b></h1>
+      <h1 class="title-menu"><b>{{ __('content.manajemen') }}</b></h1>
     </figcaption>
   </div>
   <div class="inner-content">

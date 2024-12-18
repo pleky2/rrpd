@@ -4,10 +4,10 @@
 <section class="middle">
   <div class="banner-page center">
     <figure>
-      <img src="{{ asset('upload/images/logo/bg-' . Request::segment(2) . '.jpeg') }}" alt="" style="max-height: 400px;object-fit: cover;">
+      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(1) . '-' . Request::segment(2) . '.png') }}" alt="">
     </figure>
     <figcaption>
-      <h1><b>Media</b></h1>
+      <h1 class="title-menu"><b>Media</b></h1>
     </figcaption>
   </div>
 

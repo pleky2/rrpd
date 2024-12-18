@@ -40,27 +40,45 @@
     </div>
   </div>
 
-  <nav>
-    <ul class="pagination">
-      <li>
-        <a class="disabled-link">Previous</a>
-      </li>
-      <li>
-        <a class="page-link" href="#!">1</a>
-      </li>
-      <li aria-current="page">
-        <a class="current-page" href="#!">
-          2
-        </a>
-      </li>
-      <li>
-        <a class="page-link" href="#!">3</a>
-      </li>
-      <li>
-        <a class="page-link" href="#!">Next</a>
-      </li>
-    </ul>
-  </nav>
+  <div>
+  </div>
+  @if ($project->hasPages()) 
+    <nav> 
+      <ul class="pagination"> 
+        @if ($project->onFirstPage()) 
+          <li> 
+              <a class="disabled-link" href="#" tabindex="-1">Previous</a> 
+          </li> 
+        @else 
+          <li class="page-item">
+            <a href="{{ $project->previousPageUrl() }}"> Previous</a> 
+          </li> 
+        @endif 
+
+        @for ($page=1; $page <= 4; $page++)
+          @if ($page == $project->currentPage()) 
+              <li class="page-item active"> 
+                  <a class="current-page">{{ $page }}</a> 
+              </li> 
+            @else 
+              <li class="page-item"> 
+                  <a class="page-link" href="{{ $project->url($page) }}">{{ $page }}</a> 
+              </li> 
+            @endif 
+        @endfor
+  
+        @if ($project->hasMorePages()) 
+          <li class="page-item"> 
+              <a class="page-link" href="{{ $project->nextPageUrl() }}" rel="next">Next</a> 
+          </li> 
+        @else 
+          <li> 
+              <a class="disabled-link" href="#">Next</a> 
+          </li> 
+        @endif 
+      </ul> 
+    </nav> 
+  @endif 
 
 </section>
 @endsection

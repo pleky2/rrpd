@@ -5,10 +5,10 @@
 
   <div class="banner-page center">
     <figure>
-      <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
+      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(1) . '-' . Request::segment(2) . '.png') }}" alt="">
     </figure>
     <figcaption>
-      <h1><b>Kerjasama</b></h1>
+      <h1 class="title-menu"><b>Kerjasama</b></h1>
     </figcaption>
   </div>
 

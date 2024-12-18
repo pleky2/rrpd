@@ -4,10 +4,10 @@
 <section class="middle">
   <div class="banner-page center">
     <figure>
-      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(2) . '.jpeg') }}" alt="">
+      <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(2) . '.png') }}" alt="">
     </figure>
     <figcaption>
-      <h1><b>{{ __('content.tentang_kami') }}</b></h1>
+      <h1 class="title-menu"><b>{{ __('content.tentang_kami') }}</b></h1>
     </figcaption>
   </div>
   <div class="inner-content">
