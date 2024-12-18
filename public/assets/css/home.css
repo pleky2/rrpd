@@ -1319,10 +1319,6 @@ footer .member .member-wrapper img {
     width: 55px;
 }
 
-
-
-
-
 footer .foot-partner img{
     width: 60px;
     object-fit: scale-down;
@@ -1388,6 +1384,10 @@ footer .img-title {
     
      .slide-item .content .text h3{
         font-weight: bold;
+     }
+
+     .footer .foot-partner .pipline img {
+        width: 40px;
      }
 }
 @media (max-width: 1280px) {
@@ -1743,6 +1743,35 @@ footer .img-title {
      .slide-item .content .text h3{
         font-weight: bold;
      }
+
+     footer .foot-partner .pipline img {
+        width: 40px;
+    }
+
+    footer .foot-partner img {
+        width: 40px;
+    }
+
+    footer .pipline::before {
+        content: "";
+        height: 30px;
+        position: absolute;
+        width: 2px;
+        background-color: #999999;
+        top: 8px;
+        left: 0px;
+    }
+
+    footer .pipline::after {
+        content: "Member of :";
+        height: 40px;
+        position: absolute;
+        font-size: 8px;
+        font-weight: 600;
+        top: -26px;
+        left: 0px;
+    }
+     
 }
 @media (max-width: 1023px) {
     header nav .logo {
@@ -1851,6 +1880,14 @@ footer .img-title {
     
      .slide-item .content .text h3{
         font-weight: bold;
+     }
+
+     footer .foot-partner .pipline img {
+        width: 40px;
+     }
+
+     footer .foot-partner img {
+        width: 40px;
      }
 }
 @media (max-width: 767px) {
