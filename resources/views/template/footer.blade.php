@@ -2,7 +2,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="column ">
+      <div class="column column-40">
         <a href="#" class="img-logo">
           <img src="{{ asset('assets/images/logo_home.png') }}" alt="">
         </a>
@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="column ">
+      <div class="column column-60">
         <h5>{{ __('footer.alamat') }}</h5>
         <div class="row">
           <div class="column">
