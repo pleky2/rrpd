@@ -15,6 +15,8 @@ class Sliders extends Model
         'description',
         'img',
         'is_order',
+        'type',
+        'menu',
         'created_at',
         'updated_at',
         'deleted_at'

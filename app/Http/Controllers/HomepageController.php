@@ -115,7 +115,7 @@ class HomepageController extends Controller
 
     public function procurement() {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $project = Project::paginate(5);
+        $project = Project::orderBy('is_order', 'ASC')->paginate(5);
 
         return view('content.procurement', [
             'profile' => $data['profile'],

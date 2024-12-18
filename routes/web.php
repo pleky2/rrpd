@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\SliderController;
  
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +50,16 @@ Route::get("/cms/generate", [AdminController::class, 'generatePassword']);
 Route::middleware(['cekloginstatus'])->group(function () 
 {
     Route::get("/admin", [AdminController::class, 'index']);
+
+    Route::get("/slider", [SliderController::class, 'index']);
+    Route::get("/slider/all", [SliderController::class, 'all']);
+    Route::get("/slider/add", [SliderController::class, 'create']);
+    Route::post("/slider/store", [SliderController::class, 'store']);
+    
+    Route::get("/business", [BusinessController::class, 'index']);
+    Route::get("/business/all", [BusinessController::class, 'all']);
+    Route::get("/business/edit/{id}", [BusinessController::class, 'index']);
+    
 });
 
 

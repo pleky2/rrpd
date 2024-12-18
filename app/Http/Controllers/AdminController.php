@@ -11,7 +11,7 @@ class AdminController extends Controller
 {
 
     public function index(){
-        return view('admin.menu');
+        return view('admin.business');
     }
     
     public function loginPost(Request $request){

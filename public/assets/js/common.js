@@ -32,39 +32,16 @@ $(document).ready(function(){
 
     $(document).ready(function(){
         $('.test').slick({
-            // slidesToShow: 6, 
-            // slidesToScroll: 6, 
+            slidesToShow: 6, 
+            slidesToScroll: 6, 
             autoplay: true,
             arrows:false,
             autoplaySpeed: 2000,
             speed: 15000,
             pauseOnHover: false,
             infinite: true,
-            cssEase: 'linear',
-            mobileFirst:true,//add this one
-            responsive: [
-                {
-                    breakpoint: 1441,
-                    settings: {
-                        slidesToShow: 6, 
-                        slidesToScroll: 6, 
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 426,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-            ]
+            cssEase: 'linear'
+            // fade: true
         });
     });
 
@@ -74,24 +51,7 @@ $(document).ready(function(){
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            centerMode: false,
-            responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: false,
-                    arrows: false,
-                    autoplay: true,
-                    infinite: true,
-                }
-            },
-            
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-            ]
+            centerMode: true,
         });
     });
 
@@ -103,14 +63,6 @@ $(document).ready(function(){
             dots:true,
             arrows:false,
             infinite: false,
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        centerMode: false,
-                    }
-                },
-            ]
 
             // fade: true
         });
@@ -227,43 +179,17 @@ $(document).ready(function(){
 
     var header = $('header')
 
-    $(window).on('scroll', function() {
-        var scrollTop = $(window).scrollTop();
-        if (scrollTop > 0) {
-            header.hasClass("sticky") || header.addClass("sticky")
-        } else {
-        header.removeClass("sticky")
-        }
-    })
+   $(window).on('scroll', function() {
+    var scrollTop = $(window).scrollTop();
 
-    $('header nav .menu-bar').on("click", function () {
-        $(this).hasClass("act")
-            ? ($(".right-header").removeClass("fixed"),
-              $(".overlay-menu").fadeOut(50),
-              $(this).removeClass("act"),
-              $(".right-header .have-child").removeClass("show"),
-              $(".right-header .have-child .child").hide(),
-              $("body").css("overflow", "auto"))
-            : ($(".right-header").addClass("fixed"), $(".overlay-menu").fadeIn(50), $(this).addClass("act"), $("body").css("overflow", "hidden"));
-    })
 
-    $(".overlay-menu").on("click", function () {
-        $(".right-header").removeClass("fixed"),
-            $(".overlay-menu").fadeOut(50),
-            $("header nav .menu-bar").removeClass("act"),
-            $(".right-header .have-child").removeClass("show"),
-            $(".right-header .have-child .child").hide(),
-            $("body").css("overflow", "auto");
-    })
-
-    $("header").on("click", ".right-header.fixed .have-child > a", function (t) {
-        $(this).parent().hasClass("show")
-            ? ($(this).parent().removeClass("show"), $(this).parent().children(".child").slideUp(200))
-            : (t.preventDefault(),
-              $(this).parent().addClass("show"),
-              $(this).parent().siblings().removeClass("show"),
-              $(this).parent().siblings().children(".child").slideUp(200),
-              $(this).parent().children(".child").slideDown(200));
-    })
+    if (scrollTop > 0) {
+        header.hasClass("sticky") || header.addClass("sticky")
+    } else {
+       header.removeClass("sticky")
+    }
+    console.log('scroll', $(window).scrollTop())
+    
+   })
 });
 

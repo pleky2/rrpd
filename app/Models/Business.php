@@ -16,6 +16,7 @@ class Business extends Model
         'menu',
         'description',
         'background_img',
+        'position',
         'created_at',
         'updated_at',
         'deleted_at'

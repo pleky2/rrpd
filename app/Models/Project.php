@@ -9,11 +9,12 @@ class Project extends Model
 {
     use SoftDeletes;
     //
-    protected $table = 'Project';
+    protected $table = 'project';
     protected $fillable = [
         'name',
         'description',
         'slug',
+        'is_order',
         'img_1',
         'img_2',
         'img_3',
