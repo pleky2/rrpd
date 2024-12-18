@@ -2315,6 +2315,10 @@ footer .img-title {
     .popup .calculator-popup .content-popup {
         padding: 46px 52px;
     }
+
+    footer .foot-partner img {
+        width: 48px;
+    }
 }
 @media (max-width: 1280px) {
     .popup.popup-step .inner-popup {
@@ -5197,6 +5201,14 @@ img[data-src].lazyloaded {
 @media (max-width: 1480px) {
     .banner__slider-item--text {
         padding: 0;
+    }
+
+    footer .foot-partner img {
+        width: 48px;
+    }
+
+    footer .pipline::after {
+        left: 10px;
     }
 }
 @media (max-width: 1400px) {
