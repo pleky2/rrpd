@@ -50,7 +50,8 @@ return [
     'smart' => 'Berfikir dan bekerja secara cermat, cerdas, dan tepat untuk meningkatkan value',
     'inklusif' => 'Melibatkan orang dan kelompok dengan berkolaborasi (<i>don`t be exclusive</i>)',
     'tangguh' => 'Memiliki sifat pantang menyerah, karena memiliki ilmu dan pengetahuan',
-    'sustainable' => 'Memiliki karakter berkelanjutan dan berkembang (<i>step by step</i>)'
+    'sustainable' => 'Memiliki karakter berkelanjutan dan berkembang (<i>step by step</i>)',
 
-
+    'visi' => 'Visi',
+    'misi' => 'Misi'
 ];

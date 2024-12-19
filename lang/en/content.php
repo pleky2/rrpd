@@ -50,6 +50,9 @@ return [
     'smart' => 'Think and work carefully, intelligently and precisely to increase value',
     'inklusif' => 'Involve people and groups by collaborating (<i>don`t be exclusive</i>)',
     'tangguh' => 'Has the nature of never giving up, because he has knowledge and knowledge',
-    'sustainable' => 'Has a sustainable and developing character (step by step)'
+    'sustainable' => 'Has a sustainable and developing character (step by step)',
+
+    'visi' => 'Vision',
+    'misi' => 'Mission'
 
 ];

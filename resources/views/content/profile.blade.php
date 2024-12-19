@@ -20,14 +20,14 @@
       <div class="wrap-visimisi wrapper-small">
         <div class="wrap-visimisi__visi">
           <div class="wrap-img">
-            <h3><b>Visi</b></h3>
+            <h3><b>{{ __('content.visi') }}</b></h3>
           </div>
           {!! $about->visi !!}
         </div>
 
         <div class="wrap-visimisi__misi">
           <div class="wrap-img">
-            <h3><b>Misi</b></h3>
+            <h3><b>{{ __('content.misi') }}</b></h3>
           </div>
 
           {!! $about->misi !!}
