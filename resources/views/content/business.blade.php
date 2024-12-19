@@ -10,7 +10,7 @@
           @else
             <img src="{{ asset('assets/images/about/energy.jpeg') }}" alt="" />
           @endif
-          <div class="business left">
+          <div class="business {{ $item->position ?? 'centerz'}}">
             <h1>{{ $item->name }}</h1>
             <p>
               {{ $item->description }}

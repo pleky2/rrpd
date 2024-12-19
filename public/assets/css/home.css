@@ -1014,11 +1014,15 @@ position: relative;
 }
 
 .business.left {
-    left: 300px;
+    left: 145px;
 }
 
 .business.right {
-    right: 300px;
+    right: 145px;
+}
+
+.business.centerz {
+    right: 335px;
 }
 
 .business h1 {
@@ -1207,7 +1211,14 @@ position: relative;
 
 .header-title-menu {
     max-height: 460px !important;
-    object-fit: cover !important; 
+    object-fit: cover !important;
+}
+
+.title-menu {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 5px 0px #d7a337;
+    font-size: 4rem;
 }
 
 
