@@ -34,27 +34,29 @@ $(document).ready(function(){
         $('.test').slick({
             // slidesToShow: 6, 
             // slidesToScroll: 6, 
+            slidesToShow: 6, 
+            slidesToScroll: 6, 
             autoplay: true,
             arrows:false,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 1000,
             speed: 15000,
             pauseOnHover: false,
             infinite: true,
-            cssEase: 'linear',
-            mobileFirst:true,//add this one
+            // cssEase: 'linear',
+            // mobileFirst:true,//add this one
             responsive: [
                 {
-                    breakpoint: 1441,
+                    breakpoint: 1440,
                     settings: {
                         slidesToShow: 6, 
                         slidesToScroll: 6, 
                     }
                 },
                 {
-                    breakpoint: 768,
+                    breakpoint: 769,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
                     }
                 },
                 {
