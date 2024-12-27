@@ -14,7 +14,7 @@ class Media extends Model
         'title',
         'menu',
         'code',
-        'description',
+        'url',
         'img',
         'created_at',
         'updated_at',

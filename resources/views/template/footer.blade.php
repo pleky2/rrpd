@@ -41,9 +41,9 @@
               <img src="{{ asset('assets/images/enpos.png') }}" alt="">
               <img src="{{ asset('assets/images/gh.png') }}" alt="">
               <img src="{{ asset('assets/images/yys.png') }}" alt="">
-              <img src="{{ asset('upload/images/logo/narwastu.png') }}" alt="">
+              <img src="{{ asset('assets/images/nw.png') }}" alt="">
               <div class="pipline">
-                <img src="{{ asset('assets/images/mebi.jpeg') }}" alt="">
+                <img src="{{ asset('assets/images/mebi.png') }}" alt="">
               </div>
             </div>
           </div>

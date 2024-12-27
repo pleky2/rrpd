@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BusinessController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\SliderController;
  
 /*
@@ -59,6 +60,10 @@ Route::middleware(['cekloginstatus'])->group(function ()
     Route::get("/business", [BusinessController::class, 'index']);
     Route::get("/business/all", [BusinessController::class, 'all']);
     Route::get("/business/edit/{id}", [BusinessController::class, 'index']);
+
+    Route::get("/media", [MediaController::class, 'index']);
+    Route::get("/media/all", [MediaController::class, 'all']);
+    Route::get("/media/edit/{id}", [BusinessController::class, 'index']);
     
 });
 

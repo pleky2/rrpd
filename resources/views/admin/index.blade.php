@@ -116,7 +116,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/media') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Media</p>
                 </a>
