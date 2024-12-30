@@ -18,7 +18,7 @@
         <a href="{{ $item->url }}" target="_blank">
           <div class="card-media">
             <div class="img-wrapper">
-              <img src="{{ asset('assets/images/about/cover_w1440_h400_headline-banner-about_1366x768px_.png') }}" alt="">
+              <img src="{{ url('upload/images/media/'.$item->img) }}" alt="">
             </div>
 
             <div class="content">
