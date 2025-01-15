@@ -96,10 +96,7 @@
             </div>
             <div class="text">
               <h3>Café Enpos</h3>
-              <p>Cafe Enpos merupakan sebuah industri <i>food & beverage</i> (F&B) yang memiliki konsep <i>green
-                  café</i> dengan menyajikan berbagai hidangan yang sehat di konsumsi. Café ikonik ini merupakan salah
-                satu pelopor industri F&B yang memiliki ruang baca (perpustakaan) dan ruang terbuka hijau yang luas di
-                Bandar Lampung.</p>
+              <p>{!! __('content.our_enpos') !!}</p>
               <a href="{{ url('/profile/enpos') }}" class="button">{{ __('content.learn') }}</a>
             </div>
           </div>
@@ -113,9 +110,7 @@
             </div>
             <div class="text">
               <h3>Growing Hope</h3>
-              <p>Growing Hope School berkecimpung sebagai wadah Pendidikan dan Pemberdayaan dengan fokus pada Anak
-                Berkebutuhan Khusus (ABK) yang terletak di Bandar Lampung. Saat ini terdapat banyak kurikulum dan
-                fasilitas yang disediakan untuk menunjang kegiatan sekolah.</p>
+              <p>{!! __('content.our_gh') !!}</p>
               <a href="{{ url('/profile/gh') }}" class="button">{{ __('content.learn') }}</a>
             </div>
           </div>
@@ -128,9 +123,7 @@
             </div>
             <div class="text">
               <h3>Klinik Narwastu</h3>
-              <p>Klinik Narwastu menyediakan layanan <i>Psychological Service</i> untuk umum maupun Anak Berkebutuhan
-                Khusus. Saat ini terdapat beberapa layanan antara lain adalah pemeriksaan psikologis, konsultasi dan
-                seminar.</p>
+              <p>{!! __('content.our_nw') !!}</p>
               <a href="{{ url('/profile/nw') }}" class="button">{{ __('content.learn') }}</a>
             </div>
           </div>
@@ -150,9 +143,9 @@
               <img src="{{ asset('assets/images/homepage/gesit.jpg') }}" alt="">
             </figure>
             <ul >
-              <li><strong>Green:</strong> {!! __('content.green') !!}</li>
-              <li><strong>Smart: </strong> {!! __('content.smart') !!}</li>
-              <li><strong>Inklusif: </strong> {!! __('content.inklusif') !!}</li>
+              <li><strong>Green :</strong> {!! __('content.green') !!}</li>
+              <li><strong>Smart : </strong> {!! __('content.smart') !!}</li>
+              <li><strong>Inklusif : </strong> {!! __('content.inklusif') !!}</li>
               <li><strong>Tangguh : </strong> {!! __('content.tangguh') !!}</li>
               <li><strong>Sustainable :</strong> {!! __('content.sustainable') !!}</li>
             </ul>

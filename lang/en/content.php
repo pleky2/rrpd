@@ -53,6 +53,10 @@ return [
     'sustainable' => 'Has a sustainable and developing character (step by step)',
 
     'visi' => 'Vision',
-    'misi' => 'Mission'
+    'misi' => 'Mission',
+
+    'our_gh' => 'Growing Hope School is involved as a place for Education and Empowerment with a focus on Children with Special Needs located in Bandar Lampung. Currently there are many curriculums and facilities provided to support school activities.',
+    'our_enpos' => 'Cafe Enpos is a food & beverage (F&B) industry that has a green café concept by serving a variety of healthy dishes. This iconic café is one of the pioneers of the F&B industry that has a reading room (library) and a large green open space in Bandar Lampung.',
+    'our_nw' => 'Narwastu Clinic provides Psychological Service for the general public and Children with Special Needs. Currently there are several services including psychological examinations, consultations and seminars.'
 
 ];
