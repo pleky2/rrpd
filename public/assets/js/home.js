@@ -11216,31 +11216,11 @@
                             window.removeEventListener("scroll", t));
                     });
                 }),
-                (Pa.welcomePopup = function () {
-                    window.onload = function (t) {
-                        openPopup("#welcome-popup");
-                    };
-                }),
-                (Pa.socialMedia = function () {
-                    e()(".social-media__list.list-three").slick({
-                        slidesToShow: 3,
-                        arrows: !1,
-                        autoplay: !0,
-                        responsive: [
-                            { breakpoint: 1280, settings: { slidesToShow: 2, arrows: !0, variableWidth: !0, infinite: !1 } },
-                            { breakpoint: 1023, settings: { slidesToShow: 1, arrows: !0, infinite: !1, variableWidth: !0 } },
-                        ],
-                    }),
-                        e()(".social-media__list.four-item").slick({
-                            slidesToShow: 4,
-                            arrows: !1,
-                            autoplay: !0,
-                            responsive: [
-                                { breakpoint: 1280, settings: { slidesToShow: 3, arrows: !0, variableWidth: !0, infinite: !1, draggable: !0 } },
-                                { breakpoint: 1023, settings: { slidesToShow: 2, arrows: !0, variableWidth: !0, infinite: !1, draggable: !0 } },
-                            ],
-                        });
-                }),
+                // (Pa.welcomePopup = function () {
+                //     window.onload = function (t) {
+                //         openPopup("#welcome-popup");
+                //     };
+                // }),
                 (Pa.init = function () {
                     this.sliderBanner(),
                         this.projectSlider(),
@@ -11249,8 +11229,6 @@
                         this.numberCounting(),
                         this.mousemoveEffect(),
                         this.popupVideo(),
-                        this.welcomePopup(),
-                        this.socialMedia(),
                         window.innerWidth > 1280 &&
                             (function (t) {
                                 for (

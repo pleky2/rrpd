@@ -54,7 +54,10 @@
   </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script type="text/javascript" src="{{ asset('assets/js/common.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/js/about.js') }}"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>

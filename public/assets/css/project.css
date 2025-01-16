@@ -2079,14 +2079,8 @@ footer .foot-link a:last-child:after {
     z-index: 3;
 }
 .inner-content .bg-mid,
-.inner-content .bg-top {
-    left: 0;
-    position: absolute;
-    z-index: -1;
-}
-.inner-content .bg-top {
-    top: 390px;
-}
+
+
 .inner-content .bg-mid {
     top: 695px;
 }
@@ -2304,9 +2298,7 @@ img[data-src].lazyloaded {
     .middle {
         margin-top: 98px;
     }
-    .inner-content .bg-top {
-        display: none;
-    }
+   
     .banner-page > figure {
         height: 400px;
     }

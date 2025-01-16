@@ -13,25 +13,25 @@
                 s()(a.Z, l);
                 a.Z.locals;
                 var c = {
-                    popupBod: function () {
-                        document.addEventListener("DOMContentLoaded", function (e) {
-                            o()(".listing-bod .link").on("click", function (e) {
-                                e.preventDefault();
-                                var t = o()(this).parents(".list").find(".data-popup").html();
-                                o()("#popup-bod .content-popup").html(t), openPopup("#popup-bod");
-                            });
-                        });
-                    },
-                    popupCEO: function () {
-                          document.addEventListener("DOMContentLoaded", function (e) {
-                              o()(".overlay-bg").on("click", function (e) {
+                    // popupBod: function () {
+                    //     document.addEventListener("DOMContentLoaded", function (e) {
+                    //         o()(".listing-bod .link").on("click", function (e) {
+                    //             e.preventDefault();
+                    //             var t = o()(this).parents(".list").find(".data-popup").html();
+                    //             o()("#popup-bod .content-popup").html(t), openPopup("#popup-bod");
+                    //         });
+                    //     });
+                    // },
+                    // popupCEO: function () {
+                    //       document.addEventListener("DOMContentLoaded", function (e) {
+                    //           o()(".overlay-bg").on("click", function (e) {
 
-                                  e.preventDefault();
-                                  var t = o()(this).parents(".grid-item").find(".data-popup").html();
-                                  o()("#popup-bod .content-popup").html(t), openPopup("#popup-bod");
-                              });
-                          });
-                      },
+                    //               e.preventDefault();
+                    //               var t = o()(this).parents(".grid-item").find(".data-popup").html();
+                    //               o()("#popup-bod .content-popup").html(t), openPopup("#popup-bod");
+                    //           });
+                    //       });
+                    //   },
                     popupAward: function () {
                         document.addEventListener("DOMContentLoaded", function (e) {
                             o()(".listing-award a").on("click", function (e) {
@@ -66,7 +66,7 @@
                             });
                     },
                     init: function () {
-                        this.popupBod(), this.popupAward(), this.sliderMilestone(), this.popupCEO();
+                        this.popupAward(), this.sliderMilestone();
                     },
                 };
                 c.init();

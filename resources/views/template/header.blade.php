@@ -35,8 +35,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/home.css') }}" preload>
-  <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
-  <script async type="text/javascript" src="{{ asset('assets/js/about.js') }}"></script>
+  <!-- <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
+  <script async type="text/javascript" src="{{ asset('assets/js/about.js') }}"></script> -->
 </head>
 
 <body>
