@@ -13,7 +13,7 @@
         </div>
         <div class="wrapper">
           <div class="banner__slider-item--text">
-          <h2>BTI - Pembangkit Listrik Tenaga Surya (PLTS)</h2>
+          <h2>{{ __('content.slide_one') }}</h2>
         </div>
       </div>
       </div>
@@ -26,7 +26,7 @@
         </div>
         <div class="wrapper">
           <div class="banner__slider-item--text">
-          <h2>BTI - Supply Woodchip</h2>
+          <h2>{{ __('content.slide_two') }}</h2>
         </div>
         </div>
       </div>
@@ -186,42 +186,6 @@
       <button class="next-btn">Next</button>
     </div>
   </section>
-
-
-
-  <!-- <section class="scroller our-project animating-scroll" data-section-name="our-project" id="our-project"
-      data-animate-trigger=".trigger-5">
-      <div class="trigger trigger-5"></div>
-      <div class="slider-project">
-        <div class="slider-project__item">
-          <figure>
-            <img src="{{ asset('assets/images/thumbs/cover_w1000_h562_padma-ubud-web.jpg') }}" alt="">
-          </figure>
-          <div class="wrapper">
-            <div class="title-section text-white">
-              <div class="title-section__text">
-                <span>Notable Projects</span>
-                <h2>Key Portfolios &amp; Highlights</h2>
-              </div>
-            </div>
-            <div class="slider-project__item-text r-2">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-              <img src="{{ asset('assets/images/enpos.png') }}" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider-project-thumb">
-        <div class="wrapper">
-          <div class="slider-project-thumb__box">
-            <div class="slider-project-thumb__box-item"><span>Padma Hotels</span></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
 </section>
 

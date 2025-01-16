@@ -9,6 +9,7 @@ return [
     'keunggulan' => 'Keunggulan',
     'mitra' => 'Mitra',
     'proyek' => 'Perolehan Proyek',
+    'berita' => 'Berita Terkait',
 
 
     'bisnis' => 'Bisnis',
@@ -30,7 +31,7 @@ return [
     'keterangan' => 'Keterangan',
     'man_kami' => 'Manajemen kami',
     'man_desc' => 'Memperkenalkan individu-individu berbakat yang telah berkontribusi',
-    'man_desc_dua' => 'Di BTI, karyawan kami bersemangat dalam mendorong pertumbuhan dan perkembangan industri tenaga surya.&nbsp;<br>Kami bekerja sama dengan perusahaan anggota kami dan pemangku kepentingan lainnya untuk mempromosikan penggunaan energi surya secara lebih luas di seluruh wilayah.<br>&nbsp;',
+    'man_desc_dua' => 'Di BTI, karyawan kami bersemangat dalam mendorong pertumbuhan dan perkembangan Energi Baru Terbarukan (EBT).&nbsp;<br>Kami bekerja sama dengan perusahaan anggota kami dan pemangku kepentingan lainnya untuk mempromosikan penggunaan energi surya secara lebih luas di seluruh wilayah.<br>&nbsp;',
 
 
     'inti_nw' => 'Kebenaran, Berharga, Bersyukur, Hormat, Totalitas',
@@ -64,7 +65,10 @@ return [
                 Bandar Lampung.',
     'our_nw' => 'Klinik Narwastu menyediakan layanan <i>Psychological Service</i> untuk umum maupun Anak Berkebutuhan
                 Khusus. Saat ini terdapat beberapa layanan antara lain adalah pemeriksaan psikologis, konsultasi dan
-                seminar.'
+                seminar.',
+
+    'slide_one' =>'BTI - Pembangkit Listrik Tenaga Surya (PLTS)',
+    'slide_two' =>'BTI - Supply Woodchip'
 
 
 ];
