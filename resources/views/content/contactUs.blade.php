@@ -11,7 +11,8 @@
     </figcaption>
   </div>
 
-
+  <div class="inner-content">
+  <div class="bg-top" style="top:183px"><img src="{{ asset('assets/images/icon_bti.png') }}"></div>
   <div class="top-contact">
     <div class="wrapper">
       @foreach ($contactUs as $item)
@@ -42,6 +43,7 @@
         </div>
       @endforeach
     </div>
+  </div>
   </div>
 
 

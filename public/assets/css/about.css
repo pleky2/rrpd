@@ -1990,14 +1990,8 @@ h1.elementor-heading-title.elementor-size-default {
     z-index: 3;
 }
 .inner-content .bg-mid,
-.inner-content .bg-top {
-    left: 0;
-    position: absolute;
-    z-index: -1;
-}
-.inner-content .bg-top {
-    top: 390px;
-}
+
+
 .inner-content .bg-mid {
     top: 695px;
 }
@@ -2217,9 +2211,7 @@ img[data-src].lazyloaded {
     .middle {
         margin-top: 98px;
     }
-    .inner-content .bg-top {
-        display: none;
-    }
+    
     .banner-page > figure {
         height: 400px;
     }
@@ -2260,6 +2252,8 @@ img[data-src].lazyloaded {
     .inner-content.detail-pages .bg-top img {
         height: 100%;
         width: 100%;
+        filter: grayscale(1);
+        opacity: 0.1;
     }
     .inner-content.detail-pages .content-pages h1 {
         font-size: 24px;
@@ -3308,7 +3302,7 @@ img[data-src].lazyloaded {
 .grid-container img {
     width: 100%;
     max-height: 450px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .grid-container .grid-item {

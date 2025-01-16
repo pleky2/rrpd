@@ -12,7 +12,7 @@
       </figcaption>
     </div>
     <div class="inner-content">
-      <div class="bg-top"><img src="{{ asset('assets/images/material/bg-top.svg') }}"></div>
+      <div class="bg-top"><img src="{{ asset('assets/images/icon-bti.png') }}"></div>
 
       <div class="wrapper wrapper-small content-pages">
         <h3><b>Sejarah Kita</b></h3>

@@ -11,7 +11,7 @@
     </figcaption>
   </div>
   <div class="inner-content">
-    <div class="bg-top"><img src="{{ asset('assets/images/material/bg-top.svg') }}"></div>
+    <div class="bg-top"><img src="{{ asset('assets/images/icon_bti.png') }}"></div>
 
     <div class="wrapper wrapper-small content-pages">
       <h3 style="text-align:center;"><b>{{ __('content.man_desc') }}</b></h3>
@@ -29,7 +29,7 @@
               <div class="overlay-bg link">
                 <h3>{{ $itemManag->name }}</h3>
                 <p class="title">{{ $itemManag->title }}</p>
-                <span>Lihat Profile</span>
+                <span>Lihat Profil</span>
               </div>
               <img src="{{ url('upload/images/'.$itemManag->img) }}" />
               <div class="title">
