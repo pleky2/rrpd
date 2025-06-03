@@ -51,7 +51,8 @@ header nav ul.menu li a {
 }
 header nav ul.menu li a.active,
 header nav ul.menu li a:hover {
-    color: #d8a629;
+    /* color: #d8a629; */
+    color: #0058ba;
 }
 header nav ul.menu li.search {
     padding: 0 0 0 4px;
@@ -732,9 +733,10 @@ h1.elementor-heading-title.elementor-size-default {
         padding: 0 20px 0 0;
     }
     header nav .right-header.fixed {
-        background: #d8a629 url(../images/material/bg-menu-fixed.svg) no-repeat 100% 0;
+        background: #d8a629 url(../images/icon_bti.png) no-repeat 100% 0;
         background-size: 176px;
         height: 100%;
+        /* filter: grayscale(100%); */
         padding: 130px 37px 95px;
         position: fixed;
         right: 0;

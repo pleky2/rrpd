@@ -239,9 +239,8 @@ $(document).ready(function(){
         // centerMode: true,
         focusOnSelect: true
     })
-    
 
-    if ($(window).width() >- 1280) {
+    if ($(window).width() >= 1280) {
         $('ul.menu >li.have-child').hover(function () {
             $("ul.menu").hasClass("not-submenu") ||
                 ($(this).parent().hasClass("drop")

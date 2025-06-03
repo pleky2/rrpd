@@ -1276,8 +1276,9 @@ footer .foot-link a:last-child:after {
         padding: 0 20px 0 0;
     }
     header nav .right-header.fixed {
-        background: #d8a629 url(../images/material/bg-menu-fixed.svg) no-repeat 100% 0;
+        background: #d8a629 url(../images/icon_bti.png) no-repeat 100% 0;
         background-size: 176px;
+        /* filter: grayscale(100%); */
         height: 100%;
         padding: 130px 37px 95px;
         position: fixed;

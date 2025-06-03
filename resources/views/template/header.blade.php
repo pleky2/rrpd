@@ -8,7 +8,8 @@
   <meta property="og:locale" content="id">
   <meta property="og:title" content="@yield('title', 'Bhakti Terang Indonesia - Contractor and Trading Company')">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="@yield('meta-description', 'Bhakti Terang Indonesia specializes in Contractor and Trading Company.')">
+  <meta property="og:description"
+    content="@yield('meta-description', 'Bhakti Terang Indonesia specializes in Contractor and Trading Company.')">
   <meta property="og:site_name" content="Bhakti Terang Indonesia">
   <meta property="og:url" content="https://btiofficial.co.id/">
 
@@ -27,12 +28,11 @@
   <link rel="stylesheet" href="{{ asset('assets/css/milligram.css') }}" preload>
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/about.css') }}" preload>
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/project.css') }}" preload>
-
-  <!-- <script async type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/home.css') }}" preload>
   <!-- <script async type="text/javascript" src="{{ asset('assets/js/home.js') }}"></script>
@@ -65,10 +65,50 @@
                 <div class="wrap-row">
                   <div class="col">
                     <ul>
-                      <li class="parent" id="bti"><a>BTI</a></li>
-                      <li class="parent" id="enpos"><a>Café Enpos</a></li>
-                      <li class="parent" id="gh"><a>Growing Hope</a></li>
-                      <li class="parent" id="nw"><a>Klinik Narwastu</a></li>
+                      <li class="parent have-child" id="bti">
+                        <a>BTI</a>
+                        <div class="child" data-parent="bti">
+                          <ul>
+                            <li><a href="/profile/bti">{{ __('content.info_perusahaan') }}</a></li>
+                            <li><a href="/organization/bti">{{ __('content.organ') }}</a></li>
+                            <li><a href="/management/bti">{{ __('content.manajemen') }}</a></li>
+                            <li><a href="/superiority/bti">{{ __('content.keunggulan') }}</a></li>
+                            <li><a href="/mitra/bti">{{ __('content.mitra') }}</a></li>
+                            <li><a href="/procurement/bti">{{ __('content.proyek') }}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="parent have-child" id="enpos">
+                        <a>Café Enpos</a>
+                        <div class="child" data-parent="enpos">
+                          <ul>
+                            <li><a href="/profile/enpos">{{ __('content.info_perusahaan') }}</a></li>
+                            <li><a href="/organization/enpos">{{ __('content.organ') }}</a></li>
+                            <li><a href="/superiority/enpos">{{ __('content.keunggulan') }}</a></li>
+                            <li><a href="/mitra/enpos">{{ __('content.mitra') }}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="parent have-child" id="gh">
+                        <a>Growing Hope</a>
+                        <div class="child" data-parent="gh">
+                          <ul>
+                            <li><a href="/profile/gh">{{ __('content.info_perusahaan') }}</a></li>
+                            <li><a href="/organization/gh">{{ __('content.organ') }}</a></li>
+                            <li><a href="/superiority/gh">{{ __('content.keunggulan') }}</a></li>
+                            <li><a href="/mitra/gh">{{ __('content.mitra') }}</a></li>
+                          </ul>
+                      </li>
+                      <li class="parent have-child" id="nw">
+                        <a>Klinik Narwastu</a>
+                        <div class="child" data-parent="nw">
+                          <ul>
+                            <li><a href="/profile/nw">{{ __('content.info_perusahaan') }}</a></li>
+                            <li><a href="/organization/nw">{{ __('content.organ') }}</a></li>
+                            <li><a href="/superiority/nw">{{ __('content.keunggulan') }}</a></li>
+                            <li><a href="/mitra/nw">{{ __('content.mitra') }}</a></li>
+                          </ul>
+                      </li>
 
                     </ul>
                   </div>
@@ -121,10 +161,44 @@
                 <div class="wrap-row">
                   <div class="col">
                     <ul>
-                      <li class="parent" id="bti"><a href="#">BTI</a></li>
-                      <li class="parent" id="enpos"><a href="#">Café Enpos</a></li>
-                      <li class="parent" id="gh"><a href="#">Growing Hope</a></li>
-                      <li class="parent" id="nw"><a href="#">Klinik Narwastu</a></li>
+                      <li class="parent have-child" id="bti">
+                        <a href="#">BTI</a>
+                        <div class="child" data-parent="bti">
+                          <ul>
+                            <li><a href="/business/bti/pltu">PLTGU & PLTU</a></li>
+                            <li><a href="/business/bti/plts">PLTS</a></li>
+                            <li><a href="/business/bti/bio">{{ __('content.bio') }}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="parent have-child" id="enpos">
+                        <a href="#">Café Enpos</a>
+                        <div class="child" data-parent="enpos">
+                          <ul>
+                            <li><a href="/business/enpos/cafe">Café</a></li>
+                            <li><a href="/business/enpos/psikolog">Layanan Konsultasi Psikolog</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="parent have-child" id="gh">
+                        <a href="#">Growing Hope</a>
+                        <div class="child" data-parent="gh">
+                          <ul>
+                            <li><a href="/business/gh/terapi">{{ __('content.terapi_gh') }}</a></li>
+                            <li><a href="/business/gh/pklk">{{ __('content.pklk') }}</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="parent have-child" id="nw">
+                        <a href="#">Klinik Narwastu</a>
+                        <div class="child" data-parent="nw">
+                          <ul>
+                            <li><a href="/business/nw/psikolog">{{ __('content.psiko') }}</a></li>
+                            <li><a href="/business/nw/konsul">{{ __('content.konsul') }}</a></li>
+                            <li><a href="/business/nw/seminar">{{ __('content.seminar') }}</a></li>
+                          </ul>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div class="col">
