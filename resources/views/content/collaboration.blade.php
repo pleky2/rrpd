@@ -8,7 +8,7 @@
       <img class="header-title-menu" src="{{ asset('upload/images/logo/bg-' . Request::segment(1) . '-' . Request::segment(2) . '.png') }}" alt="">
     </figure>
     <figcaption>
-      <h1 class="title-menu"><b>Kerjasama</b></h1>
+      <h1 class="title-menu"><b>{{ __('content.kerjasama') }}</b></h1>
     </figcaption>
   </div>
 

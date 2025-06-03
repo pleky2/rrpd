@@ -23,8 +23,8 @@ class HomepageController extends Controller
     //
     public function index() {
 
-        $data['slider'] = Sliders::where('type', 'HOME_1')->orderBy('is_order', 'ASC')->get();
-        $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->orderBy('is_order', 'ASC')->get();
+        $data['slider'] = Sliders::where('type', 'HOME_1')->where('lang', Session::get('locale'))->orderBy('is_order', 'ASC')->get();
+        $data['slider_mebi'] = Sliders::where('type', 'HOME_MEBI')->where('lang', Session::get('locale'))->orderBy('is_order', 'ASC')->get();
         $data['mitra'] = Mitra::where('code', 'homep')->get();
         $data['profile'] = Contact::where('code', 'homep')->first();
 
@@ -163,7 +163,7 @@ class HomepageController extends Controller
 
     public function business($parent, $id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $business = Business::where('code', $parent)->where('menu', $id)->get();
+        $business = Business::where('code', $parent)->where('menu', $id)->where('lang', Session::get('locale'))->get();
 
         return view('content.business', [
             'profile' => $data['profile'],
@@ -173,7 +173,7 @@ class HomepageController extends Controller
 
     public function media($id) {
         $data['profile'] = Contact::where('code', 'homep')->first();
-        $media = Media::where('menu', 'media')->where('code', $id)->get();
+        $media = Media::where('menu', 'media')->where('code', $id)->where('lang', Session::get('locale'))->get();
 
         return view('content.media', [
             'profile' => $data['profile'],

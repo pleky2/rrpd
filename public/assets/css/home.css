@@ -2934,7 +2934,7 @@ footer .img-title {
 .inner-content {
     min-height: 400px;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 40px;
     position: relative;
     z-index: 3;
 }

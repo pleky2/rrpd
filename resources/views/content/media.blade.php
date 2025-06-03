@@ -12,7 +12,7 @@
   </div>
 
   <div class="wrapper media">
-    <h4>Berita Terkait</h4>
+    <h4>{{ __('content.berita') }}</h4>
     <div class="media-wrapper">
       @foreach ($media as $item)
         <a href="{{ $item->url }}" target="_blank">
@@ -20,7 +20,6 @@
             <div class="img-wrapper">
               <img src="{{ url('upload/images/media/'.$item->img) }}" alt="">
             </div>
-
             <div class="content">
               <span>{{ date('d F Y', strtotime($item->created_at)) }} | {{ date('H:i', strtotime($item->created_at)) }} WIB</span>
               <p>{{ $item->title }}
