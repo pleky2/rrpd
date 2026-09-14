@@ -3,218 +3,169 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use App\Models\Sliders;
-use DataTables;
-use Illuminate\Support\Facades\DB;
+use Yajra\DataTables\Facades\DataTables;
 
 class SliderController extends Controller
 {
-    //
-    public function index(){
+    /**
+     * Show the slider list page.
+     */
+    public function index()
+    {
         return view('admin.slider.index');
     }
 
+    /**
+     * Server-side DataTables source.
+     */
     public function all()
     {
-        //
-        // $data = Sliders::all();
-        $data = DB::table('sliders')
-                ->select('id', 'title', 'description', 
-                DB::raw('CASE 
-                    WHEN type = "HOME_1" THEN "Homepage"
-                    WHEN type = "bti" THEN "BTI" 
-                    WHEN type = "enpos" THEN "Enpos"
-                    WHEN type = "gh" THEN "Growing Hope"
-                    WHEN type = "nw" THEN "Narwastu"
-                    WHEN type = "HOME_MEBI" THEN "Homepage MEBI"
-                    END AS type
-                '))
-                ->whereNull('menu')
-                ->get();
+        $data = Sliders::whereNull('menu');
 
-        return Datatables::of($data)
-            ->addColumn('action', function ($data) {
-                $update = '<a href="slide/edit/'. $data->id .'" class="btn btn-primary">Edit</a>';
-                $update .= ' <button data-href="/slide/delete/'. $data->id .'" class="btn btn-danger" data-to-delete="'.$data->id.'" id="btn_delete" onclick="deleteFunc(this)">Delete</button>';
-                return $update;
+        return DataTables::of($data)
+            ->addIndexColumn()
+            ->addColumn('img', function ($row) {
+                if ($row->img) {
+                    return '<img class="rounded img-fluid" style="max-width:80px;" src="'.url('upload/images/slider/'.$row->img).'" alt="">';
+                }
+                return '-';
             })
-            ->rawColumns(['action'])
+            ->addColumn('action', function ($row) {
+                $html = '<a href="/slider/edit/'.$row->id.'" class="btn btn-sm btn-primary">Edit</a>';
+                $html .= ' <button data-href="/slider/destroy/'.$row->id.'" class="btn btn-sm btn-danger" onclick="deleteFunc(this)">Delete</button>';
+                return $html;
+            })
+            ->rawColumns(['img', 'action'])
             ->make(true);
     }
 
+    /**
+     * Show the create form.
+     */
     public function create()
     {
         $data['url'] = '/slider/store';
         $data['method'] = 'post';
+        $data['act'] = 'add';
 
-        return view('admin.slider.add', $data);
+        return view('admin.forms.sliderForm', $data);
     }
 
+    /**
+     * Persist a new slider.
+     */
     public function store(Request $request)
     {
-        $this->validate($request,[
+        $request->validate([
             'title' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
         ]);
-        
-        $imageName = time().rand().'.'.$request->image->extension();  
-        $request->image->move(public_path('images/gallery'), $imageName);
-        
-        try{
-            $galleryHis = new GalleryHistory;
 
-            if($request->photo_1){
-                $photoName_1 = time().rand().'.'.$request->photo_1->extension();  
-                $request->photo_1->move(public_path('images/gallery'), $photoName_1);
-                $galleryHis->photo_1 = $photoName_1;
-            }
-    
-            if($request->photo_2){
-                $photoName_2 = time().rand().'.'.$request->photo_2->extension();  
-                $request->photo_2->move(public_path('images/gallery'), $photoName_2);
-                $galleryHis->photo_2 = $photoName_2;
-            }
-            
-            if($request->photo_3){
-                $photoName_3 = time().rand().'.'.$request->photo_3->extension();  
-                $request->photo_3->move(public_path('images/gallery'), $photoName_3);
-                $galleryHis->photo_3 = $photoName_3;
+        try {
+            $slider = new Sliders();
+            $slider->title = $request->title;
+            $slider->description = $request->description;
+
+            if ($request->image) {
+                $imageName = time().rand().'.'.$request->image->extension();
+                $request->image->move(public_path('upload/images/slider'), $imageName);
+                $slider->img = $imageName;
             }
 
-            $galleryHis->title = $request->title;
-            $galleryHis->description = $request->description;
-            $galleryHis->image   = $imageName;
-            $galleryHis->status = $request->status ?? 0;
-            $galleryHis->save();
+            $slider->is_order = $request->order ? $request->order : 0;
+            $slider->type = $request->type ? $request->type : 'HOME_1';
+            $slider->lang = $request->lang ?? 'id';
+            $slider->save();
 
-            return redirect('galleries')->with('status',"Insert successfully");
+            return redirect('slider')->with('status', 'Slider inserted successfully.');
         }
-        catch(Exception $e){
-            return redirect('/galleries/add')->with('failed',"operation failed");
+        catch (Exception $e) {
+            return redirect('slider/create')->with('failed', 'Operation failed. '.$e->getMessage());
         }
     }
 
+    /**
+     * Show the edit form.
+     */
     public function edit($id)
     {
-        //
-        $data['url'] = '/galleries/update/'.$id;
+        $data['url'] = '/slider/update/'.$id;
         $data['method'] = 'post';
-        $data['gallery'] = GalleryHistory::find($id);
+        $data['act'] = 'edit';
+        $data['slider'] = Sliders::find($id);
 
-        return view('admin.forms.galleryForm', $data);
+        if (!$data['slider']) {
+            abort(404);
+        }
+
+        return view('admin.forms.sliderForm', $data);
     }
 
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * Update an existing slider.
      */
-    public function update(Request $request, $id)
+    public function update($id, Request $request)
     {
-        //
-        $this->validate($request,[
+        $request->validate([
             'title' => 'required',
-         ]);
+        ]);
 
-        try{
-            $galleryHis = GalleryHistory::find($id);
-
-            if(isset($request->image)) {
-                $image_path = public_path('images/gallery') . '/' . $galleryHis->image;
-                
-                if(File::exists($image_path)) {
-                   File::delete($image_path);
-                }
-
-                $imageName = time().rand().'.'.$request->image->extension();  
-                $request->image->move(public_path('images/gallery'), $imageName);
-                $galleryHis->image = $imageName;
+        try {
+            $slider = Sliders::find($id);
+            if (!$slider) {
+                abort(404);
             }
 
-            if(isset($request->photo_1)) {
-                $photo_1_path = public_path('images/gallery') . '/' . $galleryHis->photo_1;
-                
-                if(File::exists($photo_1_path)) {
-                   File::delete($photo_1_path);
+            $slider->title = $request->title;
+            $slider->description = $request->description;
+
+            if ($request->image) {
+                $oldImage = public_path('upload/images/slider').'/'.$slider->img;
+                if ($slider->img and File::exists($oldImage)) {
+                    File::delete($oldImage);
                 }
 
-                $photoName_1 = time().rand().'.'.$request->photo_1->extension();  
-                $request->photo_1->move(public_path('images/gallery'), $photoName_1);
-                $galleryHis->photo_1 = $photoName_1;
+                $imageName = time().rand().'.'.$request->image->extension();
+                $request->image->move(public_path('upload/images/slider'), $imageName);
+                $slider->img = $imageName;
             }
 
-            if(isset($request->photo_2)) {
-                $photo_2_path = public_path('images/gallery') . '/' . $galleryHis->photo_2;
-                
-                if(File::exists($photo_2_path)) {
-                   File::delete($photo_2_path);
-                }
+            $slider->is_order = $request->order ? $request->order : 0;
+            $slider->type = $request->type ? $request->type : 'HOME_1';
+            $slider->lang = $request->lang ?? 'id';
+            $slider->save();
 
-                $photoName_2 = time().rand().'.'.$request->photo_2->extension();  
-                $request->photo_2->move(public_path('images/gallery'), $photoName_2);
-                $galleryHis->photo_2 = $photoName_2;
-            }
-
-            if(isset($request->photo_3)) {
-                $photo_3_path = public_path('images/gallery') . '/' . $galleryHis->photo_3;
-                
-                if(File::exists($photo_3_path)) {
-                   File::delete($photo_3_path);
-                }
-
-                $photoName_3 = time().'.'.$request->photo_3->extension();  
-                $request->photo_3->move(public_path('images/gallery'), $photoName_3);
-                $galleryHis->photo_3     = $photoName_3;
-            }
-
-            $galleryHis->title         = $request->title;
-            $galleryHis->description   = $request->description;
-            $galleryHis->status        = $request->status ?? 0;
-            $galleryHis->save();
-
-            return redirect('galleries')->with('status',"Update successfully");
+            return redirect('slider')->with('status', 'Slider updated successfully.');
         }
-        catch(Exception $e){
-            return redirect('/galleries/add')->with('failed',"operation failed");
+        catch (Exception $e) {
+            return redirect('/slider/edit/'.$id)->with('failed', 'Operation failed. '.$e->getMessage());
         }
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * Remove a slider (and its image).
      */
     public function destroy($id)
     {
-        //
-        try{
-            $galleryHis = GalleryHistory::find($id);
-            $image_path = public_path('images/gallery') . '/' . $galleryHis->image;
-            $photo_1_path = public_path('images/gallery') . '/' . $galleryHis->photo_1;
-            $photo_2_path = public_path('images/gallery') . '/' . $galleryHis->photo_2;
-            $photo_3_path = public_path('images/gallery') . '/' . $galleryHis->photo_3;
-                
-            if(File::exists($image_path)) {
-                File::delete($image_path);
+        try {
+            $slider = Sliders::find($id);
+            if (!$slider) {
+                abort(404);
             }
-            if(File::exists($photo_1_path)) {
-                File::delete($photo_1_path);
-            }
-            if(File::exists($photo_2_path)) {
-                File::delete($photo_2_path);
-            }
-            if(File::exists($photo_3_path)) {
-                File::delete($photo_3_path);
-            }
-            $galleryHis->delete();
 
-            return redirect('galleries')->with('status',"Delete successfully");
+            $imagePath = public_path('upload/images/slider').'/'.$slider->img;
+            if ($slider->img and File::exists($imagePath)) {
+                File::delete($imagePath);
+            }
+
+            $slider->delete();
+
+            return redirect('slider')->with('status', 'Slider deleted successfully.');
         }
-        catch(Exception $e){
-            return redirect('galleries')->with('failed',"operation failed");
+        catch (Exception $e) {
+            return redirect('slider')->with('failed', 'Operation failed. '.$e->getMessage());
         }
     }
 }

@@ -45,8 +45,10 @@
                 ajax: "/banner/all",
                 columns: [
                     {
-                        data: 'rownum',
-                        name: 'rownum'
+                        data: 'DT_RowIndex',
+                        name: 'DT_RowIndex',
+                        orderable: false,
+                        searchable: false
                     },
                     {
                         data: 'title',

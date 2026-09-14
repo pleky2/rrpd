@@ -3,18 +3,18 @@
 @section('content')
     <section class="content">
         <div class="row">
-            <h2 class="mt-4 mb-4 ml-2">List Media</h2>
+            <h2 class="mt-4 mb-4 ml-2">List Superiority (Keunggulan)</h2>
             <div class="col-md-12">
-                <a href={{ url('/media/add') }} class="btn btn-success mb-3">Create</a>
-                <table id="data-media" class="table table-bordered table-striped" style="table-layout: fixed;">
+                <a href="{{ url('/superiority/add') }}" class="btn btn-success mb-3">Create</a>
+                <table id="data_superiority" class="table table-bordered table-striped" style="table-layout: fixed;">
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Image</th>
+                            <th>Icon</th>
                             <th>Title</th>
                             <th>Code</th>
-                            <th>Menu</th>
-                            <th>Url</th>
+                            <th>Language</th>
+                            <th>Description</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -41,17 +41,17 @@
         }
 
         $(function() {
-            $('#data-media').DataTable({
+            $('#data_superiority').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: "/media/all",
+                ajax: "/superiority/all",
                 columns: [
                     { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
                     { data: 'img', name: 'img', orderable: false, searchable: false },
                     { data: 'title', name: 'title' },
                     { data: 'code', name: 'code' },
-                    { data: 'menu', name: 'menu' },
-                    { data: 'url', name: 'url' },
+                    { data: 'lang', name: 'lang' },
+                    { data: 'description', name: 'description' },
                     { data: 'action', name: 'action', orderable: false, searchable: false },
                 ]
             });

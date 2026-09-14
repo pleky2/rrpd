@@ -13,7 +13,7 @@
           <div class="business {{ $item->position ?? 'centerz'}}">
             <h1>{{ $item->name }}</h1>
             <p>
-              {{ $item->description }}
+              {!! $item->description !!}
             </p>
           </div>
         </div>

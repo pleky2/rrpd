@@ -18,9 +18,16 @@ class CekLoginStatus
     {
         if(!Session::get('login') or Session::get('login')==false)
         {
-            return redirect('/login');
-        }else{
-            return $next($request);
+            return redirect('/cms/login');
         }
+
+        $response = $next($request);
+
+        // Prevent browser from serving cached admin pages via Back button after logout
+        $response->headers->set('Cache-Control', 'no-cache, no-store, max-age=0, must-revalidate');
+        $response->headers->set('Pragma', 'no-cache');
+        $response->headers->set('Expires', 'Fri, 01 Jan 1990 00:00:00 GMT');
+
+        return $response;
     }
 }

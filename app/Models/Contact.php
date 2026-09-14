@@ -12,12 +12,15 @@ class Contact extends Model
     protected $table = 'contact';
     protected $fillable = [
         'company_name',
+        'code',
         'description',
+        'office',
         'address_ho',
         'address_branch',
         'phone',
         'email',
         'instagram',
+        'instagram_title',
         'youtube',
         'linkedin',
         'created_at',

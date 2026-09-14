@@ -27,7 +27,7 @@
       <div class="center mitra-tab">
         @foreach ($mitra['tab'] as $tab)
           <div class="mitra-tab-item">
-            <span>{{ $tab->description }}</span>
+            <span>{!! $tab->description !!}</span>
           </div>    
         @endforeach
       </div>

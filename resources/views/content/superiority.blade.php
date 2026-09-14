@@ -21,7 +21,7 @@
               </div>
             @endif
             <h5>{{ $itemSuper->title }}</h5>
-            <p>{{ $itemSuper->description }}</p>
+            <p>{!! $itemSuper->description !!}</p>
           </div>    
         @endforeach
       </div>

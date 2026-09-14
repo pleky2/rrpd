@@ -50,55 +50,43 @@
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="{{ url('/menu') }}" class="nav-link">
+                <a href="{{ url('/slider') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Slider</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/contents') }}" class="nav-link">
+                <a href="{{ url('/our-company') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Our Company</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/banner') }}" class="nav-link">
+                <a href="{{ url('/mitra') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Mitra</p>
                 </a>
               </li>
-            <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="{{ url('/about/edit') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Info Company</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/management') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Management</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Struktur Organisasi</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/superiority') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Keunggulan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mitra</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/project') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Proyek</p>
                 </a>
@@ -109,12 +97,12 @@
                   <p>Business</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="{{ url('/profile/edit') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cooperation</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="{{ url('/media') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -122,7 +110,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ url('/profile/edit') }}" class="nav-link">
+                <a href="{{ url('/contact') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contact Us</p>
                 </a>

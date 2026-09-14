@@ -38,7 +38,7 @@
 
       <div class="wrapper">
         <div class="banner__slider-item--text">
-        <h2>{{ $slide->description }}</h2>
+        <h2>{!! $slide->description !!}</h2>
         </div>
       </div>
       </div>
@@ -175,7 +175,7 @@
         <img src="{{ url('upload/images/slider/' . $mebi->img) }}" />
       </div>
       <div class="slide__content">
-        <h2>{{ $mebi->description }}</h2>
+        <h2>{!! $mebi->description !!}</h2>
       </div>
       </div>
     @endforeach

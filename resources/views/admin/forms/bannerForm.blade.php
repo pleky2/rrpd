@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="name">Description</label>
-                                    <textarea class="form-control" id="description" name="description">{{ $banner->description ?? '' }}</textarea>
+                                    <textarea class="ckeditor form-control" id="description" name="description">{{ $banner->description ?? '' }}</textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="photo">Image</label>
@@ -65,7 +65,14 @@
 
 @push('scripts')
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
     <script>
+        document.querySelectorAll('textarea.ckeditor').forEach(function (el) {
+            if (window.CKEDITOR && el.id) {
+                CKEDITOR.replace(el.id);
+            }
+        });
+
         function onSave(){
             swal({
                 title: 'Are you sure ?',
