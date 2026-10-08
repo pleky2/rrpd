@@ -60,7 +60,7 @@ class ProjectController extends Controller
     private function uploadImage($image)
     {
         $imageName = time().rand().'.'.$image->extension();
-        $image->move(public_path('upload/images/project'), $imageName);
+        $image->move(upload_path('images/project'), $imageName);
 
         return $imageName;
     }
@@ -70,7 +70,7 @@ class ProjectController extends Controller
      */
     private function deleteImage($filename)
     {
-        $path = public_path('upload/images/project').'/'.$filename;
+        $path = upload_path('images/project').'/'.$filename;
         if ($filename and File::exists($path)) {
             File::delete($path);
         }

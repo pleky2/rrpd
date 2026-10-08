@@ -11,7 +11,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Pastikan helper upload_path() selalu tersedia meski composer
+        // autoload belum di-regenerate di server (file punya guard
+        // function_exists, jadi aman dimuat berkali-kali).
+        require_once base_path('app/helpers.php');
     }
 
     /**

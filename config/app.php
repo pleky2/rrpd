@@ -56,6 +56,22 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Public Upload Path
+    |--------------------------------------------------------------------------
+    |
+    | Absolute path of the directory where uploaded images are stored. It must
+    | be reachable from the web server's document root so uploaded files are
+    | publicly accessible via the "upload/..." URL. Defaults to the "upload"
+    | folder inside the application's public directory. On shared hosting where
+    | the public folder is copied into public_html, set UPLOAD_PATH to point to
+    | the upload folder inside public_html, e.g. /home/username/public_html/upload
+    |
+    */
+
+    'upload_path' => env('UPLOAD_PATH', public_path('upload')),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |

@@ -70,7 +70,7 @@ class SliderController extends Controller
 
             if ($request->image) {
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images/slider'), $imageName);
+                $request->image->move(upload_path('images/slider'), $imageName);
                 $slider->img = $imageName;
             }
 
@@ -122,13 +122,13 @@ class SliderController extends Controller
             $slider->description = $request->description;
 
             if ($request->image) {
-                $oldImage = public_path('upload/images/slider').'/'.$slider->img;
+                $oldImage = upload_path('images/slider').'/'.$slider->img;
                 if ($slider->img and File::exists($oldImage)) {
                     File::delete($oldImage);
                 }
 
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images/slider'), $imageName);
+                $request->image->move(upload_path('images/slider'), $imageName);
                 $slider->img = $imageName;
             }
 
@@ -155,7 +155,7 @@ class SliderController extends Controller
                 abort(404);
             }
 
-            $imagePath = public_path('upload/images/slider').'/'.$slider->img;
+            $imagePath = upload_path('images/slider').'/'.$slider->img;
             if ($slider->img and File::exists($imagePath)) {
                 File::delete($imagePath);
             }

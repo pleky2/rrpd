@@ -73,7 +73,7 @@ class ManagementController extends Controller
 
             if ($request->image) {
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images'), $imageName);
+                $request->image->move(upload_path('images'), $imageName);
                 $management->img = $imageName;
             }
 
@@ -126,13 +126,13 @@ class ManagementController extends Controller
             $management->history = $request->history;
 
             if ($request->image) {
-                $oldImage = public_path('upload/images').'/'.$management->img;
+                $oldImage = upload_path('images').'/'.$management->img;
                 if ($management->img and File::exists($oldImage)) {
                     File::delete($oldImage);
                 }
 
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images'), $imageName);
+                $request->image->move(upload_path('images'), $imageName);
                 $management->img = $imageName;
             }
 
@@ -156,7 +156,7 @@ class ManagementController extends Controller
                 abort(404);
             }
 
-            $imagePath = public_path('upload/images').'/'.$management->img;
+            $imagePath = upload_path('images').'/'.$management->img;
             if ($management->img and File::exists($imagePath)) {
                 File::delete($imagePath);
             }

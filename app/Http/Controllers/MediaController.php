@@ -69,7 +69,7 @@ class MediaController extends Controller
 
             if ($request->image) {
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images/media'), $imageName);
+                $request->image->move(upload_path('images/media'), $imageName);
                 $media->img = $imageName;
             }
 
@@ -122,13 +122,13 @@ class MediaController extends Controller
             $media->url = $request->url;
 
             if ($request->image) {
-                $oldImage = public_path('upload/images/media').'/'.$media->img;
+                $oldImage = upload_path('images/media').'/'.$media->img;
                 if ($media->img and File::exists($oldImage)) {
                     File::delete($oldImage);
                 }
 
                 $imageName = time().rand().'.'.$request->image->extension();
-                $request->image->move(public_path('upload/images/media'), $imageName);
+                $request->image->move(upload_path('images/media'), $imageName);
                 $media->img = $imageName;
             }
 
@@ -152,7 +152,7 @@ class MediaController extends Controller
                 abort(404);
             }
 
-            $imagePath = public_path('upload/images/media').'/'.$media->img;
+            $imagePath = upload_path('images/media').'/'.$media->img;
             if ($media->img and File::exists($imagePath)) {
                 File::delete($imagePath);
             }
